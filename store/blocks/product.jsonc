@@ -2,7 +2,7 @@
   "store.product": {
     "children": [
       "flex-layout.row#product-breadcrumb",
-      //componente custom btn back
+      //componente custom btnback 
       "botonregresar",
       "flex-layout.row#product-main",
       "sticky-layout#pdp",
