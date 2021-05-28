@@ -1,0 +1,301 @@
+{
+    "store.custom#blog-14":{
+        "blocks":[
+            "list-context.image-list#blog-14-banner-principal",
+            "rich-text#title-blog-14",
+            "flex-layout.row#marketplaces-line-1",
+            "flex-layout.row#marketplaces-line-2",
+            "flex-layout.row#marketplaces-line-3"
+        ]
+},
+
+"list-context.image-list#blog-14-banner-principal": {
+    "children": ["slider-layout#blog-14-images"],
+    "props": {
+      "height": "100",
+      "images": [
+        {
+          "image": "https://minisocol.vteximg.com.br/arquivos/1920x150pxMiniso.png",
+          "mobileImage": "https://minisocol.vteximg.com.br/arquivos/425x425pxMiniso.png",
+          "description": "Marketplaces Miniso"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#blog-14-images": {
+    "props": {
+      "blockClass" : "marketplaces-banner-principal",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+
+  "rich-text#title-blog-14":{
+      "props":{
+          "text": "Más de lo que buscas, también en línea , por mail, por teléfono y WhatsApp para una experiencia fácil a distancia y siempre disponible.",
+          "textPosition": "CENTER",
+          "blockClass": "title-marketplaces",
+          "title": "Title Marketplaces"
+      }
+  },
+  "flex-layout.row#marketplaces-line-1":{
+    "children":[
+        "flex-layout.col#marketplaces-line-1-item1",
+        "flex-layout.col#marketplaces-line-1-item2"
+    ],
+    "props":{
+        "fullWidth": true,
+        "marginBottom": 5
+    }
+  },
+  "flex-layout.row#marketplaces-line-2":{
+    "children":[
+        "flex-layout.col#marketplaces-line-1-item3",
+        "flex-layout.col#marketplaces-line-1-item4"
+    ],
+    "props":{
+        "fullWidth": true,
+        "marginBottom": 5
+    }
+  },
+  "flex-layout.row#marketplaces-line-3":{
+    "children":[
+        "flex-layout.col#marketplaces-line-1-item3",
+        "flex-layout.col#marketplaces-line-1-item4"
+    ],
+    "props":{
+        "fullWidth": true,
+        "marginBottom": 5
+    }
+  },
+  //items
+  "flex-layout.col#marketplaces-line-1-item1":{
+    "children": [
+        "image#marketplaces-item1",
+        "rich-text#marketplaces-item1",
+        "link#marketplaces-item1"
+    ],
+    "props":{
+        "width": "50%",
+        "blockClass" : ["marketplaces-line", "marketplaces-line-margin-right"]
+    }
+  },
+  "flex-layout.col#marketplaces-line-1-item2":{
+    "children": [
+        "image#marketplaces-item2",
+        "rich-text#marketplaces-item2",
+        "link#marketplaces-item2"
+    ],
+    "props":{
+        "width": "50%",
+        "blockClass" : ["marketplaces-line", "marketplaces-line-margin-left"]
+    }
+  },
+  "flex-layout.col#marketplaces-line-1-item3":{
+    "children": [
+        "image#marketplaces-item3",
+        "rich-text#marketplaces-item3",
+        "link#marketplaces-item3"
+    ],
+    "props":{
+        "width": "50%",
+        "blockClass" : ["marketplaces-line", "marketplaces-line-margin-right"]
+
+    }
+  },
+  "flex-layout.col#marketplaces-line-1-item4":{
+    "children": [
+        "image#marketplaces-item4",
+        "rich-text#marketplaces-item4",
+        "link#marketplaces-item4"
+    ],
+    "props":{
+        "width": "50%",
+        "blockClass" : ["marketplaces-line", "marketplaces-line-margin-left"]
+     
+    }
+  },
+  "flex-layout.col#marketplaces-line-1-item5":{
+    "children": [
+        "image#marketplaces-item3",
+        "rich-text#marketplaces-item3",
+        "link#marketplaces-item3"
+    ],
+    "props":{
+        "width": "50%",
+        "blockClass" : ["marketplaces-line", "marketplaces-line-margin-right"]
+
+    }
+  },
+  "flex-layout.col#marketplaces-line-1-item6":{
+    "children": [
+        "image#marketplaces-item4",
+        "rich-text#marketplaces-item4",
+        "link#marketplaces-item4"
+    ],
+    "props":{
+        "width": "50%",
+        "blockClass" : ["marketplaces-line", "marketplaces-line-margin-left"]
+     
+    }
+  },
+  //rich texts
+  "rich-text#marketplaces-item1":{
+    "props":{
+        "text": "Compras rápidas y seguras.",
+        "textPosition": "CENTER",
+        "blockClass": "subtitle-marketplaces"
+    }
+  },
+  "rich-text#marketplaces-item2":{
+    "props":{
+        "text": "Compras rápidas y seguras.",
+        "textPosition": "CENTER",
+        "blockClass": "subtitle-marketplaces"
+    }
+  },
+  "rich-text#marketplaces-item3":{
+    "props":{
+        "text": "Compras rápidas y seguras.",
+        "textPosition": "CENTER",
+        "blockClass": "subtitle-marketplaces"
+    }
+  },
+  "rich-text#marketplaces-item4":{
+    "props":{
+        "text": "Compras rápidas y seguras.",
+        "textPosition": "CENTER",
+        "blockClass": "subtitle-marketplaces"
+    }
+  },
+  "rich-text#marketplaces-item5":{
+    "props":{
+        "text": "Compras rápidas y seguras.",
+        "textPosition": "CENTER",
+        "blockClass": "subtitle-marketplaces"
+    }
+  },
+  "rich-text#marketplaces-item6":{
+    "props":{
+        "text": "Compras rápidas y seguras.",
+        "textPosition": "CENTER",
+        "blockClass": "subtitle-marketplaces"
+    }
+  },
+  //link
+  "link#marketplaces-item1":{
+    "props":{
+        "href": "/",
+        "label": "MÁS INFORMACIÓN",
+        "blockClass": "button-marketplaces"
+    }
+  },
+  "link#marketplaces-item2":{
+    "props":{
+        "href": "/",
+        "label": "MÁS INFORMACIÓN",
+        "blockClass": "button-marketplaces"
+    }
+  },
+  "link#marketplaces-item3":{
+    "props":{
+        "href": "/",
+        "label": "MÁS INFORMACIÓN",
+        "blockClass": "button-marketplaces"
+    }
+  },
+  "link#marketplaces-item4":{
+    "props":{
+        "href": "/",
+        "label": "MÁS INFORMACIÓN",
+        "blockClass": "button-marketplaces"
+    }
+  },
+  "link#marketplaces-item5":{
+    "props":{
+        "href": "/",
+        "label": "MÁS INFORMACIÓN",
+        "blockClass": "button-marketplaces"
+    }
+  },
+  "link#marketplaces-item6":{
+    "props":{
+        "href": "/",
+        "label": "MÁS INFORMACIÓN",
+        "blockClass": "button-marketplaces"
+    }
+  },
+
+  //images
+  "image#marketplaces-item1":{
+      "props":{
+          "src": "assets/945x520pxMiniso.png",
+          "blockClass": "marketplaces-line-image",
+          "link": {
+            "url": "/",
+            "openNewTab": "false",
+            "noFollow":"false"
+          }
+      }
+  },
+  "image#marketplaces-item2":{
+      "props":{
+          "src": "assets/945x520pxMiniso.png",
+          "blockClass": "marketplaces-line-image",
+          "link": {
+            "url": "/",
+            "openNewTab": "false",
+            "noFollow":"false"
+          }
+      }
+  },
+  "image#marketplaces-item3":{
+      "props":{
+          "src": "assets/945x520pxMiniso.png",
+          "blockClass": "marketplaces-line-image",
+          "link": {
+            "url": "/",
+            "openNewTab": "false",
+            "noFollow":"false"
+          }
+      }
+  },
+  "image#marketplaces-item4":{
+      "props":{
+          "src": "assets/945x520pxMiniso.png",
+          "blockClass": "marketplaces-line-image",
+          "link": {
+            "url": "/",
+            "openNewTab": "false",
+            "noFollow":"false"
+          }
+      }
+  },
+  "image#marketplaces-item5":{
+      "props":{
+          "src": "assets/945x520pxMiniso.png",
+          "blockClass": "marketplaces-line-image",
+          "link": {
+            "url": "/",
+            "openNewTab": "false",
+            "noFollow":"false"
+          }
+      }
+  },
+  "image#marketplaces-item6":{
+      "props":{
+          "src": "assets/945x520pxMiniso.png",
+          "blockClass": "marketplaces-line-image",
+          "link": {
+            "url": "/",
+            "openNewTab": "false",
+            "noFollow":"false"
+          }
+      }
+  }
+}

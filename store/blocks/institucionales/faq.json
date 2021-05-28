@@ -1,0 +1,329 @@
+{
+    "store.custom#faq": {
+        "blocks": [
+            "flex-layout.row#faq"
+        ]
+    },
+    "flex-layout.row#faq": {
+        "children": [
+            "flex-layout.col#text-faq"
+        ],
+        "props": {
+            "blockClass": [
+                "page-institucionales",
+                "faq"
+            ]
+        }
+    },
+    "flex-layout.col#text-faq": {
+        "children": [
+            "rich-text#title-faq",
+            "rich-text#faq-section-1",
+            "rich-text#faq-section-2",
+            "rich-text#faq-section-3",
+            "rich-text#faq-section-4",
+            "rich-text#faq-section-5",
+            "rich-text#faq-section-6",
+            "rich-text#faq-section-7",
+            "rich-text#faq-section-8",
+            "rich-text#faq-section-9",
+            "rich-text#faq-section-10",
+            "rich-text#faq-section-11",
+            "rich-text#faq-section-12",
+            "rich-text#faq-section-13",
+            "rich-text#faq-section-14",
+            "rich-text#faq-section-15",
+            "rich-text#faq-section-16",
+            "rich-text#faq-section-17",
+            "rich-text#faq-section-18",
+            "rich-text#faq-section-19",
+            "rich-text#faq-section-20",
+            "rich-text#faq-section-21",
+            "rich-text#faq-section-22",
+            "rich-text#faq-section-23",
+            "rich-text#faq-section-24",
+            "rich-text#faq-section-25",
+            "rich-text#faq-section-26",
+            "rich-text#faq-section-27",
+            "rich-text#faq-section-28",
+            "rich-text#faq-section-29",
+            "rich-text#faq-section-30",
+            "rich-text#whatsapp-img-faq",
+            "image#whatsapp-faq"
+        ],
+        "props": {
+            "blockclass": [
+                "page-institucionales",
+                "faq"
+            ],
+            "preventVerticalStretch": true
+        }
+    },
+    "rich-text#title-faq": {
+        "props": {
+            "text": "# FAQs",
+            "blockClass": ""
+        }
+    },
+    "rich-text#faq-section-1": {
+        "props": {
+            "text": "##### ¿Cómo comprar?\nR: Comprar es muy fácil. Estos son los pasos que tienes que seguir:\n1. Busca lo que quieras, puedes usar nuestras categorías o el buscador\n\n2. Agrega a tu bolsa los productos que quieras dando click al botón “A mi bolsa”\n3. Una vez que hayas escogido todo lo que te gusta, ve a tu bolsa y da click en “Comprar”\n4. Revisa que los productos que seleccionaste y que tus datos sean los correctos y presiona el botón “Finalizar Compra”\n5. Si eres un nuevo usuario, completa la información de contacto (“Regístrate”) y los datos correspondientes a la dirección en donde se realizará el envío (“Entrega“) Si ya tienes una cuenta con nosotros, únicamente proporciona los datos correspondientes a la dirección en donde se realizará el envío (“Entrega“)\n6. Selecciona el método de pago que más te convenga y proporciona los datos correspondientes.\n7. Revisa y modifica, si así lo deseas, la información de las secciones  (“Mi cuenta“) y (“Entrega“) y presiona el botón “Comprar ahora”.\n8. ¡Listo! Podrás ver la información de tu pedido en la sección de “Mis Pedidos” y recibirás un correo con la información de tu compra.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-2": {
+        "props": {
+            "text": "##### ¿Cómo elijo productos para mi carrito de compra?\nR: Da clic sobre el producto que te interesa y en el detalle del producto da clic en el botón “A mi bolsa”.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-3": {
+        "props": {
+            "text": "##### ¿Los pagos son Seguros?\nR: Hemos Invertido en los sistemas de protección más avanzados para tu compra, es por ello que mantenemos las transacciones altamente protegidas de principio a fin. Utilizamos la plataforma de Mercado Pago, encriptamos los datos en forma segura (TLS) y así cumplimos con los más altos estándares de seguridad online. PCI-DSS monitorea y certifica lo que hacemos.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-4": {
+        "props": {
+            "text": "##### ¿Cuáles son los Métodos de Pago?\nTarjeta de débito y crédito. \n Al momento de pagar ingresas los datos de tu tarjeta de débito o tu tarjeta crédito y listo.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-5": {
+        "props": {
+            "text": "##### ¿Hay pago contra entrega?\nR: Por el momento no existe esa modalidad.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-6": {
+        "props": {
+            "text": "##### ¿No me llega el código para entrar a mi cuenta, qué debo hacer?\nR: El correo con el código en algunos casos puede tardar hasta 3 minutos para llegar a tu bandeja. En caso de que no lo veas en tu bandeja de entrada, revisa tu bandeja de correos no deseados. En caso de que no encuentres el correo, vuelve a introducir tu correo para generar un nuevo código. \nRecuerda que el código tiene una vigencia, por lo cual si te marca error al ingresarlo vuelve a introducir tu correo para generar un nuevo código.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-7": {
+        "props": {
+            "text": "##### Ya hice mi pedido y aún no recibo correo de confirmación\nR: Primero verifica tu bandeja de spam (correo no deseado). O verifica en nuestra página web, en la sección de “Pedidos” de “Mi cuenta”. Si tienes dudas puedes escribirnos a: contacto@miniso.cl",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-8": {
+        "props": {
+            "text": "##### ¿Cuánto tiempo tarda en llegar mi pedido/ Cuánto tardan en procesar las órdenes?\nR: Te contamos que los tiempos regulares estimados de entrega son: \n * De 12 a 15 días hábiles. \n\nSin embrago, debido a la emergencia sanitaria estos tiempos pueden variar y extenderse, en especial las zonas que tengan medidas de restricción establecidas por el gobierno. ",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-9": {
+        "props": {
+            "text": "##### ¿Cómo se si aprobó mi pago?\nR: Recibirás confirmación en tu correo electrónico registrado, o también puedes verificar en nuestra pagina web en la sección de “Pedidos” de “Mi cuenta”.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-10": {
+        "props": {
+            "text": "##### Rechazaron mi tarjeta al realizar la compra, ¿Qué hago?\nR: En algunas ocasiones MercadoPago rechaza la transacción por motivos de seguridad, te sugerimos utilizar otra tarjeta o comunicarte con tu banco para que te ayude a verificar si ésta tiene restricciones o está bloqueada.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-11": {
+        "props": {
+            "text": "##### ¿Cuál es el costo de envío? \n El costo se calcula cuando realizas tu compra y éste varía depende del destino.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-12": {
+        "props": {
+            "text": "##### ¿Cómo se dónde está mi envío? \n R: Desde “Mi Cuenta” en “Pedidos” podrás ver el estatus de tu pedido.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-13": {
+        "props": {
+            "text": "##### No he recibido mi número de guía, ¿Qué hago? \n Por favor escríbenos a: contacto@miniso.cl con la siguiente información: \n\n * Nombre registrado en la plataforma. \n * Número de pedido.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-14": {
+        "props": {
+            "text": "##### ¿Cómo puedo cambiar la dirección de entrega? \nR: Cancelar el pedido y generar uno nuevo.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-15": {
+        "props": {
+            "text": "##### Ya pasó la fecha estimada de entrega ¿cuándo va a llegar mi pedido? \n R: escríbenos a contacto@miniso.cl",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-16": {
+        "props": {
+            "text": "##### ¿Las entregas son en todo Chile?\n R: Realizamos entregas dentro del territorio nacional",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-17": {
+        "props": {
+            "text": "##### ¿Hacen envíos a otro país? \n R: Por el momento no contamos con envíos fuera del territorio Chile.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-18": {
+        "props": {
+            "text": "##### ¿Qué paqueterías utilizan? \n R: Todos nuestros envíos son hechos por Courier asignado",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-19": {
+        "props": {
+            "text": "##### ¿Tienen venta al por mayor en línea? \n R: En Miniso no contamos con ventas al por mayor.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-20": {
+        "props": {
+            "text": "##### ¿Qué hago si recibí mi pedido incompleto, dañado, vacío o no es lo que pedí? \nPor favor escríbenos a: contacto@miniso.cl\n * #de pedido.\n * Nombre registrado en la plataforma.\n * Correo electrónico registrado en la plataforma.\n * Cuáles y cuántos productos llegaron incompletos, dañados, vacíos o erróneos.\n * Cuál es el valor de los productos incompletos, dañados, vacíos o erróneos.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-21": {
+        "props": {
+            "text": "##### ¿Cómo hago una devolución? \n Te invitamos a consultar nuestra política de cambios y garantías aqui: https://www.miniso.cl/devoluciones-y-garantias si tienes alguna duda escríbenos a contacto@miniso.cl",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-22": {
+        "props": {
+            "text": "##### ¿Cómo hago válida una garantía? \n R: Te invitamos a consultar nuestra política de cambios y garantías aquí: https://www.miniso.cl/devoluciones-y-garantias si tienes alguna duda escríbenos a contacto@miniso.cl",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-23": {
+        "props": {
+            "text": "##### ¿Los cambios o devoluciones por garantía tienen costo? \n Depende del motivo del cambio, si es por gusto debe ser asumido por el cliente. En el caso de una garantía, Miniso asume el valor del flete.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-24": {
+        "props": {
+            "text": "##### ¿Puedo realizar mi garantía en cualquier tienda? \n Sí, debes llevar una copia de la boleta, cumplir con las especificaciones de acuerdo con nuestras políticas de cambios y devoluciones y dirigirte a tu tienda Miniso más cercana.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-25": {
+        "props": {
+            "text": "##### ¿Mis datos personales están protegidos? \n R: ¡Claro! Si tienes alguna duda al respecto, puedes consultar nuestro Aviso de Privacidad o bien enviar un correo electrónico a contacto@miniso.cl donde con gusto te atenderemos.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-26": {
+        "props": {
+            "text": "##### ¿Cuándo resurtirán producto en mi tienda favorita? \n R: El Sr. Miniso está trabajando constantemente para resurtir todas nuestras tiendas y que así puedas disfrutar en tu siguiente visita de la mejor experiencia.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-27": {
+        "props": {
+            "text": "##### ¿Mi tarjeta de regalo/código de ECommerce puedo usarlo en tienda física y viceversa? \n Por el momento no es posible.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-28": {
+        "props": {
+            "text": "##### ¿Tienen promociones o descuentos? \n R: Te invitamos a visitar nuestra página web: www.miniso.cl allí conocerás todas nuestras promociones vigentes.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-29": {
+        "props": {
+            "text": "##### El producto que adquirí no funciona, ¿cómo sé si tiene garantía? \n R: MINISO ofrece una garantía únicamente por lo que hace a los productos eléctricos, electrónicos y electrodomésticos que comercializa.",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#faq-section-30": {
+        "props": {
+            "text": "##### ¿Cómo puedo facturar mi compra? \n R: Deberás acceder a la sección Facturación dentro del Sitio, y proporcionar la información que se te solicitará relativa a tu compra y tus datos fiscales. Es importante tengas a la mano tu ticket de compra, donde podrás corroborar los datos necesarios para facturar (Folio de ticket, Código de Sucursal, Monto).",
+            "blockClass": [
+                "faq-section-feature"
+            ]
+        }
+    },
+    "rich-text#whatsapp-img-faq": {
+        "props": {
+            "text": "Te ayudamos con tu compra, ¿tienes alguna inquietud, sugerencia o comentario? Sólo dale click al botón de whatsapp y enseguida te atenderemos.",
+            "blockClass": [
+                "faq-section-feature",
+                "whatsapp-faq"
+            ]
+        }
+    },
+    "image#whatsapp-faq": {
+        "props": {
+            "src": "https://minisomx.vtexassets.com/assets/vtex.file-manager-graphql/images/whatsapp___a4ee5967bfc6a66adef38d8bedbcafcf.png",
+            "blockClass": "whatsapp-faq",
+            "maxWidth": "80px",
+            "maxHeight": "auto",
+            "link": {
+                "url": "https://api.whatsapp.com/send?phone=56225708553&text=Konnichiwa,%20mi%20nombre%20es",
+                "openNewTab": "true"
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+{
+  "flex-layout.row#tiendas-row-ags": {
+    "title": "Aguascalientes",
+    "children": ["flex-layout.col#tiendas-col-ags"],
+    "props": {
+      "blockClass": "tiendas-row-ags"
+    }
+  },
+  "flex-layout.col#tiendas-col-ags": {
+    "children": [
+      "rich-text#subtitle-tiendas-ags",
+      "flex-layout.row#tiendas-row1-ags"
+    ],
+    "props": {
+      "blockclass": "tiendas-col-ags"
+    }
+  },
+  "rich-text#subtitle-tiendas-ags": {
+    "props": {
+      "text": "#### Valledupar",
+      "blockClass": "subtitle-tiendas"
+    }
+  },
+  "flex-layout.row#tiendas-row1-ags": {
+    "children": ["rich-text#tiendas-tienda1-ags"],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda1-ags": {
+    "title": "tienda-1",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Guatapurí Plaza Comercial\n**Dirección:** Diagonal 10 # 6 N – 21 \n Local: 1027",
+      "blockClass": "info-tienda"
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "store.custom#aviso-de-privacidad": {
+    "blocks": [
+      "flex-layout.row#aviso-de-privacidad"
+    ]
+  },
+  "flex-layout.row#aviso-de-privacidad": {
+    "children": [
+      "flex-layout.col#text-aviso-de-privacidad"
+    ],
+    "props": {
+      "blockClass": [
+        "page-institucionales",
+        "aviso-de-privacidad"
+      ]
+    }
+  },
+  "flex-layout.col#text-aviso-de-privacidad": {
+    "children": [
+      "rich-text#title-aviso-de-privacidad",
+      "rich-text#aviso-de-privacidad-section-1",
+      "rich-text#aviso-de-privacidad-section-2",
+      "rich-text#aviso-de-privacidad-section-3",
+      "rich-text#aviso-de-privacidad-section-4",
+      "rich-text#aviso-de-privacidad-section-5",
+      "rich-text#aviso-de-privacidad-section-6",
+      "rich-text#aviso-de-privacidad-section-7",
+      "rich-text#aviso-de-privacidad-section-8",
+      "rich-text#aviso-de-privacidad-section-9",
+      "rich-text#aviso-de-privacidad-section-10"
+    ],
+    "props": {
+      "blockclass": [
+        "page-institucionales",
+        "aviso-de-privacidad"
+      ],
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#title-aviso-de-privacidad": {
+    "props": {
+      "text": "# AVISO DE PRIVACIDAD",
+      "blockClass": ""
+    }
+  },
+  "rich-text#aviso-de-privacidad-section-1": {
+    "props": {
+      "text": "**Mini BF Chile SpA (“Miniso”)**, con domicilio en **Carmencita 25, Oficina 42 Las Condes, Santiago de Chile**, será responsable del uso, tratamiento y protección de los datos personales, de sus clientes, proveedores y demás colaboradores conforme fuere aplicable, en los términos que se indican en la presente política de privacidad (la “Política”).",
+      "blockClass": [
+        "aviso-de-privacidad-section-feature"
+      ]
+    }
+  },
+  "rich-text#aviso-de-privacidad-section-2": {
+    "props": {
+      "text": "Esta Política cubre la recolección y tratamiento de los Datos o Datos Personales de las personas antes referidas, cuando interactúan directa o indirectamente con **Miniso** y suministran sus datos o datos personales a esta última. \n\nPara efectos de esta Política, se entenderá por Datos o Datos Personales todos aquellos relativos a cualquier información concerniente a personas naturales, identificadas o identificables, tales como el nombre, domicilio, teléfono, correo electrónico, fecha de nacimiento, sexo, edad, nacionalidad, imagen, fotografía, país de residencia, cédula nacional de identidad o rol único tributario, forma de contacto preferida, y firma. \n\nPor su parte, se entenderá por Datos Sensibles, aquellos Datos Personales que se refieren a las características físicas o morales de las personas o a hechos o circunstancias de su vida privada o intimidad, tales como los hábitos personales, el origen racial, las ideologías y opiniones políticas, las creencias o convicciones religiosas, los estados de salud físicos o psíquicos y la vida sexual. \n\nLa presente Política tiene como objeto informar sobre los fines y medidas bajo las cuales **Miniso** dará tratamiento a sus Datos cuando los mismos sean recabados, utilizados, almacenados, tratados y/o trasferidos por **Miniso**, sus personas relacionadas o terceros, lo cual se lleva acabo de conformidad con las disposiciones de la Ley N°19.628 sobre Protección de la Vida Privada, o aquella que la modifique o reemplace (en adelante la “Ley”).",
+      "blockClass": [
+        "aviso-de-privacidad-section-feature"
+      ]
+    }
+  },
+  "rich-text#aviso-de-privacidad-section-3": {
+    "props": {
+      "text": "##### Aceptación de la Política:\nAl aceptar esta Política se autoriza expresamente a **Miniso** a proceder al tratamiento de los Datos que sean proporcionados al adquirir productos o contratar servicios a través de los canales de comercialización de **Miniso**, al ingresar a la página web de **Miniso** o aquellos Datos que sean proporcionados a **Miniso** de cualquier otra forma por cualquier causa. Dicho tratamiento se efectuará únicamente en tanto se cuente con la autorización del titular o la Ley reconozca a **Miniso** el derecho a efectuar el tratamiento, y solo para los fines que se indican a continuación. \n\nAsimismo, con la aceptación de la Política, se autoriza expresamente a **Miniso** a compartir los Datos con todas las empresas que estén relacionadas a **Miniso** o a terceros, para que procedan al tratamiento de los Datos en beneficio de **Miniso**, y a compartirlos entre ellos. \n\nLa autorización podrá ser obtenida por parte de **Miniso** u otorgada por el titular de los Datos, a través de cualquier medio que pueda ser consultado con posterioridad, como secciones o formularios en la página web, declaraciones escritas, cuadros de aceptación, mensajes de texto, correos electrónicos u otros.",
+      "blockClass": [
+        "aviso-de-privacidad-section-feature"
+      ]
+    }
+  },
+  "rich-text#aviso-de-privacidad-section-4": {
+    "props": {
+      "text": "##### Recopilación, finalidades y/o usos de los Datos Personales:\nLos Datos Personales serán utilizados y/o tratados por **Miniso**, sus personas relacionadas o terceros, para finalidades diversas, dependiendo del caso particular en el que sean proporcionados o recabados, y dependiendo de quién los proporcione, todo ello siempre acorde con la presente Política y la Ley.\n\nPara estos efectos, podremos recabar Datos Personales a partir de las interacciones que se lleven a cabo con **Miniso** que, entre otros, deriven de:",
+      "blockClass": [
+        "aviso-de-privacidad-section-feature"
+      ]
+    }
+  },
+  "rich-text#aviso-de-privacidad-section-5": {
+    "props": {
+      "text": "(i) Aquellos Datos que sean proporcionados directamente por interacciones con **Miniso** y que sean necesarias o no para la adquisición de productos o servicios en las tiendas y canales de **Miniso**, tales como el nombre, cédula de identidad, domicilio, teléfono, dirección de correo electrónico, información de tus compras y otros.\n\n(ii) Aquellos Datos que tengan que ver con hábitos o costumbres de compras en las tiendas y canales de **Miniso**, formas de pago, devoluciones y otros similares. \n\n(iii) Utilización de servicios y facilidades que otorgue **Miniso** a sus clientes y proveedores, atención al cliente, servicio técnico y otros.\n\n(iv) Datos biométricos, si fueran proporcionados.\n\n(v) Información relativa a los hábitos de navegación en nuestro sitio web, independiente del dispositivo a través de las cuales se accede, lo que puede referirse también a información del dispositivo por el cual se accede.\n\nEn particular, la autorización nos permitirá recabar y tratar los Datos Personales para los siguientes fines:\n\n(i) Si los Datos se originan en una visita a nuestras instalaciones o locales comerciales, podremos recabar y tratar Datos para:\n\n * Controlar el acceso y medidas de seguridad al interior de éstas.\n\n * Mantener la confidencialidad de la información de **Miniso**, así como la seguridad dentro de nuestras instalaciones.\n\n(ii) Si los Datos provienen de un proveedor o posible proveedor de **Miniso**, podremos recabar y tratar Datos para:\n\n * Registrar como proveedor, redactar los instrumentos legales que sean necesarios para sustentar la relación que se tiene o se quiera tener, realizar pagos, llevar a cabo la facturación. \n\n * Cumplir con obligaciones derivadas de una relación jurídica que se tenga o se llegase a tener. \n\n * Hacer cumplir y/o ejecutar un contrato. \n\n(iii) Si los Datos provienen de un consumidor o posible consumidor, podremos recabar y tratar Datos para: \n\n * La comercialización de nuestros bienes o productos. \n\n * Cambios de productos en la aplicación de garantía. \n\n * Contactar y/o hacer llegar comunicaciones con fines promocionales. \n\n * Participar en programas de beneficios, programas de lealtad, campañas, entrega de premios de lealtad y otras promociones. \n\n * Desarrollar nuevos productos y servicios, conocer el mercado y el desempeño de **Miniso**, estudios de mercado. \n\n * Dar seguimiento a las ventas a fin de alcanzar la satisfacción del cliente, servicios de atención al cliente. \n\n * Hacer reportes a las autoridades sanitarias relativas a posibles reacciones adversas, por quemaduras e irritación en la piel por usar productos de Salud y Belleza. \n\n * Que se lleven a cabo inspecciones por parte de las autoridades, auditorías internas y externas. \n\n(iv) Si los Datos provienen de un usuario de nuestro sitio web, podremos recabar y tratar Datos para: \n\n * Proporcionar una mejor atención al cliente en línea mediante las plataformas electrónicas de **Miniso** y sus sitios web. \n\n * Para registrar al usuario en nuestro sitio web, en programas en los que se ha inscrito voluntariamente, para enviarle información solicitada o información de **Miniso** que consideremos pueda ser de su interés, responder dudas o comentarios. \n\n * Creación y administración de la cuenta del usuario, cuando decida crearla. \n\n * Enviar información promocional. \n\n * Conocer preferencias de compra de los usuarios de nuestro sitio web. \n\n(v) Si provienen de contactos efectuados en relación con propuestas de trabajo de **Miniso** o sus personas relacionadas, podremos recabar y tratar Datos para: \n\n * Contactar al interesado en caso de que su perfil resulte de interés para **Miniso**, y participar por una vacante. \n\n * En ocasiones llevar a cabo evaluaciones para procesos de contratación. \n\n * Verificar la información del perfil del interesado. \n\n(vi) En general, podremos emplear los Datos Personales para el desarrollo del giro propio del negocio **Miniso**, permitir, facilitar y mejorar la comercialización de nuestros productos y servicios en nuestras tiendas y canales de venta, levantar información estadística, mejorar la atención de nuestros clientes y otros afines. \n\n Los Datos Personales serán tratados y almacenados por **Miniso** únicamente por el tiempo necesario a fin de cumplir con las finalidades descritas en la presente Política.",
+      "blockClass": [
+        "aviso-de-privacidad-section-feature"
+      ]
+    }
+  },
+  "rich-text#aviso-de-privacidad-section-6": {
+    "props": {
+      "text": "##### Trasferencia de los Datos Personales a terceros.\n\nLos Datos Personales podrán ser compartidos con cualquiera de las personas relacionadas a **Miniso**, sean nacionales o extranjeras, quienes podrán utilizar los Datos Personales únicamente para los fines indicados en la presente Política. \n\nAsimismo, los Datos Personales podrán ser compartidos con terceros para efectos de apoyar a **Miniso** o sus personas relacionadas en el tratamiento de éstos, de conformidad con la presente. \n\nPolítica, y para el cumplimiento de fines estadísticos, encuestas y de prospección comercial, identificar preferencias de usuario, recabar información correspondiente a la hora y duración de la estadía en el sitio web o en la adquisición de nuestros productos.",
+      "blockClass": [
+        "aviso-de-privacidad-section-feature"
+      ]
+    }
+  },
+  "rich-text#aviso-de-privacidad-section-7": {
+    "props": {
+      "text": "##### Derechos sobre los Datos Personales: \nEl titular de los Datos siempre tiene derecho a conocer qué Datos Personales recaba **Miniso** de conformidad con esta Política, así como ejercer sobre éstos los derechos de rectificación, cancelación, oposición y demás derechos que contemple la Ley. \n\nCon el objeto de que el titular de los Datos ejerza los derechos antes referidos, ponemos a disposición los siguientes canales de atención y consulta: /i/ El número telefónico 224053259; /ii/ Nuestro canal de contacto a través de nuestro sitio web (www.miniso.cl); /iii/ al correo electrónico: contacto@miniso.cl; o /iv/ enviando una comunicación a nuestras oficinas ubicadas en Carmencita 25, oficina 42, Las Condes, Santiago. Recibida la solicitud por cualquiera de dichos canales, se indicarán los requisitos y como se dará trámite a la misma para el ejercicio de estos derechos, así como atender cualquier duda que pudiera tener el titular respecto al tratamiento de los Datos. \n\nAsimismo, el titular de los Datos siempre podrá revocar la autorización que haya otorgado para el tratamiento de sus Datos Personales, sin perjuicio de que por el hecho de tal revocación puede ocurrir que éste se vea imposibilitado o impedido de utilizar alguno de los servicios que **Miniso** o sus personas relacionadas proporcionan. A su vez, es importante informar que, no en todos los casos podremos atender la solicitud o concluir el uso de los Datos de forma inmediata, ya que es posible que por alguna obligación o necesidad legal, comercial, logística, u operativa requiramos seguir tratando los Datos Personales o no sea factible el cese inmediato o total del tratamiento o almacenamiento de los Datos. \n\nDel mismo modo, y a través de los canales antes indicados, será posible solicitar la suspensión del envío de comunicaciones promocionales o publicitarias, de acuerdo a lo dispuesto en el artículo 28B de la Ley N°19.496 sobre Protección de los Derechos de los Consumidores.",
+      "blockClass": [
+        "aviso-de-privacidad-section-feature"
+      ]
+    }
+  },
+  "rich-text#aviso-de-privacidad-section-8": {
+    "props": {
+      "text": "##### Uso de “Cookies” en nuestro sitio web:\nEn nuestro sitio web utilizamos “Cookies”. Las cookies son pequeños archivos de texto que su navegador guarda en su disco duro o el dispositivo a través del cual se acceda al sitio web. Estos archivos almacenan cierta información (p.ej. el idioma de preferencia o ajustes al sitio) que el navegador podría trasmitirnos durante el siguiente acceso a nuestra página (dependiendo de la vigencia del Cookie). De igual manera utilizamos, Beacons y otro tipo de tecnologías a través de las cuales es posible monitorear el comportamiento de los usuarios de nuestro sitio web, todo ello con el fin de poder brindar un mejor servicio y experiencia en nuestro sitio web.",
+      "blockClass": [
+        "aviso-de-privacidad-section-feature"
+      ]
+    }
+  },
+  "rich-text#aviso-de-privacidad-section-9": {
+    "props": {
+      "text": "##### Medidas de seguridad en el almacenamiento de los Datos Personales.\n**Miniso** ha implementado y mantiene medidas razonables de seguridad, técnicas, administrativas y físicas, acorde con prácticas de mercado y en cumplimiento de la Ley, para proteger los Datos Personales que recabe en conformidad con esta Política, y evitar cuando fuere posible, su daño, pérdida, alteración, destrucción o el uso, acceso o tratamiento no autorizado. \nAsimismo, es posible que en caso de ejercicio de alguno de los derechos que tiene el titular sobre sus Datos Personales, solicitemos una prueba de identidad antes de acceder al requerimiento, todo ello con el fin de resguardar debidamente el acceso a los Datos Personales por quién efectivamente pueda hacerlo.",
+      "blockClass": [
+        "aviso-de-privacidad-section-feature"
+      ]
+    }
+  },
+  "rich-text#aviso-de-privacidad-section-10": {
+    "props": {
+      "text": "##### Vigencia y modificaciones de la Política.\nLa presente Política tendrá vigencia indefinida. Sin perjuicio de ello, ésta podrá ser objeto de modificaciones en cualquier momento por parte de **Miniso**, para lo cual mantendremos informado al público sobre los respectivos cambios. Esta comunicación podrá efectuarse a través de cualquiera de los canales de información de **Miniso**, mediante el envío de correos electrónicos o a través de nuestro sitio web. \n\nAsimismo, el titular podrá solicitar información respecto de nuestros cambios al correo electrónico: contacto@miniso.cl.",
+      "blockClass": [
+        "aviso-de-privacidad-section-feature"
+      ]
+    }
+  }
+}

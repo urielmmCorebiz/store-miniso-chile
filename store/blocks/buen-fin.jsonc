@@ -1,0 +1,72 @@
+{
+    "store.custom#buenfin": {
+      "blocks": [
+        "list-context.image-list#buenfin",
+        "flex-layout.row#buenfin",
+        "flex-layout.row#newsletter"    
+      ]
+    },
+  
+    "list-context.image-list#buenfin": {
+      "children": [
+        "slider-layout#demo-buenfin" 
+      ],
+      "props": {
+        "height": "auto",
+        "images": [
+          {
+            "image": "https://minisomx.vteximg.com.br/arquivos/banner-dia-nino-3.jpg",
+            "mobileImage": "https://minisomx.vteximg.com.br/arquivos/banner-dia-nino-3.jpg"
+          }
+        ]
+      }
+    },
+    "slider-layout#demo-buenfin": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "blockClass": "carousel",
+        "showNavigationArrows": "never",
+        "showPaginationDots": "never",
+        "fullWidth": true
+      }
+    },
+  
+    "flex-layout.row#buenfin": {
+      "children": [
+        "flex-layout.col#text-buenfin"
+      ],
+      "props": {
+        "blockClass": ["page-institucionales", "acerca-de"]
+      }
+    },
+    
+    "flex-layout.col#text-buenfin": {
+      "children": [
+        "rich-text#title-buenfin",
+        "rich-text#buenfin-first"
+      ],
+      "props": {
+        "blockclass": "",
+        "preventVerticalStretch": true
+      }
+    },
+    "rich-text#title-buenfin": {
+      "props": {
+        "text":
+        "## 7 Regalos económicos para este Día del Niño",
+        "textPosition": "CENTER",
+        "blockClass": ""      
+      }
+    }, 
+    "rich-text#buenfin-first": {
+      "props": {
+        "text": "¿Aún no tienes el regalo perfecto para este 30 de abril? Prepárate porque hicimos una lista de artículos que a cualquier niño (y a tu bolsillo) les encantarán. <br/><br/> **1. Torre de bloques de madera:** Jugar mientras aprenden es una de las mejores herramientas que pueden recibir. [Ver producto](https://www.miniso.com.mx/juego-de-torre-de-bloques-de-madera)<br/>**2. Set de dinosaurios:** Dales horas de diversión en una aventura con dinosaurios. [Ver producto](https://www.miniso.com.mx/set-de-juguetes-herramientas-dinosaurios)<br/>**3. Plastilina para moldear:** Permítele dar forma a sus sueños con 36 colores diferentes. [Ver producto](https://www.miniso.com.mx/set-de-plastilina-de-36-colores)<br/>**4. Rompecabezas 3D:** ¿Por qué tener un rompecabezas tradicional si puedes impulsar en grande su imaginación? [Ver producto](https://www.miniso.com.mx/rompecabezas-3d-mundo-de-juguete)<br/>**5. Auto de carreras armable:** No es solo la máxima velocidad, es la forma de armar tu propio auto. [Ver producto](https://www.miniso.com.mx/bloques-de-construccion-naranja-race-car-series)<br/>**6. Bloques armables de hora de aventura:** Construye a tus personajes favoritos de la televisión bloque por bloque. [Ver producto](https://www.miniso.com.mx/bloque-de-construccion-lumpy-space-princess-hora-de-aventura)<br/>**7. Kit de té de madera:** La hora del té ahora viene de color de rosa, para una tarde llena de historias. [Ver producto](https://www.miniso.com.mx/juguete-de-madera-kit-la-hora-del-te)<br/><br/>Los productos ideales para este día los puedes tener De Miniso a tu casa, encuéntralos [aquí](https://www.claroshop.com/Tienda/124339/).<br/><br/>Síguenos en <a href='https://www.facebook.com/MinisoMexico/' target='_blank'>Facebook</a>, <a href='https://www.instagram.com/minisomexico/' target='_blank'>Instagram</a> y <a href='https://twitter.com/MinisoMexico' target='_blank'>Twitter</a> para que te enteres de todas nuestras promociones<br/><br/>¡Arigato!",
+        "blockClass": ""
+      }
+    }
+  }

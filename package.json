@@ -1,0 +1,25 @@
+{
+  "name": "minisomx",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch --no-source-map styles/scss:styles/css --style compressed",
+    "sass:checkout": "sass --watch --no-source-map checkout/scss:checkout --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/corebiz_ag/minisomx.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/corebiz_ag/minisomx#readme",
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
+}

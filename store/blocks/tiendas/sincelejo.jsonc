@@ -1,0 +1,37 @@
+{
+  "flex-layout.row#tiendas-row-camp": {
+    "title": "Campeche",
+    "children": ["flex-layout.col#tiendas-col-camp"],
+    "props": {
+      "blockClass": "tiendas-row-camp"
+    }
+  },
+  "flex-layout.col#tiendas-col-camp": {
+    "children": [
+      "rich-text#subtitle-tiendas-camp",
+      "flex-layout.row#tiendas-row1-camp"
+    ],
+    "props": {
+      "blockclass": "tiendas-col-camp"
+    }
+  },
+  "rich-text#subtitle-tiendas-camp": {
+    "props": {
+      "text": "#### Sincelejo",
+      "blockClass": "subtitle-tiendas"
+    }
+  },
+  "flex-layout.row#tiendas-row1-camp": {
+    "children": ["rich-text#tiendas-tienda1-camp"],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda1-camp": {
+    "title": "tienda-1",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Parque Comercial Guacarí\n**Dirección:** Calle 28 N° 25B – 365, Barrio Boston \n Local: 1137",
+      "blockClass": "info-tienda"
+    }
+  }
+}

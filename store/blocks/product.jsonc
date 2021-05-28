@@ -1,0 +1,796 @@
+{
+  "store.product": {
+    "children": [
+      "flex-layout.row#product-breadcrumb",
+      "botonregresar",
+      "flex-layout.row#product-main",
+      "sticky-layout#pdp",
+      "__fold__",
+      "flex-layout.row#description",
+      //"flex-layout.row#product-reviews",
+      //"product-questions-and-answers",
+      "shelf.relatedProducts#AlsoBought"
+    ]
+  },
+ 
+  "flex-layout.row#product-breadcrumb": {
+    "props": {
+      "marginTop": 4,
+      "blockClass": "breadcrumb-product"
+    },
+    "children": ["breadcrumb"]
+  },
+  "flex-layout.row#description": {
+    "props": {
+      "blockClass": "product-description"
+    },
+    "children": ["tab-layout#desc"]
+  },
+
+  "tab-layout#desc": {
+    "children": ["tab-list#desc", "tab-content#desc"],
+    "props": {
+      "blockClass": "tab-description",
+      "defaultActiveTabId": "desc",
+      "width": "100%"
+    }
+  },
+
+  /*TABS TITLE*/
+  "tab-list#desc": {
+    "children": [
+      "tab-list.item#description",
+      "tab-list.item#specification",
+      "tab-list.item#comments",
+      "tab-list.item#entrega"
+    ]
+  },
+
+  "tab-list.item#description": {
+    "props": {
+      "width": "50%",
+      "tabId": "desc",
+      "label": "Medidas y detalles del producto",
+      "blockClass": "tab-desc",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#specification": {
+    "props": {
+      "width": "50%",
+      "tabId": "spec",
+      "label": "Cuidados del Producto",
+      "blockClass": "tab-desc"
+    }
+  },
+  "tab-list.item#comments": {
+    "props": {
+      "width": "50%",
+      "tabId": "comments",
+      "label": "Comentarios",
+      "blockClass": "tab-desc"
+    }
+  },
+  "tab-list.item#entrega": {
+    "props": {
+      "width": "50%",
+      "tabId": "entrega",
+      "label": "Entrega y devoluciones",
+      "blockClass": "tab-desc"
+    }
+  },
+
+  /*CONTENT TAB */
+  "tab-content#desc": {
+    "children": [
+      "tab-content.item#desc",
+      "tab-content.item#spec",
+      "tab-content.item#commets",
+      "tab-content.item#entrega"
+    ],
+    "props": {
+      "blockClass": "tab-content-desc"
+    }
+  },
+  /*1 CONTENT*/
+  "tab-content.item#desc": {
+    "children": [
+      "product-specifications#product",
+      "product-identifier.product"
+    ],
+    "props": {
+      "tabId": "desc"
+    }
+  },
+  /*2 CONTENT*/
+  "tab-content.item#spec": {
+    "children": ["product-specifications#product-cares"],
+    "props": {
+      "tabId": "spec"
+    }
+  },
+  /*3 CONTENT*/
+  "tab-content.item#commets": {
+    "children": ["flex-layout.row#product-reviews"],
+    "props": {
+      "tabId": "comments"
+    }
+  },
+  /*4 CONTENT*/
+  "tab-content.item#entrega": {
+    "children": ["rich-text#txt-politicas-pdp"],
+    "props": {
+      "tabId": "entrega"
+    }
+  },
+
+  "flex-layout.row#product-reviews": {
+    "children": ["product-reviews"],
+    "props": {
+      "blockClass": "row-reviews"
+    }
+  },
+  "product-description": {
+    "props": {
+      // "collapseContent": "never"
+    }
+  },
+  "flex-layout.row#product-main": {
+    "props": {
+      "colGap": 7,
+      "rowGap": 7,
+      "marginTop": 4,
+      "marginBottom": 7,
+      "paddingTop": 7,
+      "paddingBottom": 7,
+      "blockClass": "product-main-info"
+    },
+    "children": ["flex-layout.row#image-pdp", "flex-layout.col#right-col"]
+  },
+  "flex-layout.row#image-pdp": {
+    "children": ["flex-layout.col#image-pdp"],
+    "props": {
+      "blockClass": "row-image-pdp"
+    }
+  },
+  "flex-layout.col#image-pdp": {
+    "children": ["stack-layout#main-image-pdp"],
+    "props": {
+      "blockClass": "col-image-pdp"
+    }
+  },
+  "stack-layout#main-image-pdp": {
+    "props": {
+      "blockClass": "product"
+    },
+    "children": [
+      "flex-layout.row#product-image",
+      //"product-price-savings#savings",
+      "product-bookmark",
+      "add-to-list-btn"
+    ]
+  },
+  "flex-layout.col#stack": {
+    "children": ["stack-layout#main-image-pdp"],
+    "props": {
+      "width": "50%",
+      "rowGap": 0
+    }
+  },
+  "product-specifications#stack-badge-pdp": {
+    "props": {
+      "visibleSpecifications": ["3x2"]
+    }
+  },
+
+  "flex-layout.row#product-image": {
+    "children": ["product-images"]
+  },
+
+  "product-images": {
+    "props": {
+      "showNavigationArrows": true,
+      "displayThumbnailsArrows": true,
+      "showPaginationDots": false,
+      "thumbnailsOrientation": "vertical",
+      "zoomMode": "in-place-hover",
+      "aspectRatio": "1:1",
+      "thumbnailAspectRatio": "1:1"
+    }
+  },
+  "flex-layout.col#right-col": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "blockClass": "product-info-right"
+    },
+    "children": [
+      "flex-layout.row#product-headers",
+      "vtex.store-components:product-name",
+      "flex-layout.row#product-price",
+      "sku-selector",
+      "product-assembly-options",
+      "flex-layout.row#product-quantity-and-buy-button",
+      "condition-layout.product",
+      "availability-subscriber",
+      "flex-layout.row#description-short"
+      //"shipping-simulator",
+      // "flex-layout.row#row-share"
+    ]
+  },
+
+  "flex-layout.row#description-short": {
+    "props": {
+      "marginBottom": 7,
+      "blockClass": "container-description-short"
+    },
+    "children": ["product-description"]
+  },
+
+  "condition-layout.product": {
+    "children": ["condition.product#custom-pdp", "condition.else"]
+  },
+  "condition.product#custom-pdp": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "categoryId",
+          "verb": "is",
+          "object": "408"
+        }
+      ]
+    },
+    "children": ["flex-layout.row#row-benefits-detail-pdp-2"]
+  },
+  "condition.else": {
+    "children": ["flex-layout.row#row-benefits-detail-pdp"]
+  },
+  "flex-layout.row#product-headers": {
+    "children": [
+      "flex-layout.row#col-product-headers-01",
+      "flex-layout.row#col-product-headers-02"
+    ],
+    "props": {
+      "marginBottom": "3",
+      "blockClass": "row-product-headers"
+    }
+  },
+  "flex-layout.row#col-product-headers-01": {
+    "children": ["vtex.store-components:product-brand"],
+    "props": {
+      "horizontalAlign": "left",
+      "blockClass": ["col-product-headers", "col-product-headers-01"]
+    }
+  },
+  "flex-layout.row#col-product-headers-02": {
+    "children": ["product-rating-summary"],
+    "props": {
+      "horizontalAlign": "right",
+      "blockClass": ["col-product-headers", "col-product-headers-02"]
+    }
+  },
+  "product-specifications#product": {
+    "props": {
+      "showSpecificationsTab": false,
+      "collapsible": "never",
+      "hiddenSpecifications": ["Cuidados del Producto", "Descripción"]
+    }
+  },
+  "product-specifications#product-cares": {
+    "props": {
+      "showSpecificationsTab": false,
+      "collapsible": "never",
+      "visibleSpecifications": ["Cuidados del Producto"],
+      "blockClass": "specifications-b"
+    }
+  },
+  "sku-selector": {
+    "props": {
+      "variationsSpacing": 3,
+      "showValueNameForImageVariation": true
+    }
+  },
+  "product-price#product-details": {
+    "props": {
+      "showInstallments": true,
+      "showSavings": false,
+      "showLabels": false
+    }
+  },
+  "flex-layout.row#buy-button": {
+    "props": {},
+    "children": ["add-to-cart-button#add-to-cart"]
+  },
+  "product-quantity": {
+    "props": {
+      "showLabel": false,
+      "size": "large"
+    }
+  },
+  "flex-layout.col#buy-button": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "product--buy-button"
+    },
+    "children": ["add-to-cart-button#add-to-cart"]
+  },
+  "flex-layout.row#product-price": {
+    "children": [
+      "flex-layout.col#col-price-pdp",
+      "flex-layout.col#col-warnings-pdp"
+    ],
+    "props": {
+      "blockClass": "row-pdp-price",
+      "marginTop": 5,
+      "marginBottom": 4,
+      "colGap": 0
+    }
+  },
+  "flex-layout.col#col-price-pdp": {
+    "children": ["product-price#product-details"],
+    "props": {
+      "blockClass": "col-price-pdp",
+      "horizontalAlign": "left"
+    }
+  },
+  "flex-layout.col#col-warnings-pdp": {
+    "children": [
+      "product-specifications#stack-badge-pdp",
+      "flex-layout.col#savings"
+    ],
+    "props": {
+      "blockClass": "col-warnings-pdp"
+    }
+  },
+  "flex-layout.col#savings": {
+    "children": ["product-price-savings#savings", "product-availability"],
+    "props": {
+      "blockClass": "col-saving-percentage",
+      "horizontalAlign": "right"
+    }
+  },
+  "product-availability": {
+    "props": {
+      "threshold": "30",
+      "lowStockMessage": "Últimas piezas!",
+      "highStockMessage": "¡Llévatelo ahora!"
+    },
+    "title": "Product Availability"
+  },
+  "product-price-savings#savings": {
+    "props": {
+      "markers": ["hignlight"],
+      "message": "- {savingsPercentage}"
+    }
+  },
+  "share#default": {
+    "props": {
+      "social": {
+        "Facebook": true,
+        "WhatsApp": true,
+        "Twitter": true,
+        "Pinterest": false
+      }
+    }
+  },
+  "shelf.relatedProducts#View": {
+    "blocks": ["product-summary.shelf#default-shelf"],
+    "props": {
+      "recommendation": "editor.relatedProducts.view",
+      "productList": {
+        "maxItems": 25,
+        "itemsPerPage": 5,
+        "arrows": true,
+        "titleText": "También te puede interesar:"
+      },
+      "context": {
+        "maxItemsPerPage": 9,
+        "hideUnavailableItems": false
+      },
+      "blockClass": "product-who-saw"
+    }
+  },
+  "shelf.relatedProducts#AlsoBought": {
+    "blocks": ["product-summary.shelf#default-shelf"],
+    "props": {
+      "recommendation": "editor.relatedProducts.buy",
+      "blockClass": "product-who-bought",
+      "productList": {
+        "maxItems": 25,
+        "itemsPerPage": 5,
+        "arrows": true,
+        "titleText": "Completa tu pedido:"
+      },
+      "context": {
+        "maxItemsPerPage": 9,
+        "hideUnavailableItems": false
+      }
+    }
+  },
+  "flex-layout.row#product-quantity-and-buy-button": {
+    "children": ["product-quantity", "flex-layout.row#double-buy-button"],
+    "props": {
+      "colSizing": "auto",
+      "colGap": 6,
+      "marginTop": 6,
+      "marginBottom": 6,
+      "blockClass": "product-quantity-and-cta-buttons"
+    }
+  },
+  "flex-layout.row#double-buy-button": {
+    "children": [
+      "flex-layout.col#buy-one-click-buttom",
+      "flex-layout.col#add-to-cart"
+    ],
+    "props": {
+      "colGap": 1,
+      "width": "grow",
+      "blockClass": "double-buy-button"
+    }
+  },
+  "flex-layout.col#buy-one-click-buttom": {
+    "children": ["add-to-cart-button#one-click"],
+    "props": {
+      "blockClass": "buy--one-click"
+    }
+  },
+  "flex-layout.col#add-to-cart": {
+    "children": ["add-to-cart-button#add-to-cart"],
+    "props": {
+      "blockClass": "buy--add-to-cart-button",
+      "shouldOpenMinicart": true
+    }
+  },
+  "add-to-cart-button#add-to-cart": {
+    "props": {
+      "isOneClickBuy": false,
+      "text": "A MI BOLSA",
+      "unavailableText": "NO DISPONIBLE"
+    }
+  },
+  "add-to-cart-button#one-click": {
+    "props": {
+      "isOneClickBuy": true,
+      "text": "COMPRAR AHORA",
+      "unavailableText": "NO DISPONIBLE"
+    }
+  },
+  "flex-layout.row#row-benefits-detail-pdp": {
+    "children": [
+     // "modal-trigger#trigger-benefit-pdp-01",
+      "modal-trigger#trigger-benefit-pdp-03",
+      // "modal-trigger#trigger-benefit-pdp-04",
+      "modal-trigger#trigger-benefit-pdp-02"
+      // "modal-trigger#trigger-benefit-pdp-05"
+    ],
+    "props": {
+      "blockClass": ["row-benefits-pdp"]
+    }
+  },
+  "flex-layout.row#row-benefits-detail-pdp-2": {
+    "children": [
+      "modal-trigger#trigger-benefit-pdp-01",
+      "modal-trigger#trigger-benefit-pdp-02",
+      "modal-trigger#trigger-benefit-pdp-03",
+      "modal-trigger#trigger-benefit-pdp-04"
+    ],
+    "props": {
+      "blockClass": ["row-benefits-pdp", "row-benefits-pdp-2"]
+    }
+  },
+  "flex-layout.col#col-benefit-pdp-01": {
+    "children": ["image#img-benefit-pdp-01", "rich-text#txt-benefit-pdp-01"],
+    "props": {
+      "blockClass": ["col-benefit-pdp", "col-benefit-pdp-01"],
+      "verticalAlign": "middle"
+    }
+  },
+  "image#img-benefit-pdp-01": {
+    "props": {
+      "src": "assets/icon-truck.svg",
+      "blockClass": ["image-benefit-pdp", "image-benefit-pdp-01"]
+    }
+  },
+  "rich-text#txt-benefit-pdp-01": {
+    "props": {
+      "text": "Envío Seguro",
+      "blockClass": ["txt-benefit-pdp", "txt-benefit-pdp-01"]
+    }
+  },
+  "flex-layout.col#col-benefit-pdp-02": {
+    "children": ["image#img-benefit-pdp-02", "rich-text#txt-benefit-pdp-02"],
+    "props": {
+      "blockClass": ["col-benefit-pdp", "col-benefit-pdp-02"],
+      "verticalAlign": "middle"
+    }
+  },
+  "image#img-benefit-pdp-02": {
+    "props": {
+      "src": "assets/icon-cards.svg",
+      "blockClass": ["image-benefit-pdp", "image-benefit-pdp-02"]
+    }
+  },
+  "rich-text#txt-benefit-pdp-02": {
+    "props": {
+      "text": "Paga con tus tarjetas",
+      "blockClass": ["txt-benefit-pdp", "txt-benefit-pdp-02"]
+    }
+  },
+  "modal-trigger#trigger-benefit-pdp-01": {
+    "children": [
+      "flex-layout.col#col-benefit-pdp-01",
+      "modal-layout#benefit-pdp-01"
+    ],
+    "props": {
+      "blockClass": "trigger-benefit-pdp-01"
+    }
+  },
+
+  "modal-layout#benefit-pdp-01": {
+    "children": ["rich-text#txt-modal-benefit-pdp-01"],
+    "props": {
+      "blockClass": ["modal-benefit-pdp-01", "modal-benefit-pdp"]
+    }
+  },
+
+  "rich-text#txt-modal-benefit-pdp-01": {
+    "props": {
+      "text": "## Envío Seguro: \n Nos apoyamos de aliados importantes para asegurar la entrega de tu pedido hasta tu domicilio. Entre estos aliados tenemos: IVOY y DHL.",
+      "blockClass": ["txt-modal-benefit-pdp-01", "txt-modal-benefit-pdp"]
+    }
+  },
+
+  "modal-layout#benefit-pdp-02": {
+    "children": ["rich-text#txt-modal-benefit-pdp-02"],
+    "props": {
+      "blockClass": ["modal-benefit-pdp-02", "modal-benefit-pdp"]
+    }
+  },
+
+  "rich-text#txt-modal-benefit-pdp-02": {
+    "props": {
+      "text": "## Disponible pago en efectivo: \n Aceptamos las siguientes formas de pago: \n - Pago con tarjetas de crédito: Visa, MasterCard y American Express. \n - Pago con tarjetas de débito: Visa y MasterCard. \n - Pago en efectivo a través de la tienda de conveniencia OXXO. \n - Pago en efectivo en la institución bancaria Citibanamex.",
+      "blockClass": ["txt-modal-benefit-pdp-02", "txt-modal-benefit-pdp"]
+    }
+  },
+
+  "modal-trigger#trigger-benefit-pdp-02": {
+    "children": [
+      "flex-layout.col#col-benefit-pdp-02"
+      // "modal-layout#benefit-pdp-02"
+    ],
+    "props": {
+      "blockClass": "trigger-benefit-pdp-02"
+    }
+  },
+  "modal-trigger#trigger-benefit-pdp-03": {
+    "children": [
+      "flex-layout.col#col-benefit-pdp-03"
+      // "modal-layout#benefit-pdp-03"
+    ],
+    "props": {
+      "blockClass": "trigger-benefit-pdp-03"
+    }
+  },
+  "modal-layout#benefit-pdp-03": {
+    "children": ["rich-text#txt-modal-benefit-pdp-03"],
+    "props": {
+      "blockClass": ["modal-benefit-pdp-03", "modal-benefit-pdp"]
+    }
+  },
+  "rich-text#txt-modal-benefit-pdp-03": {
+    "props": {
+      "text": "## ENVÍO EXPRESS \n - El plazo estimado de entrega es hasta 90 minutos en motocicleta. \n - Disponible de Lunes a Domingo, en los siguientes horarios de entrega 11:00 hrs a 18:00 hrs. \n - Recuerda estar pendiente de la llegada de tu pedido, pasado los 6 minutos se cancelará el servicio no reembolsándote el costo de envío. \n - Si realizas tu compra después de las 18:00 hrs te entregaremos al día siguiente. \n - Aplica para tiendas y productos seleccionados. \n - Aplica restricciones de peso y dimensiones: Peso máximo de 25kg y dimensiones de la caja de la motocicleta (Largo 40cm x Ancho 50cm x Alto 40cm)",
+      "blockClass": ["txt-modal-benefit-pdp-03", "txt-modal-benefit-pdp"]
+    }
+  },
+  "modal-trigger#trigger-benefit-pdp-04": {
+    "children": [
+      "flex-layout.col#col-benefit-pdp-04",
+      "modal-layout#benefit-pdp-04"
+    ],
+    "props": {
+      "blockClass": "trigger-benefit-pdp-04"
+    }
+  },
+
+  "flex-layout.col#col-benefit-pdp-04": {
+    "children": ["image#img-benefit-pdp-04"],
+    "props": {
+      "blockClass": ["col-benefit-pdp", "col-benefit-pdp-03"],
+      "verticalAlign": "middle"
+    }
+  },
+
+  "modal-layout#benefit-pdp-04": {
+    "children": ["rich-text#txt-modal-benefit-pdp-04"],
+    "props": {
+      "blockClass": ["modal-benefit-pdp-04", "modal-benefit-pdp"]
+    }
+  },
+  "rich-text#txt-modal-benefit-pdp-04": {
+    "props": {
+      "text": "## CLIC & RECOGE \n - Aplica para tiendas seleccionadas, entregas a partir del día siguiente de la confirmación de pago de tu pedido. \n Para recoger tu pedido será necesario presentar una identificación oficial con fotografía. \n Una vez que recibas la confirmación de que tu pedido está listo para recoger, tendrás hasta 7 días hábiles para pasar por él. En caso contrario se cancelará tu pedido y se reembolsará el pago.",
+      "blockClass": ["txt-modal-benefit-pdp-04", "txt-modal-benefit-pdp"]
+    }
+  },
+  "image#img-benefit-pdp-04": {
+    "props": {
+      "src": "assets/icon-clic-recoge.png",
+      "blockClass": ["image-benefit-pdp", "image-benefit-pdp-04"]
+    }
+  },
+
+  "flex-layout.col#col-benefit-pdp-03": {
+    "children": ["image#img-benefit-pdp-03", "rich-text#txt-benefit-pdp-03"],
+    "props": {
+      "blockClass": ["col-benefit-pdp", "col-benefit-pdp-03"],
+      "verticalAlign": "middle"
+    }
+  },
+  "image#img-benefit-pdp-03": {
+    "props": {
+      "src": "assets/carritoSVG.svg",
+      "blockClass": ["image-benefit-pdp", "image-benefit-pdp-03"]
+    }
+  },
+  "rich-text#txt-benefit-pdp-03": {
+    "props": {
+      "text": "Envío Seguro",
+      "blockClass": ["txt-benefit-pdp", "txt-benefit-pdp-03"]
+    }
+  },
+  /*5*/
+  "modal-trigger#trigger-benefit-pdp-05": {
+    "children": [
+      "flex-layout.col#col-benefit-pdp-05",
+      "modal-layout#benefit-pdp-05"
+    ],
+    "props": {
+      "blockClass": "trigger-benefit-pdp-05"
+    }
+  },
+
+  "modal-layout#benefit-pdp-05": {
+    "children": ["rich-text#txt-modal-benefit-pdp-05"],
+    "props": {
+      "blockClass": ["modal-benefit-pdp-05", "modal-benefit-pdp"]
+    }
+  },
+
+  "rich-text#txt-modal-benefit-pdp-05": {
+    "props": {
+      "text": "## Pago seguro: \nEn Miniso, cuidamos tu seguridad y privacidad. Nuestro sistema de seguridad de pagos está cifrado durante la transmisión de datos. No compartimos los datos de tu tarjeta de crédito con vendedores externos, ni vendemos tu información a terceros.",
+      "blockClass": ["txt-modal-benefit-pdp-05", "txt-modal-benefit-pdp"]
+    }
+  },
+  "flex-layout.col#col-benefit-pdp-05": {
+    "children": ["image#img-benefit-pdp-05", "rich-text#txt-benefit-pdp-05"],
+    "props": {
+      "blockClass": ["col-benefit-pdp", "col-benefit-pdp-05"],
+      "verticalAlign": "middle"
+    }
+  },
+  "image#img-benefit-pdp-05": {
+    "props": {
+      "src": "assets/icon-seguridad.svg",
+      "blockClass": ["image-benefit-pdp", "image-benefit-pdp-05"]
+    }
+  },
+  "rich-text#txt-benefit-pdp-05": {
+    "props": {
+      "text": "Pago seguro",
+      "blockClass": ["txt-benefit-pdp", "txt-benefit-pdp-05"]
+    }
+  },
+  /**FIN5)**/
+  "flex-layout.row#pdp-extras": {
+    "children": [
+      "product-identifier.product",
+      "vtex.menu@2.x:menu#menu-extras"
+    ],
+    "props": {
+      "blockClass": ["row-extras-pdp", "product-main-info"]
+    }
+  },
+  "flex-layout.row#row-share": {
+    "children": [
+      "flex-layout.col#title-share",
+      "flex-layout.col#row-share-items"
+    ],
+    "props": {
+      "horizontalAlign": "left",
+      "marginTop": "8",
+      "marginBottom": "5",
+      "blockClass": "row-share"
+    }
+  },
+
+  "flex-layout.col#title-share": {
+    "children": ["rich-text#title-share"],
+    "props": {
+      "text": "¡Comparte la experiencia MINISO en tus redes!",
+      "blockClass": "title-share"
+    }
+  },
+
+  "rich-text#title-share": {
+    "props": {
+      "text": "¡Comparte la experiencia MINISO en tus redes!",
+      "blockClass": "txt-title-share"
+    }
+  },
+
+  "flex-layout.col#row-share-items": {
+    "children": ["share#default"],
+    "props": {
+      "blockClass": "col-share-items"
+    }
+  },
+
+  "vtex.menu@2.x:menu#menu-extras": {
+    "children": [
+      "menu-item#pdp-product-details",
+      "menu-item#pdp-product-cares",
+      "menu-item#pdp-politicas"
+    ]
+  },
+  "menu-item#pdp-product-details": {
+    "props": {
+      "id": "menu-item-product-details",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Detalles del Producto",
+        "text": "Detalles del Producto"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#submenu-product-details"]
+  },
+  "vtex.menu@2.x:submenu.accordion#submenu-product-details": {
+    "children": ["product-specifications#product"]
+  },
+  "menu-item#pdp-politicas": {
+    "props": {
+      "id": "menu-item-pdp-politicas",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Política de envío y devolución",
+        "text": "Política de envío y devolución"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#submenu-pdp-politicas"]
+  },
+  "vtex.menu@2.x:submenu.accordion#submenu-pdp-politicas": {
+    "children": ["rich-text#txt-politicas-pdp"]
+  },
+  "rich-text#txt-politicas-pdp": {
+    "props": {
+      "blockClass": "extra-politicas",
+      "text": "**ENTREGA A DOMICILIO:**\n \n En el momento de procesar tu compra indica la dirección donde quieres recibir tu producto.\n \n -Tiempo de entrega: El plazo estimado de entrega será entre 5 y 7 días hábiles, dependiendo de la dirección en donde se realizará el envío. Te compartiremos el número de rastreo para que puedas darle el seguimiento correspondiente. \n \n -Cobertura: Las entregas son realizadas por Chilexpress, por lo que estamos sujetos a su cobertura, para más información de cobertura y el servicio puedes consultar: [www.chilexpress.cl](https://www.chilexpress.cl/contingencia/) \n \n Cambios y Garantia Para cambios, devoluciones o aplicacion de garantia Consulta restricciones en[ https://www.miniso.cl/devoluciones-y-garantias](/devoluciones-y-garantias) \n \n Ofrecemos garantías en productos eléctricos, electrónicos y electrodomésticos."
+    }
+  },
+
+  "menu-item#pdp-product-cares": {
+    "props": {
+      "id": "menu-item-pdp-product-cares",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "noFollow": false,
+        "tagTitle": "Cuidados del Producto",
+        "text": "Cuidados del Producto"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#submenu-pdp-product-cares"]
+  },
+  "vtex.menu@2.x:submenu.accordion#submenu-pdp-product-cares": {
+    "children": ["product-specifications#product-cares"]
+  }
+}

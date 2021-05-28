@@ -1,0 +1,79 @@
+{
+  "flex-layout.row#tiendas-row-chih": {
+    "title": "Chihuahua",
+    "children": ["flex-layout.col#tiendas-col-chih"],
+    "props": {
+      "blockClass": "tiendas-row-chih"
+    }
+  },
+  "flex-layout.col#tiendas-col-chih": {
+    "children": [
+      "rich-text#subtitle-tiendas-chih",
+      "flex-layout.row#tiendas-row1-chih",
+      "flex-layout.row#tiendas-row2-chih"
+    ],
+    "props": {
+      "blockclass": "tiendas-col-chih"
+    }
+  },
+  "rich-text#subtitle-tiendas-chih": {
+    "props": {
+      "text": "#### Baranquilla",
+      "blockClass": "subtitle-tiendas"
+    }
+  },
+  "flex-layout.row#tiendas-row1-chih": {
+    "children": [
+      "rich-text#tiendas-tienda1-chih",
+      "rich-text#tiendas-tienda2-chih",
+      "rich-text#tiendas-tienda3-chih"
+    ],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda1-chih": {
+    "title": "tienda-1",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Aeropuerto Ernesto Cortissoz\n**Dirección:** Calle 30, Km 7 Local: 225",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda2-chih": {
+    "title": "tienda-2",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Cra 51B\n**Dirección:** Carrera 51B 80-124",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda3-chih": {
+    "title": "tienda-3",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Mallplaza Barranquilla\n**Dirección:** Carrera 55 #98A-15 Local: A1066",
+      "blockClass": "info-tienda"
+    }
+  },
+  "flex-layout.row#tiendas-row2-chih": {
+    "children": [
+      "rich-text#tiendas-tienda4-chih",
+      "rich-text#tiendas-tienda5-chih"
+    ],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda4-chih": {
+    "title": "tienda-4",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Viva Barranquilla\n**Dirección:** Carrera 51B # 87-50 Local: 204",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda5-chih": {
+    "title": "tienda-4",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Portal del Prado\n**Dirección:** Calle 53 N° 46 – 192 Local: 176",
+      "blockClass": "info-tienda"
+    }
+  }
+}

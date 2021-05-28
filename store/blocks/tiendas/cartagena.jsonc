@@ -1,0 +1,55 @@
+{
+  "flex-layout.row#tiendas-row-yuc": {
+    "title": "Yucatán",
+    "children": ["flex-layout.col#tiendas-col-yuc"],
+    "props": {
+      "blockClass": "tiendas-row-yuc"
+    }
+  },
+  "flex-layout.col#tiendas-col-yuc": {
+    "children": [
+      "rich-text#subtitle-tiendas-yuc",
+      "flex-layout.row#tiendas-row1-yuc"
+    ],
+    "props": {
+      "blockclass": "tiendas-col-yuc"
+    }
+  },
+  "rich-text#subtitle-tiendas-yuc": {
+    "props": {
+      "text": "#### Cartagena",
+      "blockClass": "subtitle-tiendas"
+    }
+  },
+  "flex-layout.row#tiendas-row1-yuc": {
+    "children": [
+      "rich-text#tiendas-tienda1-yuc",
+      "rich-text#tiendas-tienda2-yuc",
+      "rich-text#tiendas-tienda3-yuc"
+    ],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda1-yuc": {
+    "title": "tienda-1",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial La Serrezuela\n**Dirección:** Carrera 11 # 39-21 \n Local: 113",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda2-yuc": {
+    "title": "tienda-2",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Mallplaza Cartagena\n**Dirección:** Av. Pedro de Heredia, Carrera 13 \nLocal: 226",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda3-yuc": {
+    "title": "tienda-2",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Casa Perdomo\n**Dirección:** Calle Estanco del Tabaco #35-16",
+      "blockClass": "info-tienda"
+    }
+  }
+}

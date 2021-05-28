@@ -1,0 +1,37 @@
+{
+  "flex-layout.row#tiendas-row-hgo": {
+    "title": "Hidalgo",
+    "children": ["flex-layout.col#tiendas-col-hgo"],
+    "props": {
+      "blockClass": "tiendas-row-hgo"
+    }
+  },
+  "flex-layout.col#tiendas-col-hgo": {
+    "children": [
+      "rich-text#subtitle-tiendas-hgo",
+      "flex-layout.row#tiendas-row1-hgo"
+    ],
+    "props": {
+      "blockclass": "tiendas-col-hgo"
+    }
+  },
+  "rich-text#subtitle-tiendas-hgo": {
+    "props": {
+      "text": "#### Popayan",
+      "blockClass": "subtitle-tiendas"
+    }
+  },
+  "flex-layout.row#tiendas-row1-hgo": {
+    "children": ["rich-text#tiendas-tienda1-hgo"],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda1-hgo": {
+    "title": "tienda-1",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Campanario Centro Comercial \n**Dirección:** Carrera 9 #24AN-21 \n Local: 32A",
+      "blockClass": "info-tienda"
+    }
+  }
+}

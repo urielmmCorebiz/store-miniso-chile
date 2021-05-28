@@ -1,0 +1,71 @@
+{
+    "store.custom#blog-10": {
+      "blocks": [
+        "list-context.image-list#blog-10",
+        "flex-layout.row#blog-10"   
+      ]
+    },
+  
+    "list-context.image-list#blog-10": {
+      "children": [
+        "slider-layout#demo-blog-10" 
+      ],
+      "props": {
+        "height": "auto",
+        "images": [
+          {
+            "image": "https://minisomx.vteximg.com.br/arquivos/ids/159669/entrada9.jpg",
+            "mobileImage": "https://minisomx.vteximg.com.br/arquivos/ids/159669/entrada9.jpg"
+          }
+        ]
+      }
+    },
+    "slider-layout#demo-blog-10": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "blockClass": "carousel",
+        "showNavigationArrows": "never",
+        "showPaginationDots": "never",
+        "fullWidth": true
+      }
+    },
+  
+    "flex-layout.row#blog-10": {
+      "children": [
+        "flex-layout.col#text-blog-10"
+      ],
+      "props": {
+        "blockClass": ["page-institucionales", "acerca-de"]
+      }
+    },
+    
+    "flex-layout.col#text-blog-10": {
+      "children": [
+        "rich-text#title-blog-10",
+        "rich-text#blog-first-10"
+      ],
+      "props": {
+        "blockclass": "",
+        "preventVerticalStretch": true
+      }
+    },
+    "rich-text#title-blog-10": {
+      "props": {
+        "text":
+        "## 5 Básicos de higiene MINISO",
+        "textPosition": "CENTER",
+        "blockClass": ""      
+      }
+    }, 
+    "rich-text#blog-first-10": {
+      "props": {
+        "text": "Tener un ambiente libre de bacterias es importante tanto para nuestra salud como para nuestra belleza, es por eso que en tu MINISO más cercano podrás encontrar nuestros productos favoritos para este propósito.<br/><br/>**1. [Toallitas húmedas:](/paquete-de-toallitas-humedas-osos-escandalosos-mediano-2/p)** Tenerlas contigo te ayudará a mantener tus manos y las de tu familia limpias<br/>**2. [Cotonetes:](/cotonetes-de-algodon-punta-blanca-200-pzas/p)** Dale a tu rostro limpieza profunda en zonas específicas.<br/>**3. [Jabón hidratante:](/jabon-antibacterial-con-aloe-vera-verde-grande/p)** Olvida las manos secas después de lavarlas una y otra vez.<br/>**4. [Gel sanitizante:](/gel-desinfectante-portatil-jake-limon-adventure-time/p)** Con uno de ellos en tu bolso estarás listo siempre.<br/>**5. [Jabón facial de argán:](/salud-y-belleza)** Un jabón en barra que además ofrece la hidratación que tu rostro necesita.<br/><br/>Nuestro catálogo en línea va De Miniso a tu casa, consúltalo aquí para elegir tus productos de higiene personal favoritos<br/><br/>Síguenos en <a href='https://www.facebook.com/MinisoMexico/' target='_blank'>Facebook</a>, <a href='https://www.instagram.com/minisomexico/' target='_blank'>Instagram</a> y <a href='https://twitter.com/MinisoMexico' target='_blank'>Twitter</a> para que te enteres de todas nuestras promociones.<br/><br/>¡Arigatto!",
+        "blockClass": ""
+      }
+    }
+  } 

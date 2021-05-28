@@ -1,0 +1,37 @@
+{
+  "flex-layout.row#tiendas-row-oax": {
+    "title": "Oaxaca",
+    "children": ["flex-layout.col#tiendas-col-oax"],
+    "props": {
+      "blockClass": "tiendas-row-oax"
+    }
+  },
+  "flex-layout.col#tiendas-col-oax": {
+    "children": [
+      "rich-text#subtitle-tiendas-oax",
+      "flex-layout.row#tiendas-row1-oax"
+    ],
+    "props": {
+      "blockclass": "tiendas-col-oax"
+    }
+  },
+  "rich-text#subtitle-tiendas-oax": {
+    "props": {
+      "text": "#### Monteria",
+      "blockClass": "subtitle-tiendas"
+    }
+  },
+  "flex-layout.row#tiendas-row1-oax": {
+    "children": ["rich-text#tiendas-tienda1-oax"],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda1-oax": {
+    "title": "tienda-1",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Alamedas Centro Comercial\n**Dirección:** Calle 44#10-91\n Local: 1406",
+      "blockClass": "info-tienda"
+    }
+  }
+}

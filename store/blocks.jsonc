@@ -1,0 +1,240 @@
+/* Blocks can be defined both on the store/blocks.json file, and in any number of json
+ * files inside the store/blocks directory, with any arbitrary directory structure.
+ *
+ * Additionally, all blocks files can support comments, such as this one, if given the
+ * .jsonc file extension.
+ *
+ * The store/blocks.json file is intended for backwards compatibility, for miscellaneous
+ * blocks, or if the app is simple enough that it doesn't warrant splitting the file.
+ */
+{
+  "store.orderplaced": {
+    "blocks": ["order-placed"]
+  },
+  "store.account": {
+    "blocks": ["my-account"],
+    "parent": {
+      "challenge": "challenge.profile"
+    }
+  },
+  "store.login": {
+    "blocks": ["login", "login-content#default"]
+  },
+  "login-content#default": {
+    "props": {
+      "isInitialScreenOptionOnly": false,
+      "defaultOption": 1,
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+  "product-summary.shelf#home-shelf": {
+    "children": [
+      "add-to-list-btn",
+      "stack-layout#prodsum",
+      //"product-summary-brand",
+      "product-summary-name",
+      "product-summary-space",
+      "product-summary-price",
+      "flex-layout.row#row-btns-shelf"
+    ]
+  },
+  "product-summary.shelf#default-shelf": {
+    "children": [
+      "add-to-list-btn",
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "product-summary-space",
+      "product-summary-price",
+      "add-to-cart-button#default-summary-add"
+    ]
+  },
+  "vtex.product-highlights@2.x:product-highlights#collection": {
+    "props": {
+      "type": "collection"
+    },
+    "children": ["product-highlight-wrapper"]
+  },
+
+  "product-highlight-wrapper": {
+    "props": {
+      "blockClass": "tresxdos"
+    },
+    "children": ["product-highlight-text"]
+  },
+  "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}"
+    }
+  },
+  "add-to-cart-button#home-summary-add": {
+    "props": {
+      "text": "AGREGAR A LA BOLSA",
+      "unavailableText": "NO DISPONIBLE"
+    }
+  },
+  "add-to-cart-button#home-summary-buy-one-click": {
+    "props": {
+      "text": "COMPRAR AHORA",
+      "isOneClickBuy": true,
+      "unavailableText": "NO DISPONIBLE",
+      "customOneClickBuyLink": "/checkout/#/cart"
+    }
+  },
+  "add-to-cart-button#default-summary-add": {
+    "props": {
+      "isOneClickBuy": false,
+      "text": "A MI BOLSA",
+      "unavailableText": "NO DISPONIBLE"
+    }
+  },
+  "product-summary-buy-button": {
+    "props": {
+      "isOneClickBuy": true,
+      "buyButtonText": "COMPRAR AHORA",
+      "unavailableText": "NO DISPONIBLE",
+      "customOneClickBuyLink": "/checkout/#/cart"
+    }
+  },
+  "flex-layout.row#row-btns-shelf": {
+    "children": [
+      //"product-summary-buy-button",
+      "flex-layout.col#btn-01",
+      "add-to-cart-button#home-summary-add"
+    ],
+    "props": {
+      "blockClass": "row-btns-shelf",
+      "colGap": "2"
+    }
+  },
+  "flex-layout.col#btn-01": {
+    "children": ["add-to-cart-button#home-summary-buy-one-click"],
+    "props": {
+      "blockClass": "btn-01"
+    }
+  },
+  "product-summary-price": {
+    "props": {
+      "showSavings": false,
+      "showListPrice": true,
+      "showLabels": false,
+      "showInstallments": false,
+      "blockClass": "price-summary"
+    }
+  },
+  "product-price": {
+    "props": {
+      "showSavings": false,
+      "showListPrice": true,
+      "showLabels": false,
+      "showInstallments": false
+    }
+  },
+  "stack-layout#prodsum": {
+    "children": [
+      "product-summary-image",
+      "product-bookmark",
+      "vtex.product-highlights@2.x:product-highlights#collection"
+    ]
+  },
+  "product-summary-image": {
+    "props": {
+      "height": {
+        "desktop": 384,
+        "mobile": 384
+      },
+      "aspectRatio": {
+        "desktop": "1:2",
+        "phone": "1:2"
+      }
+    }
+  },
+  "product-summary-specification-badges": {
+    "props": {
+      "specificationGroupName": "Especificaciones",
+      "specificationName": "3x2",
+      "visibleWhen": "Si",
+      "displayValue": "SPECIFICATION_NAME",
+      "blockClass": "summary-badges"
+    }
+  },
+  "store.product-review-form": {
+    "blocks": ["product-review-form"]
+  },
+  "store.not-found#product": {
+    "blocks": [
+      //"rich-text#not-found"
+      "flex-layout.row#searchbread",
+      "flex-layout.row#line-01-not-found",
+      "flex-layout.row#line-02-not-found",
+      "flex-layout.row#line-03-not-found",
+      "flex-layout.row#line-04-not-found"
+    ]
+  },
+  "rich-text#not-found": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "**PAGE NOT FOUND**",
+      "font": "t-heading-1"
+    }
+  },
+  "search-result": {
+    "blocks": [
+      "filter-navigator.v2",
+      "gallery",
+      "not-found",
+      "breadcrumb",
+      "total-products",
+      "order-by",
+      "search-title"
+    ],
+    "props": {
+      "mobileLayout": {
+        "mode1": "small"
+      },
+      "querySchema": {
+        "maxItemsPerPage": 21,
+        "orderByField": "OrderByPriceDESC"
+      },
+      "hiddenFacets": {
+        "layoutMode1": "normal",
+        "layoutMode2": "small",
+        "specificationFilters": {
+          "hiddenFilters": [
+            {
+              "__editorItemTitle": "editor.search-result.hiddenFacets.specificationFilters.hiddenFilter"
+            }
+          ]
+        }
+      },
+      "summary": {
+        "isOneClickBuy": false,
+        "showBadge": true,
+        "displayBuyButton": "displayButtonHover",
+        "showCollections": false,
+        "labelListPrice": false,
+        "labelSellingPrice": false,
+        "showListPrice": true,
+        "showLabels": true,
+        "showInstallments": false,
+        "showSavings": false,
+        "name": {
+          "showBrandName": false,
+          "showSku": false,
+          "showProductReference": false
+        }
+      },
+      "pagination": "show-more"
+    }
+  },
+  "order-by": {
+    "props": {
+      "hiddenOptions": []
+    }
+  },
+  "order-by.v2": {
+    "props": {
+      "hiddenOptions": []
+    }
+  }
+}

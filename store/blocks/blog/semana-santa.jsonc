@@ -1,0 +1,216 @@
+{
+    "store.custom#blog-13": {
+      "blocks": [
+        "list-context.image-list#blog-13-bannerprincipal",
+        "rich-text#title-blog-introdution",
+        "rich-text#title-blog-13-mequedo",
+        "slider-layout-group#vacation-mequedo",
+        "flex-layout.row#line-feature-01-vacation",
+        "rich-text#title-blog-13-mevoy",
+        "slider-layout-group#vacation-mevoy",
+        "flex-layout.row#line-feature-02-vacation",
+        "flex-layout.row#vacaciones-shelf-01",
+        "flex-layout.row#newsletter"
+      ]
+    },
+  
+    "rich-text#title-blog-introdution": {
+      "props": {
+        "text": "**¡Semana Santa está llegando!** Ya sea que te des una escapada a algún pueblito, a la playa o simplemente te quedes en casa a descansar y a consentirte tenemos lo que necesitas. **#ViajaSeguroConMiniso** \n\n Checa estas dos listas que tenemos para ti:",
+        "textPosition": "CENTER",
+        "blockClass": "title-vacation",
+        "title": "texto introduccion"
+      }
+    },
+    "flex-layout.row#line-feature-01-vacation": {
+      "children": [
+        "image#feature-product-1-vacation",
+        "flex-layout.col#col-line-feature-01-vacation"
+      ],
+      "props": {
+        "fullWidth": true,
+        "blockClass": ["feature-products", "vacation-container"],
+        "marginBottom": 11
+      },
+      "title": "banner-coleccion 01"
+    },
+    "flex-layout.row#line-feature-02-vacation": {
+      "children": [
+        "image#feature-product-2-vacation",
+        "flex-layout.col#col-line-feature-02-vacation"
+      ],
+      "props": {
+        "fullWidth": true,
+        "blockClass": ["feature-products", "vacation-container"],
+        "marginBottom": 11
+      },
+      "title": "banner-coleccion 02"
+    },
+  
+    "image#feature-product-1-vacation": {
+      "props": {
+        "src": "assets/banners/content-banner-01.png",
+        "blockClass": "feature-products--image",
+        "link": {
+          "url": "/",
+          "openNewTab": "false",
+          "noFollow":"false"
+        }
+      }
+    },
+    "image#feature-product-2-vacation": {
+      "props": {
+        "src": "assets/banners/content-banner-01.png",
+        "blockClass": "feature-products--image",
+        "link": {
+          "url": "/",
+          "openNewTab": "false",
+          "noFollow":"false"
+        }
+      }
+    },
+   
+    "flex-layout.col#col-line-feature-01-vacation": {
+      "children": [
+        "rich-text#title-extra-shelf-01-vac",
+        "list-context.product-list#shelf-feature-01"
+      ],
+      "props": {
+        "width": "60%",
+        "blockClass": "col-line-feature-01"
+      }
+    },
+    "rich-text#title-extra-shelf-01-vac": {
+      "props": {
+        "text": "Me quedo en casa",
+        "blockClass": ["title-extra-semana"],
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER",
+        "title": "Titulo 01 banner-coleccion"
+      }
+    },
+   "flex-layout.col#col-line-feature-02-vacation": {
+      "children": [
+        "rich-text#title-extra-shelf-02-vac",
+        "list-context.product-list#shelf-feature-02"
+      ],
+      "props": {
+        "width": "60%",
+        "blockClass": "col-line-feature-01"
+      }
+    },
+    "rich-text#title-extra-shelf-02-vac": {
+      "props": {
+        "text": "Que nada te falte",
+        "blockClass": ["title-extra-semana"],
+        "textPosition": "CENTER",
+        "textAlignment": "CENTER",
+        "title": "Titulo 02 banner-coleccion"
+      }
+    },
+    "flex-layout.row#vacaciones-shelf-01": {
+      "children": ["flex-layout.col#vacaciones-shelf"],
+      "props": {
+        "blockClass": "home-shelf"
+      },
+      "title": "SHELF 01"
+    },
+    "flex-layout.col#vacaciones-shelf": {
+      "children": [
+        "rich-text#vacaciones-shelf-title",
+        "list-context.product-list#shelf-vacaciones"
+      ],
+      "props": {
+        "blockClass": "home-shelf"
+      }
+    },
+    "rich-text#vacaciones-shelf-title": {
+      "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "[¡Lo que no te puede faltar!](/)",
+        "blockClass": "title-semana"
+      }
+    },
+    "list-context.product-list#shelf-vacaciones": {
+      "blocks": ["product-summary.shelf#vacaciones-shelf"],
+      "children": ["slider-layout#shelf-01-vacations"],
+      "props": {
+        "orderBy": "OrderByTopSaleDESC",
+        "hideUnavailableItems": false,
+        "collection": "146"
+      }
+    },
+    
+    "slider-layout#shelf-01-vacations": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 5,
+          "tablet": 4,
+          "phone": 2
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "showNavigationArrows": "always",
+        "blockClass": "shelf"
+      }
+    },
+    "product-summary.shelf#vacaciones-shelf": {
+      "children": [
+        "add-to-list-btn",
+        "stack-layout#prodsum",
+        "product-summary-name",
+        "product-summary-space",
+        "product-summary-price",
+        "flex-layout.row#row-btns-shelf"
+      ]
+    },
+  
+    "list-context.image-list#blog-13-bannerprincipal": {
+      "children": ["slider-layout#demo-blog-13"],
+      "props": {
+        "height": "auto",
+        "title": "Banner Principal",
+        "images": [
+          {
+            "image": "https://minisomx.vteximg.com.br/arquivos/banner-dia-nino-3.jpg",
+            "mobileImage": "https://minisomx.vteximg.com.br/arquivos/banner-dia-nino-3.jpg"
+          }
+        ]
+      }
+    },
+  
+    "slider-layout#demo-blog-13": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "blockClass": "carousel",
+        "showNavigationArrows": "never",
+        "showPaginationDots": "never",
+        "fullWidth": true
+      }
+    },
+  
+    "rich-text#title-blog-13-mequedo": {
+      "props": {
+        "text": " ¡ME  QUEDO!",
+        "textPosition": "CENTER",
+        "title": "me-quedo",
+        "blockClass": ["title-semana"]
+      }
+    },
+  
+    "rich-text#title-blog-13-mevoy": {
+      "props": {
+        "text": " ¡ME VOY! ",
+        "textPosition": "CENTER",
+        "blockClass": ["title-semana"],
+        "title": "me-voy"
+      }
+    }
+  }
+  

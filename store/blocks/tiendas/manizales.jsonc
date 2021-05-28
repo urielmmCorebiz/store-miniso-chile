@@ -1,0 +1,47 @@
+{
+  "flex-layout.row#tiendas-row-sin": {
+    "title": "Sinaloa",
+    "children": ["flex-layout.col#tiendas-col-sin"],
+    "props": {
+      "blockClass": "tiendas-row-sin"
+    }
+  },
+  "flex-layout.col#tiendas-col-sin": {
+    "children": [
+      "rich-text#subtitle-tiendas-sin",
+      "flex-layout.row#tiendas-row1-sin"
+    ],
+    "props": {
+      "blockclass": "tiendas-col-sin"
+    }
+  },
+  "rich-text#subtitle-tiendas-sin": {
+    "props": {
+      "text": "#### Manizales",
+      "blockClass": "subtitle-tiendas"
+    }
+  },
+  "flex-layout.row#tiendas-row1-sin": {
+    "children": [
+      "rich-text#tiendas-tienda1-sin",
+      "rich-text#tiendas-tienda2-sin"
+    ],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda1-sin": {
+    "title": "tienda-1",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Mall Plaza Manizales Centro Comercial\n**Dirección:** Av. Kevin Ángel # 55D-251\n Local: A1017",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda2-sin": {
+    "title": "tienda-1",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Fundadores\n**Dirección:** Calle 33 B # 20 – 03 \n Local: 161",
+      "blockClass": "info-tienda"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "flex-layout.row#tiendas-row-col": {
+    "title": "Colima",
+    "children": ["flex-layout.col#tiendas-col-col"],
+    "props": {
+      "blockClass": "tiendas-row-col"
+    }
+  },
+  "flex-layout.col#tiendas-col-col": {
+    "children": [
+      "rich-text#subtitle-tiendas-col",
+      "flex-layout.row#tiendas-row1-col"
+    ],
+    "props": {
+      "blockclass": "tiendas-col-col"
+    }
+  },
+  "rich-text#subtitle-tiendas-col": {
+    "props": {
+      "text": "#### Pereira",
+      "blockClass": "subtitle-tiendas"
+    }
+  },
+  "flex-layout.row#tiendas-row1-col": {
+    "children": ["rich-text#tiendas-tienda1-col"],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda1-col": {
+    "title": "tienda-1",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Victoria Centro Comercial\n**Dirección:** Carrera 11 Bis # 17 – 20 \n Local: 108",
+      "blockClass": "info-tienda"
+    }
+  }
+}

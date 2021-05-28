@@ -1,0 +1,47 @@
+{
+  "flex-layout.row#tiendas-row-mex": {
+    "title": "México",
+    "children": ["flex-layout.col#tiendas-col-mex"],
+    "props": {
+      "blockClass": "tiendas-row-mex"
+    }
+  },
+  "flex-layout.col#tiendas-col-mex": {
+    "children": [
+      "rich-text#subtitle-tiendas-mex",
+      "flex-layout.row#tiendas-row1-mex"
+    ],
+    "props": {
+      "blockclass": "tiendas-col-mex"
+    }
+  },
+  "rich-text#subtitle-tiendas-mex": {
+    "props": {
+      "text": "#### Bucaramanga",
+      "blockClass": "subtitle-tiendas"
+    }
+  },
+  "flex-layout.row#tiendas-row1-mex": {
+    "children": [
+      "rich-text#tiendas-tienda1-méx",
+      "rich-text#tiendas-tienda2-méx"
+    ],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda1-méx": {
+    "title": "tienda-1",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Aeropuerto Internacional Palonegro\n**Dirección:** Km 25 vía Lebrija, Santander \n Local: 2076 ",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda2-méx": {
+    "title": "tienda-2",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Parque Caracolí Centro Comercial\n**Dirección:** Carrera 27 #29-145 \n Local: 306",
+      "blockClass": "info-tienda"
+    }
+  }
+}

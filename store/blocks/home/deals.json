@@ -1,0 +1,82 @@
+{
+  "flex-layout.row#deals": {
+    "children": [
+      "flex-layout.col#deal-01",
+      "flex-layout.col#deal-02",
+      "flex-layout.col#deal-03"
+    ],
+    "props": {
+      "blockClass": "deals",
+      "horizontalAlign": "center"
+    },
+    "title": "Seccion 5 Home"
+  },
+  "flex-layout.col#deal-01":{
+    "children":[
+      "image#img-deal-01",
+      "rich-text#txt-deal-01"
+    ]
+  },
+  "image#img-deal-01":{
+    "props":{
+      "src": "assets/deals/img-deal-01.png",
+      "link":{
+        "url": "/formas-de-pago"
+      }
+    }
+  },
+  "rich-text#txt-deal-01":{
+    "props":{
+      "text": "[PAGO SEGURO *GARANTIZADO*](/formas-de-pago)",
+      "blockClass": "txt-deal"
+    },
+    "title": "Pago seguro"
+  },
+
+  "flex-layout.col#deal-02":{
+    "children":[
+      "image#img-deal-02",
+      "rich-text#txt-deal-02"
+    ],
+    "props":{
+      "blockClass": ["col-deal","col-deal-02"]
+    }
+  },
+  "image#img-deal-02":{
+    "props":{
+      "src": "assets/deals/img-deal-02.png",
+      "link":{
+        "url": "/compras-un-click"
+      }
+    }
+  },
+  "rich-text#txt-deal-02":{
+    "props":{
+      "text": "[COMPRAS EN *UN CLICK*](/compras-un-click)",
+      "blockClass": "txt-deal"
+    },
+    "title": "Compras en un click"
+  },
+
+  "flex-layout.col#deal-03":{
+    "children":[
+      "image#img-deal-03",
+      "rich-text#txt-deal-03"
+    ]
+  },
+  "image#img-deal-03":{
+    "props":{
+      "src": "assets/deals/img-deal-03.png",
+      "link":{
+        "url": "/devoluciones-y-garantias"
+      }
+    }
+  },
+  "rich-text#txt-deal-03":{
+    "props":{
+      "text": "[OPCIÓN DE ENVÍO *SEGURO*](/devoluciones-y-garantias)",
+      "blockClass": "txt-deal"
+    },
+    "title": "Opción de envío seguro"
+  }
+}

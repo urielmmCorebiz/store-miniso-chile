@@ -1,0 +1,57 @@
+{
+    "flex-layout.row#tiendas-row-chis": {
+        "title": "Chiapas",
+        "children": [
+            "flex-layout.col#tiendas-col-chis"
+        ],
+        "props": {
+            "blockClass": "tiendas-row-chis"
+        }
+    },
+    "flex-layout.col#tiendas-col-chis": {
+        "children": [
+            "rich-text#subtitle-tiendas-chis",
+            "flex-layout.row#tiendas-row1-chis"
+        ],
+        "props": {
+            "blockclass": "tiendas-col-chis"
+        }
+    },
+    "rich-text#subtitle-tiendas-chis": {
+        "props": {
+            "text": "#### Santa Marta",
+            "blockClass": "subtitle-tiendas"
+        }
+    },
+    "flex-layout.row#tiendas-row1-chis": {
+        "children": [
+            "rich-text#tiendas-tienda1-chis",
+            "rich-text#tiendas-tienda2-chis",
+            "rich-text#tiendas-tienda3-chis"
+        ],
+        "props": {
+            "blockClass": "tiendas-row"
+        }
+    },
+    "rich-text#tiendas-tienda1-chis": {
+        "title": "tienda-1",
+        "props": {
+            "text": "<span></span>\n**Nombre de la tienda:** Miniso Aeropuerto Internacional Simón Bolívar\n**Dirección:**  Av. Aeropuerto Km. 80 \n Local: 23045",
+            "blockClass": "info-tienda"
+        }
+    },
+    "rich-text#tiendas-tienda2-chis": {
+        "title": "tienda-2",
+        "props": {
+            "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Buenavista \n**Dirección:** Av. El libertador, parque Trupillos \n Local: 122",
+            "blockClass": "info-tienda"
+        }
+    },
+    "rich-text#tiendas-tienda3-chis": {
+        "title": "tienda-3",
+        "props": {
+            "text": "<span></span>\n**Nombre de la tienda:** Miniso Mall Estación San Pedro\n**Dirección:** Calle 22 # 11 – 60    \n  Local: 1",
+            "blockClass": "info-tienda"
+        }
+    }
+}

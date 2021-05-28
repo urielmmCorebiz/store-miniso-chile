@@ -1,0 +1,165 @@
+:global(.vtex-flex-layout-0-x-flexRowContent--rowResult){
+    .container {
+        &:hover{
+            box-shadow: 0 0 15px -3px rgba(0,0,0,.35);
+        }
+    }
+}
+
+.containerNormal{
+    margin: 0 4px;
+
+    .productBrandContainer{
+        text-align: left;
+        text-transform: uppercase;
+        color: #7e7e7e;
+        font-size: 9px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        display: block;
+        padding-top:10px;
+    }
+}
+
+.container {
+    background-color: white;
+    transition: all .2s linear;
+    padding-bottom:10px;
+    
+    .nameContainer {
+        text-align: left;
+        padding-bottom: 0;
+        padding-top: 10px;
+
+        .productNameContainer{
+            width: 100%;
+            text-align: left;
+        }
+        .productBrand {
+            font-size: 16px;
+            font-weight: 500;
+            color: #1e1e24;
+            @media (max-width: 768px) {
+                font-size: 14px;
+            }
+        }
+    }
+    .productPriceClass {
+        width: 100%;
+        align-items: flex-end;
+        .sellingPrice {
+            font-size: 21px;
+            font-weight: 700;
+            color: #1ac0c6;
+            @media (max-width: 768px) {
+                font-size: 18px;
+            }
+        }
+    }
+    .installmentContainer {
+        display: none;
+    }
+}
+
+.hoverEffect .imageNormal{
+    height: auto!important;
+}
+
+.element {
+    padding: 0 10px;
+    position: relative;
+
+    @media screen and (min-width:640px){
+        :global(.vtex-flex-layout-0-x-flexRow--row-btns-shelf){
+            opacity: 0;
+            visibility: hidden;
+            transition: all .12s linear;
+        }
+
+        &:hover{
+            :global(.vtex-flex-layout-0-x-flexRow--row-btns-shelf){
+                visibility: visible;
+                opacity: 1;
+            }    
+        }
+    }
+
+    .buyButton{
+
+        :global(.vtex-button) {
+            background-color: transparent!important;
+
+            :global(.vtex-button__label){
+                font-weight: 700;
+                font-size: 13px;
+            }
+
+            &:hover {
+                background-color: #d22630!important;
+                border-color: #d22630!important;
+            }
+        }
+    }
+    
+    :global(.vtex-button) {
+        border-radius: 6px;
+        border-color: #f7c1bb;
+        background-color: #f7c1bb;
+        min-height: 43px;
+        @media (max-width: 768px) {
+            :global(.vtex-button__label) {
+                padding: 0;
+                font-size: 13px;
+            }
+        }
+        :global(.vtex-add-to-cart-button-0-x-buttonText) {
+            font-size: 13px;
+            letter-spacing: 1px;
+            text-align: center;
+            color: #1e1e24;
+        }
+        &:hover {
+            background-color: #d22630;
+            border-color: #d22630;
+            :global(.vtex-add-to-cart-button-0-x-buttonText) {
+                color: #fff;
+            }
+        }
+    }
+}
+
+.buyButtonContainer{
+    padding: 0px;
+}
+
+.productPriceClass--price-summary{
+    padding:.5rem 0;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+    .sellingPriceContainer{
+        padding-bottom: 0px;
+    }
+}
+
+.priceContainer {
+    padding-top: 0px;
+    padding-bottom: 5px;
+}
+
+.badgeContainer--summary-badges{
+    border-radius: 5px;
+    &.badgeContainer--summary-badges--3x2{
+        background: #f7c1bb;
+        color: black!important;
+    }
+    .badgeText--summary-badges{
+        color: white;
+    }
+    .badgeText--summary-badges--3x2{
+        color: #000;
+        height: 11px;
+        font-size: 14px;
+        line-height: 11px
+    }
+}

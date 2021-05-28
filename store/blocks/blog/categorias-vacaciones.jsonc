@@ -1,0 +1,316 @@
+{
+
+    "slider-layout-group#vacation-mevoy": {
+      "props": {
+        "blockClass": "slider-semana-santa"
+      },
+      "children": [
+        "slider-layout#vacations-mevoy",
+        "slider-layout#vacations-mevoy-2"
+      ]
+    },
+  
+    "slider-layout#vacations-mevoy-2": {
+      "children": [
+        "rich-text#txt-cat-vacaciones-01",
+        "rich-text#txt-cat-vacaciones-02",
+        "rich-text#txt-cat-vacaciones-03",
+        "rich-text#txt-cat-vacaciones-04",
+        "rich-text#txt-cat-vacaciones-05",
+        "rich-text#txt-cat-vacaciones-06"
+      ],
+      "props": {
+        "title":"mevoyTextos",
+        "showPaginationDots": "never",
+        "showNavigationArrows": "never",
+        "blockClass":"text-slider-vacation",
+        "itemsPerPage": {
+          "desktop": 6,
+          "tablet": 4,
+          "phone": 2
+        },
+        "slideTransition":{ "speed": 0, "delay": 0}
+      }
+    },
+    "slider-layout#vacations-mevoy": {
+      "children": [
+        "image#img-cat-vacaciones-01",
+        "image#img-cat-vacaciones-02",
+        "image#img-cat-vacaciones-03",
+        "image#img-cat-vacaciones-04",
+        "image#img-cat-vacaciones-05",
+        "image#img-cat-vacaciones-06"
+      ],
+      "props": {
+        "showPaginationDots": "never",
+        "title":"mevoyImagenes",
+        "blockClass": "carousel-vacations",
+        "itemsPerPage": {
+          "desktop": 6,
+          "tablet": 4,
+          "phone": 2
+        },
+        "slideTransition":{ "speed": 0, "delay": 0}
+      }
+    },
+  
+    "slider-layout-group#vacation-mequedo": {
+      "children": [
+        "slider-layout#vacations-mequedo-03",
+        "slider-layout#vacations-mequedo-02"
+      ],
+      "props": {
+        "blockClass":"slider-semana-santa"
+      }
+    },
+    "slider-layout#vacations-mequedo-02": {
+      "children": [
+        "rich-text#txt-cat-vacaciones-01-01",
+        "rich-text#txt-cat-vacaciones-01-02",
+        "rich-text#txt-cat-vacaciones-01-03",
+        "rich-text#txt-cat-vacaciones-01-04",
+        "rich-text#txt-cat-vacaciones-01-05"
+      ],
+      "props": {
+        "showPaginationDots": "never",
+        "showNavigationArrows": "never",
+        "blockClass":"text-slider-vacation",
+        "title":"mequedoTextos",
+        "itemsPerPage": {
+          "desktop": 5,
+          "tablet": 4,
+          "phone": 2
+        },
+        "slideTransition":{ "speed": 0, "delay": 0}
+      }
+    },
+    "slider-layout#vacations-mequedo-03": {
+      "children": [
+        "image#img-cat-vacaciones-01-01",
+        "image#img-cat-vacaciones-01-02",
+        "image#img-cat-vacaciones-01-03",
+        "image#img-cat-vacaciones-01-04",
+        "image#img-cat-vacaciones-01-05"
+      ],
+      "props": {
+        "showPaginationDots": "never",
+        "blockClass": "carousel-vacations",
+        "title":"meQuedoImagenes",
+        "itemsPerPage": {
+          "desktop": 5,
+          "tablet": 4,
+          "phone": 2
+        },
+        "slideTransition":{ "speed": 0, "delay": 0}
+      }
+    },
+    "image#img-cat-vacaciones-01": {
+      "props": {
+        "blockClass": "img-vacation",
+        "src": "https://minisomx.vtexassets.com/arquivos/ids/167111",
+        "link": {
+          "url": "/accesorios-de-viajes"
+        }
+      }
+    },
+    "rich-text#txt-cat-vacaciones-01": {
+      "props": {
+        "text": "[ACCESORIOS DE VIAJES](/accesorios-de-viajes)\n**No viajes incómodo o sin estar preparado, almohadas, set de botellitas y más.**",
+        "blockClass": "txt-vacation"
+      }
+    },
+    "image#img-cat-vacaciones-02": {
+      "props": {
+        "blockClass": "img-vacation",
+        "src": "https://minisomx.vtexassets.com/arquivos/ids/171673-800-800",
+        "link": {
+          "url": "/viajes/maletas"
+        }
+      }
+    },
+    "rich-text#txt-cat-vacaciones-02": {
+      "props": {
+        "text": "[MALETAS DE VIAJE Y NECESERES](/viajes/maletas)\n**El secreto de un viaje exitoso, tener todo bien organizado.**",
+        "blockClass": "txt-vacation"
+      }
+    },
+    "image#img-cat-vacaciones-07": {
+      "props": {
+        "blockClass": "img-vacation",
+        "src": "https://minisomx.vtexassets.com/arquivos/ids/177015",
+        "link": {
+          "url": "/moda/bolsas-y-mochilas"
+        }
+      }
+    },
+    "rich-text#txt-cat-vacaciones-07": {
+      "props": {
+        "text": "[MOCHILAS](/moda/bolsas-y-mochilas)\n**Que nada te falte y todo te quepa con la selección de mochilas que tenemos para ti.**",
+        "blockClass": "txt-vacation"
+      }
+    },
+    "image#img-cat-vacaciones-03": {
+      "props": {
+        "blockClass": "img-vacation",
+        "src": "https://minisomx.vtexassets.com/arquivos/ids/167153-1200-1200",
+        "link": {
+          "url": "/lentes-y-gorras"
+        }
+      }
+    },
+    "rich-text#txt-cat-vacaciones-03": {
+      "props": {
+        "text": "[LENTES Y GORRAS](/lentes-y-gorras)\n**No olvides protegerte bien del sol**",
+        "blockClass": "txt-vacation"
+      }
+    },
+  
+   
+    "image#img-cat-vacaciones-04": {
+      "props": {
+        "blockClass": "img-vacation",
+        "src": "https://minisomx.vtexassets.com/arquivos/ids/176823-800-800",
+        "link": {
+          "url": "/ventiladores"
+        }
+      }
+    },
+    "rich-text#txt-cat-vacaciones-04": {
+      "props": {
+        "text": "[VENTILADORES](/ventiladores)\n**A donde vayas, siempre fresco con estos ventiladores personales**",
+        "blockClass": "txt-vacation"
+      }
+    },
+   
+    "image#img-cat-vacaciones-05": {
+      "props": {
+        "blockClass": "img-vacation",
+        "src": "https://minisomx.vtexassets.com/arquivos/ids/171504",
+        "link": {
+          "url": "/audífonos"
+        }
+      }
+    },
+    "rich-text#txt-cat-vacaciones-05": {
+      "props": {
+        "text": "[AUDÍFONOS](/audífonos)\n**Para llevar tu música a donde sea que vayas.**",
+        "blockClass": "txt-vacation"
+      }
+    },
+   
+    "image#img-cat-vacaciones-06": {
+      "props": {
+        "src": "https://minisomx.vtexassets.com/arquivos/ids/162249",
+        "link": {
+          "url": "/bocinas"
+        },
+        "blockClass": "img-vacation"
+      }
+    },
+    "rich-text#txt-cat-vacaciones-06": {
+      "props": {
+        "text": "[BOCINAS](/bocinas)\n**Perfectas para llevar a la playa mientras te tumbas al sol.**",
+        "blockClass": "txt-vacation"
+      }
+    },
+   
+  
+    "image#img-cat-vacaciones-01-01": {
+      "props": {
+        "blockClass": "img-vacation",
+        "src": "https://minisomx.vtexassets.com/arquivos/ids/172711",
+        "link": {
+          "url": "/cuidados-faciales"
+        }
+      }
+    },
+    "rich-text#txt-cat-vacaciones-01-01": {
+      "props": {
+        "text": "[CUIDADOS FACIALES](/cuidados-faciales) \n**Arma tu propia rutina de skin care para el puente, nada mejor que Mascarillas y Netflix**",
+        "blockClass": "txt-vacation"
+      }
+    },
+  
+  
+    "image#img-cat-vacaciones-01-02": {
+      "props": {
+        "blockClass": "img-vacation",
+        "src": "https://minisomx.vtexassets.com/arquivos/ids/172711",
+        "link": {
+          "url": "/cuidados-corporales"
+        }
+      }
+    },
+    "rich-text#txt-cat-vacaciones-01-02": {
+      "props": {
+        "text": "[CUIDADOS CORPORALES](/cuidados-corporales) \n**Continúa consintiendo tu piel y cuerpo con hidratantes y lociones**",
+        "blockClass": "txt-vacation"
+      }
+    },
+  
+   
+    "image#img-cat-vacaciones-01-03": {
+      "props": {
+        "blockClass": "img-vacation",
+        "src": "https://minisomx.vtexassets.com/arquivos/ids/176547",
+        "link": {
+          "url": "/depiladoras-y-rastrillos"
+        }
+      }
+    },
+    "rich-text#txt-cat-vacaciones-01-03": {
+      "props": {
+        "text": "[DEPILADORAS Y RASTRILLOS](/depiladoras-y-rastrillos) \n**Termina tu sesión de cuidados con esta selección de depiladoras y Rastrillos.**",
+        "blockClass": "txt-vacation"
+      }
+    },
+  
+  
+    "image#img-cat-vacaciones-01-04": {
+      "props": {
+        "blockClass": "img-vacation",
+        "src": "https://minisomx.vtexassets.com/arquivos/ids/173556",
+        "link": {
+          "url": "/cocina/vasos-termos-y-cilindros"
+        }
+      }
+    },
+    "rich-text#txt-cat-vacaciones-01-04": {
+      "props": {
+        "text": "[VASOS Y CILINDROS](/cocina/vasos-termos-y-cilindros)\n **Prepara tu bebida favorita y relájate**",
+        "blockClass": "txt-vacation"
+      }
+    },
+  
+    "image#img-cat-vacaciones-01-05": {
+      "props": {
+        "blockClass": "img-vacation",
+        "src": "https://minisomx.vtexassets.com/arquivos/ids/177026",
+        "link": {
+          "url": "/snacks"
+        }
+      }
+    },
+    "rich-text#txt-cat-vacaciones-01-05": {
+      "props": {
+        "text": "[SNACKS](/snacks)\n**Tus snacks favoritos y una buena lista de pelis y series te esperan.**",
+        "blockClass": "txt-vacation"
+      }
+    },
+   
+    "image#img-cat-vacaciones-01-06": {
+      "props": {
+        "src": "",
+        "link": {
+          "url": "/"
+        },
+        "blockClass": "img-vacation"
+      }
+    },
+    "rich-text#txt-cat-vacaciones-01-06": {
+      "props": {
+        "text": "",
+        "blockClass": "txt-vacation"
+      }
+    }
+  }

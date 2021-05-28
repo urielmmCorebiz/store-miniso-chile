@@ -1,0 +1,118 @@
+.buttonHandle{
+    background: transparent;
+    width: 125px;
+    align-items: center;
+    text-align: left;
+    cursor: pointer;
+    font-size: .9rem;
+    color: #444;
+    line-height: 15px;
+    position: relative;
+    top: -3px;
+    justify-content: flex-start;
+    outline: none;
+    word-break: break-word;
+    margin-left: 15px;
+    border-radius: 5px;
+    border: none;
+    transition: all .12s linear;
+
+    @media (max-width:480px){
+        margin-left: 0px;
+        font-size: .7rem;
+        width: auto;
+    }
+}
+
+.buttonHandle:hover{
+    background-color: #dbe9fd!important;
+}
+.buttonHandle::before {
+    content: "";
+    display: block;
+    width: 20px;
+    max-width: 20px;
+    height: 40px;
+    margin-right: 5px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EPin%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath stroke-width='4' stroke-miterlimit='10' stroke='%23202020' fill='none' d='M32 2a20 20 0 0 0-20 20c0 18 20 39 20 39s20-21 20-39A20 20 0 0 0 32 2z' data-name='layer2' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Ccircle stroke-width='4' stroke-miterlimit='10' stroke='%23202020' fill='none' r='8' cy='22' cx='32' data-name='layer1' stroke-linejoin='round' stroke-linecap='round'%3E%3C/circle%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.regionItem {
+    cursor: pointer;
+    list-style: none;
+    padding-left: 0px;
+    transition: all .12s linear;
+    width: fit-content;
+    padding: 4px 15px 5px;
+    transition: all .12s linear;
+    width: 100%;
+
+    &:hover{
+        background-color: #f7c1bb!important;
+        color:#000
+    }
+}
+
+.regionItems{
+    background: white;
+    padding: 10px 0;
+    width: fit-content;
+    border-radius: 5px;
+    min-width: 260px;
+    margin-right: 20px;
+    max-height: 150px;
+    overflow: auto;
+}
+
+.regionItem::after{
+    content: "";
+    display: block;
+    margin-left: 10px;
+    width: 25px;
+    height: 20px;
+    position: relative;
+    top: 1px;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title' aria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EAngle Right%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer1' fill='none' stroke='%23202020' stroke-miterlimit='10' stroke-width='4' d='M26 20.006L40 32 26 44.006' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: all .12s linear;
+}
+
+.titleModalRegions{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.backButton{
+    border-radius: 5px;
+    border: none;
+    height: 35px;
+    width: 115px;
+    margin-bottom: 15px;
+    color: #000;
+    cursor: pointer;
+    transition: all .12s linear;
+    display: flex;
+    outline: none;
+    align-items: center;
+    background-color: transparent;
+
+    &::before {
+        margin-right: 4px;
+        content: "";
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64' aria-labelledby='title'%0Aaria-describedby='desc' role='img' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3EArrow Left%3C/title%3E%3Cdesc%3EA line styled icon from Orion Icon Library.%3C/desc%3E%3Cpath data-name='layer2' fill='none' stroke='%23202020' stroke-miterlimit='10' stroke-width='2' d='M14 31.998h36' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3Cpath data-name='layer1' fill='none' stroke='%23202020' stroke-miterlimit='10' stroke-width='2' d='M28 18L14 32l14 14' stroke-linejoin='round' stroke-linecap='round'%3E%3C/path%3E%3C/svg%3E");
+        width: 22px;
+        height: 20px;
+        display: block;
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        position: relative;
+        transition: all .12s linear;
+    }
+
+    &:hover::before{
+        left: -5px;
+    }
+}

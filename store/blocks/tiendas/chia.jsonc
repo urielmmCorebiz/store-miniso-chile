@@ -1,0 +1,47 @@
+{
+  "flex-layout.row#tiendas-row-tab": {
+    "title": "Tabasco",
+    "children": ["flex-layout.col#tiendas-col-tab"],
+    "props": {
+      "blockClass": "tiendas-row-tab"
+    }
+  },
+  "flex-layout.col#tiendas-col-tab": {
+    "children": [
+      "rich-text#subtitle-tiendas-tab",
+      "flex-layout.row#tiendas-row1-tab"
+    ],
+    "props": {
+      "blockclass": "tiendas-col-tab"
+    }
+  },
+  "rich-text#subtitle-tiendas-tab": {
+    "props": {
+      "text": "#### Chia",
+      "blockClass": "subtitle-tiendas"
+    }
+  },
+  "flex-layout.row#tiendas-row1-tab": {
+    "children": [
+      "rich-text#tiendas-tienda1-tab",
+      "rich-text#tiendas-tienda2-tab"
+    ],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda1-tab": {
+    "title": "tienda-1",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Centro Chía\n**Dirección:** Av. Pradilla # 9-00 Este, Chía \n Local: 141",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda2-tab": {
+    "title": "tienda-1",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Fontanar\n**Dirección:** Vía Chía Km 2.5 Cajicá \n Local: 242",
+      "blockClass": "info-tienda"
+    }
+  }
+}

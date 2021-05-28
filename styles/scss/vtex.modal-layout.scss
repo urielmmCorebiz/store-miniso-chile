@@ -1,0 +1,49 @@
+.paper--modal-popup-miniso{
+    padding:20px;
+}
+
+.triggerContainer--trigger-popup-miniso{
+    position: absolute; 
+    opacity: 0;
+    visibility: hidden;
+    top: -99999em;
+}
+.headerContainer{
+    border: none !important;
+    height: 30px !important;
+}
+.closeButton{
+    padding: 0px !important;
+}
+
+.paperNotFullScreen{
+    width: 530px;
+    background-color: rgb(193,253, 255);
+    border-radius: 0px;
+    padding: 10px 10px;
+}
+.vtex-rich-text-0-x-wrapper{
+    min-width: 100%;
+}
+@media (max-width: 425px) {
+    .paperNotFullScreen{
+       width: 400px;
+    }
+}
+
+@media screen and (max-width:1024px){
+    .paper--modal-popup-miniso{
+        :global(.vtex-flex-layout-0-x-flexColChild--col-popup-miniso-02){
+            margin: 0px!important
+        }
+        :global(.vtex-flex-layout-0-x-stretchChildrenWidth){
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.paper--modal-benefit-pdp{
+    max-width: 1000px;
+    padding-left: 3%;
+    padding-right: 3%;
+}

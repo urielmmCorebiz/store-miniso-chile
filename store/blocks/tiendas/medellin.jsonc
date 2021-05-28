@@ -1,0 +1,101 @@
+{
+  "flex-layout.row#tiendas-row-qro": {
+    "title": "Querétaro",
+    "children": ["flex-layout.col#tiendas-col-qro"],
+    "props": {
+      "blockClass": "tiendas-row-qro"
+    }
+  },
+  "flex-layout.col#tiendas-col-qro": {
+    "children": [
+      "rich-text#subtitle-tiendas-qro",
+      "flex-layout.row#tiendas-row1-qro",
+      "flex-layout.row#tiendas-row2-qro",
+      "flex-layout.row#tiendas-row3-qro"
+    ],
+    "props": {
+      "blockclass": "tiendas-col-qro"
+    }
+  },
+  "rich-text#subtitle-tiendas-qro": {
+    "props": {
+      "text": "#### Medellin",
+      "blockClass": "subtitle-tiendas"
+    }
+  },
+  "flex-layout.row#tiendas-row1-qro": {
+    "children": [
+      "rich-text#tiendas-tienda1-qro",
+      "rich-text#tiendas-tienda2-qro",
+      "rich-text#tiendas-tienda3-qro"
+    ],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda1-qro": {
+    "title": "tienda-1",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Arkadia Centro Comercial\n**Dirección:** Carrera 80 No. 1 – 09 \n Local: 0201",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda2-qro": {
+    "title": "tienda-2",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso El Tesoro Parque Comercial\n**Dirección:** Carrera 25a#1A Sur-45\n Local: 3001",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda3-qro": {
+    "title": "tienda-3",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial La Central\n**Dirección:** Calle 49 #21 – 38 \n Local: 241",
+      "blockClass": "info-tienda"
+    }
+  },
+  "flex-layout.row#tiendas-row2-qro": {
+    "children": [
+      "rich-text#tiendas-tienda4-qro",
+      "rich-text#tiendas-tienda5-qro",
+      "rich-text#tiendas-tienda6-qro"
+    ],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda4-qro": {
+    "title": "tienda-4",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Mayorca Mega Plaza\n**Dirección:** Calle 51 Sur #48-57\n Local: 2029",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda5-qro": {
+    "title": "tienda-5",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Oviedo\n**Dirección:** Carrera 43A # 6 Sur-15 O\n Local: 1375",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda6-qro": {
+    "title": "tienda-5",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Premium Plaza\n**Dirección:** Carrera 43A (Av. El Poblado) con Calle 30 \n Local: 1244",
+      "blockClass": "info-tienda"
+    }
+  },
+  "flex-layout.row#tiendas-row3-qro": {
+    "children": ["rich-text#tiendas-tienda7-qro"],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda7-qro": {
+    "title": "tienda-5",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Viva Laureles\n**Dirección:**Carrera 81 #37-100 \n Local: 117",
+      "blockClass": "info-tienda"
+    }
+  }
+}

@@ -1,0 +1,177 @@
+:global(.vtex-sticky-layout-0-x-container--container-stick-layout) {
+  visibility: hidden;
+  :global(.vtex-store-components-3-x-productImage) {
+    display: none !important;
+    &:first-child {
+      display: block !important;
+    }
+  }
+}
+
+:global(.vtex-sticky-layout-0-x-container--container-stick-layout) {
+  position: fixed;
+  top: 0px;
+  max-height: 150px;
+  background-color: white;
+  @media (min-width: 2440px) {
+    bottom: 1400px !important;
+    max-height: 150px;
+  }
+  @media (max-width: 1800px) {
+    bottom: 725px !important;
+  }
+  @media (max-width: 1600px) {
+    bottom: 455px !important;
+  }
+  @media (max-width: 1200px) {
+    bottom: 555px !important;
+  }
+  :global(.vtex-store-components-3-x-productNameContainer) {
+    margin-bottom: 0;
+  }
+  :global(.vtex-store-components-3-x-productImageTag--main) {
+    width: 150px !important;
+  }
+  :global(.vtex-flex-layout-0-x-flexCol--image-stick-layout) {
+    display: flex;
+    flex-flow: row;
+    position: relative;
+    justify-content: end;
+  }
+  :global(.vtex-flex-layout-0-x-flexRow--line-stick-layout) {
+    width: 100%;
+    background-color: white;
+  }
+  .description-stick-layout {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+  }
+  :global(.vtex-store-components-3-x-productBrand) {
+    font-size: 18px;
+  }
+  :global(.vtex-store-components-3-x-price_sellingPrice) {
+    font-size: 16px;
+  }
+  :global(.vtex-sticky-layout-0-x-wrapper) {
+    height: 1px !important;
+  }
+
+  :global(.vtex-reviews-and-ratings-1-x-loginLink){
+  font-size: 18px;
+  font-weight: bold;
+  }
+}
+@media (max-width: 768px) {
+/*contenedor*/
+    :global(.vtex-sticky-layout-0-x-container--container-stick-layout) {
+      position: fixed;
+      bottom: 0px !important;
+      display: flex;
+      background: #f7c1bb;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+      padding: 15px;
+      top: auto;
+
+      :global(.vtex-flex-layout-0-x-flexRow) {
+        width: 100%;
+      }
+
+    :global(.vtex-sticky-layout-0-x-wrapper--container-stick-layout) {
+      height: 1px !important;
+    }
+    .flexRow--double-buy-button {
+      margin-top: 0px !important;
+    }
+    
+    :global(.vtex-rich-text-0-x-container--quanty-class) {
+      display: none;
+    }
+    :global(.vtex-flex-layout-0-x-flexRowContent) {
+      display: flex;
+      width: 100%;
+    }
+    :global(.vtex-flex-layout-0-x-flexCol--image-stick-layout) {
+      display: none;
+    }
+    :global(.vtex-store-components-3-x-productNameContainer) {
+      display: none;
+    }
+    :global(.vtex-flex-layout-0-x-flexCol--buy--one-click) {
+      display: none;
+    }
+    :global(.vtex-flex-layout-0-x-flexCol--buy--add-to-cart-button){
+      :global(.vtex-button){
+        background: white;
+      }
+     :global(.vtex-flex-layout-0-x-flexColChild--buy--add-to-cart-button){
+    
+      :global(.vtex-button){
+          background-color: white;
+        }
+      }
+    }
+  }
+  :global(.vtex-tab-layout-0-x-listItemActive--tab-desc) {
+    width: 100%;
+    text-align: left;
+  }
+  :global(.vtex-tab-layout-0-x-listItem--tab-desc) {
+    text-align: left;
+    width: 47%; 
+  }
+  :global(.vtex-flex-layout-0-x-flexRow--double-buy-button) {
+    margin-top: 0px;
+  }
+  :global(.vtex-flex-layout-0-x-flexRow) {
+    width: 100%;
+    :global(.vtex-flex-layout-0-x-flexRowContent--container-blocks-product) {
+      display: flex;
+      justify-content: space-evenly;
+      padding-right: 35px !important;
+    }
+  }
+
+
+}
+
+
+
+
+
+
+
+:global(.vtex-tab-layout-0-x-listItem--tab-desc) {
+  :global(.vtex-button) {
+    &:hover {
+      background-color: #89e6b9 !important;
+      border-color: #89e6b9;
+    }
+  }
+  &:hover {
+    background-color: #89e6b9 !important;
+    border-color: #89e6b9;
+  }
+  :global(.vtex-button__label) {
+    font-size: 11px;
+  }
+}
+:global(.vtex-flex-layout-0-x-flexRow--container-blocks-product){
+  background-color: white;
+  box-shadow: 0 4px 7px 0 rgb(204 204 204 / 50%);
+
+  @media (max-width: 768px) {
+    background-color: #f7c1bb;
+  }
+}
+:global(.vtex-sticky-layout-0-x-wrapper--container-stick-layout){
+  height: 1px !important;
+}
+
+:global(.vtex-tab-layout-0-x-container--tab-description) {
+  :global(.vtex-tab-layout-0-x-listItem--tab-desc) {
+    :global(.vtex-button__label) {
+      font-size: 0.88rem;
+    }
+  }
+}

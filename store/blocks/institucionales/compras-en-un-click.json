@@ -1,0 +1,52 @@
+{
+    "store.custom#compras-un-click": {
+      "blocks": [
+        "flex-layout.row#compras-un-click"
+      ]
+    },
+    "flex-layout.row#compras-un-click": {
+      "children": [
+        "flex-layout.col#text-compras-un-click"
+      ],
+      "props": {
+        "blockClass": ["page-institucionales", "acerca-de"]
+      }
+    },
+    
+    "flex-layout.col#text-compras-un-click": {
+      "children": [
+        "rich-text#title-acerca-de",
+        "rich-text#acerca-de-section-01",
+        "image#whatsapp-compras-un-click"
+      ],
+      "props": {
+        "blockclass": "",
+        "preventVerticalStretch": true
+      }
+    },
+    "rich-text#title-acerca-de": {
+      "props": {
+        "text":
+        "# Compras en un Click",
+        "blockClass": ""
+      }
+    },
+    "rich-text#acerca-de-section-01": {
+      "props": {
+        "text": "## Konnichiwa\n Te ayudamos con tu compra,¿tienes alguna inquietud, sugerencia o comentario? Sólo dale click al botón de whatsapp y enseguida te atenderemos. ",
+        "blockClass": ["acerca-de--section-feature"]
+      }
+    },
+    "image#whatsapp-compras-un-click": {
+        "props": {
+            "src": "https://minisomx.vteximg.com.br/arquivos/whatsapp-pdp.png",
+            "blockClass": "whatsapp-faq",
+            "maxWidth": "80px",
+            "maxHeight": "auto",
+            "link": {
+                "url": "https://api.whatsapp.com/send?phone=573165748950&text=Konnichiwa,%20mi%20nombre%20es",
+                "openNewTab": "true"
+            }
+        }
+    }
+  }

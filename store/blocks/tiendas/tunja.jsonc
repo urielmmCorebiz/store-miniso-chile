@@ -1,0 +1,37 @@
+{
+  "flex-layout.row#tiendas-row-bcs": {
+    "title": "Baja California Sur",
+    "children": ["flex-layout.col#tiendas-col-bcs"],
+    "props": {
+      "blockClass": "tiendas-row-bcs"
+    }
+  },
+  "flex-layout.col#tiendas-col-bcs": {
+    "children": [
+      "rich-text#subtitle-tiendas-bcs",
+      "flex-layout.row#tiendas-row1-bcs"
+    ],
+    "props": {
+      "blockclass": "tiendas-col-bcs"
+    }
+  },
+  "rich-text#subtitle-tiendas-bcs": {
+    "props": {
+      "text": "#### Tunja",
+      "blockClass": "subtitle-tiendas"
+    }
+  },
+  "flex-layout.row#tiendas-row1-bcs": {
+    "children": ["rich-text#tiendas-tienda1-bcs"],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda1-bcs": {
+    "title": "tienda-1",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Viva Tunja\n**Dirección:** Av. Universitaria 51-21 \n Local: 151",
+      "blockClass": "info-tienda"
+    }
+  }
+}

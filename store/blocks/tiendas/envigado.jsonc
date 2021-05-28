@@ -1,0 +1,37 @@
+{
+  "flex-layout.row#tiendas-row-son": {
+    "title": "Sonora",
+    "children": ["flex-layout.col#tiendas-col-son"],
+    "props": {
+      "blockClass": "tiendas-row-son"
+    }
+  },
+  "flex-layout.col#tiendas-col-son": {
+    "children": [
+      "rich-text#subtitle-tiendas-son",
+      "flex-layout.row#tiendas-row1-son"
+    ],
+    "props": {
+      "blockclass": "tiendas-col-son"
+    }
+  },
+  "rich-text#subtitle-tiendas-son": {
+    "props": {
+      "text": "#### Envigado",
+      "blockClass": "subtitle-tiendas"
+    }
+  },
+  "flex-layout.row#tiendas-row1-son": {
+    "children": ["rich-text#tiendas-tienda1-son"],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda1-son": {
+    "title": "tienda-1",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Viva Envigado\n**Dirección:** Carrera 48 #32B Sur – 139o\n Local: 268",
+      "blockClass": "info-tienda"
+    }
+  }
+}

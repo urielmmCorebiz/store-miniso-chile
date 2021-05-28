@@ -1,0 +1,69 @@
+{
+  "flex-layout.row#tiendas-row-mor": {
+    "title": "Morelos",
+    "children": ["flex-layout.col#tiendas-col-mor"],
+    "props": {
+      "blockClass": "tiendas-row-mor"
+    }
+  },
+  "flex-layout.col#tiendas-col-mor": {
+    "children": [
+      "rich-text#subtitle-tiendas-mor",
+      "flex-layout.row#tiendas-row1-mor",
+      "flex-layout.row#tiendas-02-row1-mor"
+    ],
+    "props": {
+      "blockclass": "tiendas-col-mor"
+    }
+  },
+  "rich-text#subtitle-tiendas-mor": {
+    "props": {
+      "text": "#### Cali",
+      "blockClass": "subtitle-tiendas"
+    }
+  },
+  "flex-layout.row#tiendas-row1-mor": {
+    "children": [
+      "rich-text#tiendas-tienda1-mor",
+      "rich-text#tiendas-tienda2-mor",
+      "rich-text#tiendas-tienda3-mor"
+    ],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda1-mor": {
+    "title": "tienda-1",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Ciudad Jardín\n**Dirección:** Carrera 98 # 16-200 \n Local: 189",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda2-mor": {
+    "title": "tienda-2",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Jardín Plaza\n**Dirección:** Carrera 98 #16-200 \n Local: 190 ",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda3-mor": {
+    "title": "tienda-2",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Unico Centro Comercial Outlet\n**Dirección:** Calle 52 # 03-29\n Local: 74",
+      "blockClass": "info-tienda"
+    }
+  },
+  "flex-layout.row#tiendas-02-row1-mor": {
+    "children": ["rich-text#tiendas-tienda4-mor"],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda4-mor": {
+    "title": "tienda-2",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Cosmocentro\n**Dirección:** Calle 5 #50 – 103 \n Local: 2-05",
+      "blockClass": "info-tienda"
+    }
+  }
+}

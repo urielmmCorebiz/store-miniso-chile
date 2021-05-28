@@ -1,0 +1,37 @@
+{
+  "flex-layout.row#tiendas-row-nay": {
+    "title": "Nayarit",
+    "children": ["flex-layout.col#tiendas-col-nay"],
+    "props": {
+      "blockClass": "tiendas-row-nay"
+    }
+  },
+  "flex-layout.col#tiendas-col-nay": {
+    "children": [
+      "rich-text#subtitle-tiendas-nay",
+      "flex-layout.row#tiendas-row1-nay"
+    ],
+    "props": {
+      "blockclass": "tiendas-col-nay"
+    }
+  },
+  "rich-text#subtitle-tiendas-nay": {
+    "props": {
+      "text": "#### Neiva",
+      "blockClass": "subtitle-tiendas"
+    }
+  },
+  "flex-layout.row#tiendas-row1-nay": {
+    "children": ["rich-text#tiendas-tienda1-nay"],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda1-nay": {
+    "title": "tienda-1",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial San Pedro Plaza \n**Dirección:** Carrera 8A N° 38-42 \n  Local: 182",
+      "blockClass": "info-tienda"
+    }
+  }
+}

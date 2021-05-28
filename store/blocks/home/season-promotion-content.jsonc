@@ -1,0 +1,88 @@
+{
+  "flex-layout.row#season-promotion": {
+    "children": ["flex-layout.col#season-promotion--cards"],
+    "props": {
+      "blockClass": "season-promotion--cards"
+    },
+    "title": "Seccion 1 Home"
+  },
+  "flex-layout.col#season-promotion--cards": {
+    "children": [
+      "rich-text#season-promotion--cards-1",
+      //"rich-text#season-promotion--cards-2",
+      "flex-layout.row#season-promotion--cards"
+    ],
+    "props": {
+      "blockClass": "season-promotion--content-card"
+    }
+  },
+  "rich-text#season-promotion--cards-1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Categorías",
+      "blockClass": "titles-home"
+    },
+    "title": "Titulo Principal Home"
+  },
+  "rich-text#season-promotion--cards-2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "De Miniso a tu casa",
+      "blockClass": "subtitles-home"
+    }
+  },
+  "flex-layout.row#season-promotion--cards": {
+    "children": [
+      "image#card-link-1",
+      "image#card-link-2",
+      "image#card-link-3",
+      "image#card-link-4"
+    ],
+    "props": {
+      "blockClass": "season-promotion--content-card",
+      "rowGap": "6"
+    }
+  },
+  "image#card-link-1": {
+    "props": {
+      "src": "https://via.placeholder.com/285x405.png",
+      "blockClass": "season-promotion--card",
+      "link": {
+        "url": "/Salud-Y-Belleza",
+        "openNewTab": "false"
+      }
+    }
+  },
+  "image#card-link-2": {
+    "props": {
+      "src": "https://via.placeholder.com/285x405.png",
+      "blockClass": "season-promotion--card",
+      "link": {
+        "url": "/",
+        "openNewTab": "false"
+      }
+    }
+  },
+  "image#card-link-3": {
+    "props": {
+      "src": "https://via.placeholder.com/285x405.png",
+      "blockClass": "season-promotion--card",
+      "link": {
+        "url": "/",
+        "openNewTab": "false"
+      }
+    }
+  },
+  "image#card-link-4": {
+    "props": {
+      "src": "https://via.placeholder.com/285x405.png",
+      "blockClass": "season-promotion--card",
+      "link": {
+        "url": "/",
+        "openNewTab": "false"
+      }
+    }
+  }
+}

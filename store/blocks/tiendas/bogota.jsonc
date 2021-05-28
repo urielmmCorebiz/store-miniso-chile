@@ -1,0 +1,294 @@
+{
+  "flex-layout.row#tiendas-row-jal": {
+    "title": "Jalisco",
+    "children": ["flex-layout.col#tiendas-col-jal"],
+    "props": {
+      "blockClass": "tiendas-row-jal"
+    }
+  },
+  "flex-layout.col#tiendas-col-jal": {
+    "children": [
+      "rich-text#subtitle-tiendas-jal",
+      "flex-layout.row#tiendas-row1-jal",
+      "flex-layout.row#tiendas-row2-jal",
+      "flex-layout.row#tiendas-row3-jal",
+      "flex-layout.row#tiendas-row4-jal",
+      "flex-layout.row#tiendas-row5-jal",
+      "flex-layout.row#tiendas-row6-jal",
+      "flex-layout.row#tiendas-row7-jal",
+      "flex-layout.row#tiendas-row8-jal",
+      "flex-layout.row#tiendas-row9-jal"
+    ],
+    "props": {
+      "blockclass": "tiendas-col-jal"
+    }
+  },
+  "rich-text#subtitle-tiendas-jal": {
+    "props": {
+      "text": "#### Bogotá",
+      "blockClass": "subtitle-tiendas"
+    }
+  },
+  "flex-layout.row#tiendas-row1-jal": {
+    "children": [
+      "rich-text#tiendas-tienda1-jal",
+      "rich-text#tiendas-tienda2-jal",
+      "rich-text#tiendas-tienda3-jal"
+    ],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda1-jal": {
+    "title": "tienda-1",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Aeropuerto Internacional El Dorado\n**Dirección:** Calle 26 #103-9 \n Locales: \n 20360 - Frente a los filtros nacionales de Avianca. \n Cruzando los filtros LATAM. \n GAA2144B - Muelle Internacional.  ",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda2-jal": {
+    "title": "tienda-2",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Calima Centro Comercial\n**Dirección:** Carrera 30 Calle 19 \n Local: A01",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda3-jal": {
+    "title": "tienda-3",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Calle 100\n**Dirección:** Calle 100 # 11B-01 \n Local: 103",
+      "blockClass": "info-tienda"
+    }
+  },
+  "flex-layout.row#tiendas-row2-jal": {
+    "children": [
+      "rich-text#tiendas-tienda4-jal",
+      "rich-text#tiendas-tienda5-jal",
+      "rich-text#tiendas-tienda6-jal"
+    ],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda4-jal": {
+    "title": "tienda-4",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Calle 122\n**Dirección:** Carrera 17A # 122 – 08 \n Local: 3",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda5-jal": {
+    "title": "tienda-5",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Centro Mayor\n**Dirección:**  Calle 38 A #Sur No. 34D-51 \n Local: 2-178",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda6-jal": {
+    "title": "tienda-6",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso  City U\n**Dirección:**  Calle 19 No. 2A – 10 \n Local: 102 ",
+      "blockClass": "info-tienda"
+    }
+  },
+  "flex-layout.row#tiendas-row3-jal": {
+    "children": [
+      "rich-text#tiendas-tienda7-jal",
+      "rich-text#tiendas-tienda8-jal",
+      "rich-text#tiendas-tienda9-jal"
+    ],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda7-jal": {
+    "title": "tienda-7",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Ciudad Tunal \n**Dirección:** Calle 47B Sur #33 \n Local: 124 ",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda8-jal": {
+    "title": "tienda-8",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Connecta Ecosistema Empresarial\n**Dirección:** Av. Calle 26 No. 92-32 \n  Local: G305",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda9-jal": {
+    "title": "tienda-9",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial DiverPlaza \n**Dirección:** Transversal 99 #70A – 89 \n Local: 106 ",
+      "blockClass": "info-tienda"
+    }
+  },
+  "flex-layout.row#tiendas-row4-jal": {
+    "children": [
+      "rich-text#tiendas-tienda10-jal",
+      "rich-text#tiendas-tienda11-jal",
+      "rich-text#tiendas-tienda12-jal"
+    ],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda10-jal": {
+    "title": "tienda-10",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Plaza Imperial\n**Dirección:**  Carrera 104 ##148 – 07 \n Local: 1-38-1 ",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda11-jal": {
+    "title": "tienda-11",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Gran Plaza Bosa\n**Dirección:** Calle 65 Sur #78H – 51 \n Local: 122 ",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda12-jal": {
+    "title": "tienda-11",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Gran Plaza Ensueño \n**Dirección:** Calle 65 Sur #78H – 51 \n Local: 102 ",
+      "blockClass": "info-tienda"
+    }
+  },
+
+  "flex-layout.row#tiendas-row5-jal": {
+    "children": [
+      "rich-text#tiendas-tienda13-jal",
+      "rich-text#tiendas-tienda14-jal",
+      "rich-text#tiendas-tienda15-jal"
+    ],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda13-jal": {
+    "title": "tienda-10",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Hayuelos Centro Comercial\n**Dirección:**  Calle 20 #82 – 52 \n Local: 2--64  ",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda14-jal": {
+    "title": "tienda-10",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Metrópolis \n**Dirección:**  Av. Carrera 68 # 75A - 50 \n Local: 124A1 ",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda15-jal": {
+    "title": "tienda-10",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Multiplaza  \n**Dirección:**  Calle 19 A # 72 - 57 (Avenida Boyacá con Calle 13 / sentido norte - sur) \n Local: A-169",
+      "blockClass": "info-tienda"
+    }
+  },
+  "flex-layout.row#tiendas-row6-jal": {
+    "children": [
+      "rich-text#tiendas-tienda16-jal",
+      "rich-text#tiendas-tienda17-jal",
+      "rich-text#tiendas-tienda18-jal"
+    ],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda16-jal": {
+    "title": "tienda-10",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Parque de la 93\n**Dirección:** Calle 93A # 12-51",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda17-jal": {
+    "title": "tienda-10",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Parque La Colina\n**Dirección:** Carrera 58D # 146-51 \n Local: 213 ",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda18-jal": {
+    "title": "tienda-10",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Plaza Central\n**Dirección:** Carrera 65 # 11-50 \n Local: 193 ",
+      "blockClass": "info-tienda"
+    }
+  },
+  "flex-layout.row#tiendas-row7-jal": {
+    "children": [
+      "rich-text#tiendas-tienda19-jal",
+      "rich-text#tiendas-tienda20-jal",
+      "rich-text#tiendas-tienda21-jal"
+    ],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda19-jal": {
+    "title": "tienda-10",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Plaza Claro\n**Dirección:** Carrera 68 A # 24 B-10  \n Local: 1-34   ",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda20-jal": {
+    "title": "tienda-10",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Paseo San Rafael\n**Dirección:** Calle 134 # 55-30 \n Local: 110                              ",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda21-jal": {
+    "title": "tienda-10",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Santafél\n**Dirección:** Calle 185 No. 45-03 Costado Occidental Autopista Norte \n Local: 1-143             ",
+      "blockClass": "info-tienda"
+    }
+  },
+  "flex-layout.row#tiendas-row8-jal": {
+    "children": [
+      "rich-text#tiendas-tienda22-jal",
+      "rich-text#tiendas-tienda23-jal",
+      "rich-text#tiendas-tienda24-jal"
+    ],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda22-jal": {
+    "title": "tienda-10",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Tintal Plaza Centro Comercial\n**Dirección:** Av. Ciudad de Cali con, Av. de las Américas  \n Local: 127  ",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda23-jal": {
+    "title": "tienda-10",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Titán Plaza\n**Dirección:** Av. Boyacá # 80-94 \n Local: 2--16 ",
+      "blockClass": "info-tienda"
+    }
+  },
+  "rich-text#tiendas-tienda24-jal": {
+    "title": "tienda-10",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Centro Comercial Unicentro de Occidente\n**Dirección:** Carrera 111C #86-05 \n Local:104 ",
+      "blockClass": "info-tienda"
+    }
+  },
+  "flex-layout.row#tiendas-row9-jal": {
+    "children": ["rich-text#tiendas-tienda25-jal"],
+    "props": {
+      "blockClass": "tiendas-row"
+    }
+  },
+  "rich-text#tiendas-tienda25-jal": {
+    "title": "tienda-10",
+    "props": {
+      "text": "<span></span>\n**Nombre de la tienda:** Miniso Zona T\n**Dirección:** Carrera 13 #81-38  ",
+      "blockClass": "info-tienda"
+    }
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": ["notification.bar", "sticky-layout#2-desktop"]
+  },
+  "flex-layout.row#3-desktop": {
+    "props": {
+      "blockClass": "menu-link",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#category-menu",
+      "flex-layout.col#spacer"
+      //"flex-layout.col#redirect-menu"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#2-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#4-desktop", "flex-layout.row#3-desktop"]
+  },
+  "notification.bar": {
+    "props": {
+      "content": "¡Recuerda! envíos a $29.00 en compras superiores a $249.00, ¡no lo dejes pasar!"
+    },
+    "title": "Topbar"
+  },
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      // "campus-selector",
+      "search-bar",
+      "flex-layout.col#spacer",
+      "login",
+      "flex-layout.col#col-wishlist",
+      "minicart.v2"
+      //"modal-trigger#popup-miniso"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "logoBrand"
+    },
+    "children": ["logo#desktop"]
+  },
+  "search-bar": {
+    "blocks": ["autocomplete-result-list.v2"],
+    "props": {
+      "openAutocompleteOnFocus": true,
+      "placeholder": "¿Qué estás buscando hoy?",
+      "blockClass": "main-search-bar",
+      "width": "grow",
+      "maxWidth": "680px"
+    }
+  },
+  "autocomplete-result-list.v2": {
+    "blocks": ["product-summary.shelf#home-shelf"]
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "col-category-menu-desk"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+
+  "flex-layout.col#redirect-menu": {
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "col-redirect-menu"
+    },
+    "children": ["vtex.menu@2.x:menu#redirect-menu"]
+  },
+
+  "flex-layout.col#col-wishlist": {
+    "children": ["image#wishlist-icon"],
+    "props": {
+      "blockClass": "col-header-wishlist",
+      "verticalAlign": "middle",
+      "horizontalAlign": "center",
+      "marginRight": "6"
+    }
+  },
+  "image#wishlist-icon": {
+    "props": {
+      "src": "assets/wishlist-icon-2.svg",
+      "link": {
+        "url": "/wishlist",
+        "title": "¡Mis favoritos!"
+      }
+    }
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/logo.png",
+      "width": "120"
+    }
+  },
+  "header-layout.mobile": {
+    "children": ["sticky-layout#1-mobile"]
+  },
+  "sticky-layout#1-mobile": {
+    "children": [
+      "notification.bar",
+      "flex-layout.row#1-mobile",
+      "flex-layout.row#2-mobile"
+    ],
+    "props": {
+      "blockClass": "custom-sticky-header--mobile"
+    }
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer",
+      "logo#mobile",
+      // "campus-selector",
+      "flex-layout.col#spacer",
+      "login",
+      "flex-layout.col#col-wishlist",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#2-mobile": {
+    "children": ["search-bar"],
+    "props": {
+      "blockClass": "searchbar-mobile"
+    }
+  },
+  "flex-layout.row#row-search-mobile": {
+    "children": [
+      //"flex-layout.col#col-drawer-mobile",
+      "flex-layout.col#col-searchbar-mobile"
+    ],
+    "props": {
+      "preventHorizontalStretch": false,
+      "blockClass": "row-search-mobile"
+    }
+  },
+  "flex-layout.col#col-drawer-mobile": {
+    "children": ["drawer"],
+    "props": {
+      "blockClass": "col-drawer-mobile",
+      "width": "20%"
+    }
+  },
+  "flex-layout.col#col-searchbar-mobile": {
+    "children": ["search-bar"],
+    "props": {
+      "preventHorizontalStretch": true,
+      "width": "grow",
+      "blockClass": "col-search-mobile"
+    }
+  },
+  "drawer": {
+    "blocks": ["drawer-header#my-drawer"],
+    "children": ["menu#drawer"],
+    "props": {
+      "isFullWidth": true,
+      "blockClass": "menu"
+    }
+  },
+
+  "flex-layout.row#redirect-menu": {
+    "children": ["flex-layout.col#redirect-menu"]
+  },
+
+  "drawer-header#my-drawer": {
+    "children": ["image#logo", "drawer-close-button"]
+  },
+  "image#logo": {
+    "props": {
+      "src": "/arquivos/logo.png",
+      "blockClass": "logo",
+      "link": "/"
+    }
+  },
+  "menu#drawer": {
+    "children": [
+      "menu-item#menu-mobile-categorias",
+      "menu-item#menu-item-01",
+      "menu-item#menu-item-losMasVendidos",
+      "menu-item#menu-item-outlet",
+      "drawer#categorias-licencias",
+      "menu-item#menu-item-tiendas",
+      "menu-item#menu-item-05"
+      //"flex-layout.row#redirect-menu"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "/arquivos/logo.png",
+      "width": "50"
+    }
+  },
+  "login": {
+    "props": {
+      "showIconProfile": true,
+      "iconLabel": "Inicia Sesión o Registrate",
+      "termsAndConditions": ""
+    }
+  },
+  "category-menu": {
+    "props": {
+      "showPromotionCategory": false,
+      "showGiftCategory": false,
+      "showAllDepartments": false,
+      "showSubcategories": true,
+      "menuDisposition": "left",
+      "departments": []
+    }
+  }
+}
