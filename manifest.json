@@ -1,7 +1,7 @@
 {
   "vendor": "minisocl",
   "name": "store-theme",
-  "version": "0.17.10",
+  "version": "0.17.11",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
