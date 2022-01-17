@@ -27,6 +27,7 @@
   },
   "flex-layout.col#minicart-footer": {
     "children": [
+      // "minicart-bar",
       "minicart-summary",
       "minicart-checkout-button"
     ]

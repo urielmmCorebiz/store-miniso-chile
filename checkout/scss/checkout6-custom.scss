@@ -1883,12 +1883,13 @@ label.input.btn.label-vertical-group.bank-invoice-list-item.bank-invoice-item-ba
 }
 
 .empty-cart-title {
-    font-size: 0;
+    font-size: 0 !important;
 }
 
 .empty-cart-title::before {
-    content: "¡No tienes artículos añadidos!";
-    font-size: 31.5px;
+    content: "¡No tienes artículos añadidosooos!" !important;
+    font-size: 31.5px !important;
+    color: black !important;
 }
 
 .empty-cart-message p {

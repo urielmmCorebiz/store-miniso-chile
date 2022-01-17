@@ -147,7 +147,7 @@
 
 .paragraph--titles-home,
 .link--titles-home {
-  margin: 0 0 30px 0;
+  margin: -32px 0 -18px 0;
   font-size: 45px;
   font-weight: 700;
   font-stretch: normal;
@@ -604,12 +604,17 @@
 }
 
 .wrapper--minicart-empty-card::before {
-  content: url(/arquivos/penguin-icon.png);
+  content: url("https://minisomx.myvtex.com/arquivos/penguin-icon.png");
   display: flex;
   justify-content: center;
   height: 95px;
   width: 95px;
   margin: 0 auto 15px;
+}
+.wrapper--minicart-empty-card::after{
+  content: "¡No tienes artículos añadidos!" !important;
+  margin-top: -10px !important;
+
 }
 
 .wrapper--formas-pago-section-feature {
@@ -729,12 +734,27 @@
 
 //modal
 .paragraph--newsletter-title-modal{
-  min-width: 486px !important;
+  // min-width: 486px !important;
   max-height: 40px;
-  margin: 0px ;
+  margin: 0px 0px 0px 7px !important;
   display: flex !important;
   justify-content: center !important;
-  font-size: 32px !important;
+  font-size: 22px !important;
+  color: #fff;
+  text-shadow: 0px 0px 5px black;
+}
+.paragraph--newsletter-modal{
+  font-size: 14px;
+  text-align: center !important;
+  color: #fff;
+  margin: 5px 0px 0px 0px !important;
+  text-shadow: 0px 0px 5px black;
+}
+.link--newsletter-terms-modal{
+  color: #fff !important;
+}
+.paragraph--newsletter-terms-modal{
+  text-shadow: 0px 0px 5px black;
 }
 @media (max-width: 425px) {
   .paragraph--newsletter-title-modal{
@@ -745,6 +765,9 @@
   .paragraph--newsletter-modal {
     margin: 5px 0 !important;
     font-size: 14px !important;
+  }
+  .paragraph--newsletter-terms-modal{
+    margin-left: 0px !important;
   }
 }
 @media (max-width: 375px) {
@@ -767,6 +790,26 @@
 
 .paragraph--newsletter-terms-modal{
   font-size: 11px   !important;
+  text-align: center;
+  color: #fff;
+}
+//end newsletter
+@media(max-width: 768px){
+  .paragraph--title-marketplaces{
+    margin: 20px 20px 20px 20px;
+    font-size: 26px;
+  }
+  .paragraph--newsletter-title-modal{
+    margin: 0px 0px 0px 150px !important;
+  }
+  .paragraph--newsletter-terms-modal{
+    margin-left: 30px;
+  }
+}
+@media(max-width: 1024px){
+  .paragraph--newsletter-modal{
+    font-size: 15px !important;
+  }
 }
 //marketplaces
 .paragraph--title-marketplaces{
@@ -779,30 +822,19 @@
   margin: 10px 0 45px 0 !important;
   font-weight: 700;
 }
-@media(max-width: 768px){
-  .paragraph--title-marketplaces{
-    margin: 20px 20px 20px 20px;
-    font-size: 26px;
-  }
-}
-@media(max-width: 1024px){
-  .paragraph--newsletter-modal{
-    font-size: 15px !important;
-  }
-}
+
+//modal newsletter
 @media(max-width: 425px){
   .paragraph--newsletter-title-modal{
     min-width: 320px !important;
-    font-size: 26px !important;
+    margin: 0px 0px 0px 3px !important;
+    font-size: 22px !important;
+    
   }
   .paragraph--newsletter-modal{
     min-width: 320px !important;
-    font-size: 16px !important;
-  }
-  .paragraph--title-marketplaces{
-    margin: 10px 20px ;
-    font-size: 18px;
-  }
+    font-size: 14px !important;
+  }  
 }
 @media(max-width: 375px){
   .paragraph--newsletter-title-modal{
@@ -834,6 +866,8 @@
     font-size: 18px !important;
   }
 }
+//end modal
+
 .link--txt-benefit-pdp{
   color: #333;
   text-decoration: underline;
@@ -845,4 +879,62 @@
 }
 .container--extra-politicas{
   margin-left: 29px;
+}
+
+//new landing category
+:global(.vtex-rich-text-0-x-strong--title-category-new-landing){
+  color: #f7c1bb !important;
+}
+:global(.vtex-rich-text-0-x-headingLevel1--title-category-new-landing){
+  margin-top: -15px !important;
+}
+:global(.vtex-rich-text-0-x-link--new-landing-category-photo-text){
+  color: #1ac0c6 !important;
+}
+@media (max-width: 768px){
+  :global(.vtex-rich-text-0-x-headingLevel1--title-category-new-landing){
+    font-size: 32px !important;
+    margin-top: 10px !important;
+  }
+}
+@media (max-width: 425px){
+  :global(.vtex-rich-text-0-x-headingLevel1--title-category-new-landing){
+    font-size: 20px !important;
+    margin-top: 10px !important;
+  }
+}
+//seo
+
+:global(.vtex-rich-text-0-x-italic--txt-deal){
+  display: flex;
+  text-align: center ;
+  font-style: normal;
+  justify-content: center;
+}
+:global(.vtex-rich-text-0-x-headingLevel2--txt-deal){
+  font-size: 16px ;
+  font-weight: 700   ;
+  font-style: normal ;
+  letter-spacing: 1.2px ;
+}
+:global(.vtex-rich-text-0-x-headingLevel2--newsletter-title){
+  margin: 5px 0;
+}
+
+:global(.vtex-rich-text-0-x-link--txt-vacation){
+  font-size: 16px;
+}
+
+:global(.vtex-rich-text-0-x-headingLevel3--txt-vacation){
+  text-align: center;
+  margin-bottom: 0px;
+}
+
+//spaces
+:global(.vtex-rich-text-0-x-container--shelf-title){
+  max-height: 18px;
+}
+//footer
+:global(.vtex-rich-text-0-x-paragraph--footer-paymentOptions-text){
+  color: white;
 }

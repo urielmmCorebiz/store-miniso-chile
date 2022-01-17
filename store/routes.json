@@ -71,10 +71,25 @@
   "store.custom#blog-14": {
     "path": "/marketplaces"
   },
+  "store.custom#newsletter-landing": {
+    "path": "/enterate-noticias-ofertas"
+  },
   "store.custom#collection-2banners": {
     "path": "/collection-2banners"
   },
   "store.custom#collection-3banners": {
     "path": "/collection-3banners"
+  },
+  "store.custom#new-landing-categories": {
+    "path": "/new-landing-categories"
+  },
+  "store.custom#category-blocks": {
+    "path": "/category-blocks"
+  },
+  "store.custom#colecciones-landing": {
+    "path": "/colecciones-landing"
+  },
+  "store.custom#colecciones-landing2": {
+    "path": "/colecciones-landing-2"
   }
 }

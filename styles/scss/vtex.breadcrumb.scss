@@ -4,6 +4,8 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    text-transform: uppercase;
+    font-weight: 700;
     @media (max-width: 768px) {
         justify-content: center;
     }
@@ -13,21 +15,27 @@
             content: "Home";
             align-items: center;
             display: flex;
-            color: #1e1e24;
+            color:  #1cc0c6;
         }
         .homeIcon {
             display: none;
         }
     }
+    .arrow:last-child{
+        .link{
+            color: #1e1e24;
+            .term{
+                text-transform: uppercase;
+            }
+        }
+        
+    }
     .arrow,
     .link,
     .termArrow {
         text-transform: uppercase;
-        color: #1e1e24;
-        font-weight: 500;
+        color:  #1cc0c6;
+        font-weight: 700;
     }
-    .term {
-        text-transform: uppercase;
-        color: #1e1e24;
-    }
+   
 }

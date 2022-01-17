@@ -17,8 +17,14 @@
 }
 
 .paperNotFullScreen{
-    width: 530px;
-    background-color: rgb(193,253, 255);
+    width: 600px;
+    height: 450px;
+    background-image: linear-gradient(to right, rgba(221, 42, 63, 0.048) , rgba(221, 42, 63, 0.034)),
+    url( "https://minisocl.vtexassets.com/assets/vtex.file-manager-graphql/images/12c94320-5c26-469f-b42a-ab59f5f620ab___a0b3ccdef0dd56676fad896e32566188.webp");
+    // background-color: rgb(193,253, 255);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 0px;
     padding: 10px 10px;
 }
@@ -28,6 +34,7 @@
 @media (max-width: 425px) {
     .paperNotFullScreen{
        width: 400px;
+       height: 440px;
     }
 }
 

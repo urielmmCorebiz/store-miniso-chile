@@ -39,9 +39,16 @@
 .styledLinkContent--menu-title-item-licencias {
   color: #1ac0c6;
 }
+//eventos
+// .menuItem--menu-title-item-02{
+// //   background-color:#d22630;
+// }
 
 .styledLinkContent--menu-title-item-02 {
   color: #d22630;
+  // &:hover{
+  //   color: #000 !important;
+  // }
 }
 
 .styledLinkContainer--menu-title {
@@ -55,11 +62,11 @@
     }
   }
 }
-
 .menuContainerNav--menu-categorias {
   @media (max-width: 768px) {
     margin-left: 10px;
 
+    
     .menuContainer--menu-categorias {
       .styledLinkContainer--menu-categorias {
         margin: 0;
@@ -67,13 +74,20 @@
       }
       :first-child {
         .styledLinkContent--menu-categorias {
-          font-size: 16px;
+          font-size: 15px;
           font-weight: 700;
           line-height: 1;
           letter-spacing: 1px;
+          margin-left: 0px;
           color: #1e1e24;
           // color: rgba(30, 30, 36, 0.5);
           text-transform: uppercase;
+        }
+      }
+      :first-child{
+        .styledLinkContent--menu-categorias::before{
+          content: "VER TODO ";
+          margin-right: 5px !important;
         }
       }
       :not(:first-child) {
@@ -84,11 +98,17 @@
           letter-spacing: normal;
           color: #1e1e24;
           text-transform: capitalize;
-          margin-left: 20px;
+          margin-left: 5px;
           padding: 5px 0;
         }
         &:hover {
           background-color: #fcebe9;
+        }
+      }
+      :not(:first-child){
+        .styledLinkContent--menu-categorias::before{
+          content: none;
+          font-size: 0px !important;
         }
       }
     }
@@ -107,7 +127,7 @@
           font-weight: 700;
           line-height: 1;
           letter-spacing: 1px;
-          color: rgba(30, 30, 36, 0.5);
+          color: #f1a49b;
           text-transform: uppercase;
         }
       }

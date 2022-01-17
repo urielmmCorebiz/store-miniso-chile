@@ -515,7 +515,7 @@
 .flexRowContent--page-institucionales {
   //max-width: 1250px;
   margin: auto;
-  padding: 30px 15px 50px;
+  padding: 0px 15px 50px;
 
   :global(.vtex-rich-text-0-x-headingLevel1) {
     color: #d22630;
@@ -524,7 +524,6 @@
 
   :global(.vtex-rich-text-0-x-headingLevel2) {
     font-size: 1.25rem;
-    margin-top: 40px;
   }
 }
 
@@ -597,6 +596,19 @@
 .flexRowContent--row-btns-shelf {
   :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
     padding: 5px !important;
+  }
+}
+.flexRowContent--row-btns-shelf {
+  :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    padding: 5px !important;
+  }
+  :global(.vtex-flex-layout-0-x-flexColChild--btn-01) {
+    :global(.vtex-button) {
+      border-color: #f7c1bb !important;
+    }
+    :global(.vtex-add-to-cart-button-0-x-buttonText) {
+      color: #f7c1bb !important;
+    }
   }
 }
 
@@ -674,7 +686,7 @@
   .flexCol--col-benefit-pdp {
     flex-direction: column;
   }
-  :global(.vtex-store-components-3-x-imageElement--image-benefit-pdp-03) {
+  :global(.vtex-store-components-3-x-imageElement---03) {
     width: auto;
     height: 35px;
     display: block;
@@ -791,8 +803,9 @@
   padding: 0 1.5%;
 }
 
+//class new styles
 .flexCol--col-warnings-pdp {
-  align-items: flex-end;
+  align-items: flex-start;
 }
 
 .flexRowContent--deals {
@@ -849,4 +862,131 @@
     display: flex;
   }
  
+}
+//news letter modal
+.flexRow--newsletter-modal{
+  width: 50% !important;
+  margin-top: 0% !important;
+}
+@media (max-width: 768px) {
+  .flexRow--newsletter-modal{
+    width: 100% !important;
+    margin-top: 10% !important;
+  }
+}
+@media (max-width: 425px) {
+  .flexRow--newsletter-modal{
+    width: 100% !important;
+    margin-top: 5% !important;
+  }
+}
+//Newsletter form landing
+:global(.vtex-flex-layout-0-x-flexRow--page-registro) {
+  background: #f2f2f2;
+  margin: 0 auto;
+  .flexRowContent--content-form {
+    margin: 0 auto;
+    max-width: 580px;
+  }
+  :global(.vtex-input-prefix__group){
+    margin-bottom: 10px;
+  }
+  :global(.vtex-input-prefix__group){
+    height: 2.8rem;
+  }
+  :global(.vtex-button){
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+//new landing categories
+.flexRowContent--new-landing-category-photo-editorial{
+  display: flex;
+  align-items: center;
+}
+:global(.vtex-flex-layout-0-x-flexRowContent--new-landing-category-photo){
+  margin-top: 20px;
+}
+.flexRowContent--seo-text{
+  border-top: 1px solid #f7c1bb;
+  padding: 10px;
+  margin-top: 20px;
+}
+:global(.vtex-rich-text-0-x-wrapper--seo-text-contain){
+  font-size: 14px !important;
+  font-weight: 300;
+}
+:global(.vtex-flex-layout-0-x-flexCol--new-landing-category-photo-text){
+  background-color: #f7f7f7 !important;
+}
+:global(.vtex-rich-text-0-x-wrapper--new-landing-category-photo-text-title){
+  margin-left: 25px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--new-landing-category-button){
+  margin: 0 auto !important;
+  display: flex;
+  align-items: center;
+}
+//category 768px
+@media (max-width: 768px) {
+  :global(.vtex-flex-layout-0-x-flexCol--new-landing-category-photo-text) {
+    // display: block !important;
+    :global(.vtex-flex-layout-0-x-flexRow--new-landing-category-button) {
+      text-align: center !important;
+      margin-top: 60px;
+    }
+  }
+  .flexRowContent--seo-text {
+    display: none !important;
+  }
+
+  :global(.vtex-store-components-3-x-imageElement--new-landing-category-photo) {
+    width: 300px !important;
+    height: 220px;
+  }
+}
+@media (max-width: 425px){
+  :global(.vtex-rich-text-0-x-wrapper--seo-text-contain){
+    font-size: 10px !important;
+    font-weight: 300;
+  }
+}
+
+//colecciones-landing
+:global(.vtex-flex-layout-0-x-flexRow--colecciones-landing-block){
+  margin-bottom: 41px;
+}
+
+//class new styles
+.flexRow--footer-desktop-paymentsOptions {
+  background-color: #1e1e24;
+  display: grid;
+  :global(.vtex-store-components-3-x-container) {
+    display: inherit;
+    padding: 0px !important;
+    margin: 0;
+    justify-content: center;
+    .flexRowContent--footer-desktop-paymentsOptions {
+      display: inherit;
+      grid-auto-flow: column;
+      align-items: center;
+      grid-column-gap: 10px;
+      padding: 0px;
+      justify-items: center;
+      @media screen and (min-width: 1550px) {
+        margin-left: 13%;
+      }
+      @media screen and (max-width: 768px) {
+        grid-auto-flow: row;
+        grid-template-columns: auto 1fr 1fr;
+        grid-row-gap: 20px;
+      }
+    }
+  }
+}
+
+//product PDP
+:global(.vtex-flex-layout-0-x-flexRow--row-express-pdp){
+  display: flex !important;
+  justify-content: center !important;
 }

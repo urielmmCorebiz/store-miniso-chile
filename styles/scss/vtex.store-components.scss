@@ -129,6 +129,7 @@
   .imageElement--season-promotion--card {
     width: 100%;
     display: block;
+    min-height: 100%;
   }
 
   .imageElement--season-promotion--card:hover {
@@ -400,7 +401,7 @@
     }
     .sellingPriceValue {
       font-size: 30px;
-      color: #1ac0c6;
+      color: #ff1a40;
       font-weight: normal;
       @media (max-width: 768px) {
         display: flex;
@@ -657,9 +658,10 @@
 // Feature Products
 .imageElement--feature-products--image {
   width: 100%;
-  height: 100%;
+  // height: 100%;
   display: block;
   object-fit: cover;
+  height: 100%;
 }
 
 .imageElementLink--carousel {
@@ -751,7 +753,7 @@
     color: #d22630;
   }
   &:hover {
-    background-color: #d22630;
+    -color: #d22630;
     :global(.vtex-numeric-stepper__plus-button__text) {
       color: #fff;
     }
@@ -862,9 +864,9 @@
     :first-child {
       :first-child {
         :first-child {
-          font-size: 0;
+          font-size: 16px;
           &::before {
-            content: "Inicia sesión para poder agregar tus productos a la lista.";
+            content: "";
             font-size: 16px;
             font-weight: 400;
             font-family: "arial";
@@ -904,6 +906,117 @@
     text-align: left;
   }
 }
+//modal newsletter
+:global(.vtex-input__error) {
+  margin-top: 0px !important;
+}
+
+:global(.vtex-store-newsletter-1-x-formSubmitContainer){
+  :global(.vtex-button) {
+    width: 100% !important;
+  }
+}
+:global(.vtex-store-newsletter-1-x-newsletterForm){
+  :global(.vtex-input-prefix__group){
+    border: none !important;
+  }
+}
+@media screen and (max-width: 425px) {
+  :global(.vtex-store-newsletter-1-x-phoneInputContainer){
+    :global(.vtex-input-prefix__group) {
+      :global(.vtex-styleguide-9-x-input){
+        font-size: 12px !important;
+        width: 65% !important;
+        margin: 0 auto !important;
+      }
+    }
+  }
+  :global(.vtex-store-newsletter-1-x-nameInputContainer){
+    :global(.vtex-input-prefix__group) {
+      :global(.vtex-styleguide-9-x-input){
+        font-size: 12px !important;
+        width: 65% !important;
+        margin: 0 auto !important;
+      }
+    }
+  }
+  :global(.vtex-store-newsletter-1-x-emailInputContainer){
+    :global(.vtex-input-prefix__group) {
+      :global(.vtex-styleguide-9-x-input){
+        font-size: 12px !important;
+        width: 65% !important;
+        margin: 0 auto !important;
+      }
+    }
+  } 
+  :global(.vtex-store-newsletter-1-x-formSubmitContainer){
+    :global(.vtex-button) {
+      width: 65% !important;
+      display: flex !important;
+      justify-content: center !important;
+    }
+  }
+  :global(.vtex-store-newsletter-1-x-formSubmitContainer){
+      display: flex !important;
+      justify-content: center !important;
+  
+  }
+  :global(.vtex-store-newsletter-1-x-confirmationCheckboxContainer){
+    width: 65%;
+    margin: 0 auto;
+    font-size: 12px;
+  }
+  
+}
+@media screen and (max-width: 375px) {
+  :global(.vtex-store-newsletter-1-x-phoneInputContainer){
+    :global(.vtex-input-prefix__group) {
+      :global(.vtex-styleguide-9-x-input){
+        width: 100%;
+      }
+    }
+  }
+  :global(.vtex-store-newsletter-1-x-nameInputContainer){
+    :global(.vtex-input-prefix__group) {
+      :global(.vtex-styleguide-9-x-input){
+        width: 100%;
+      }
+    }
+  }
+  :global(.vtex-store-newsletter-1-x-emailInputContainer){
+    :global(.vtex-input-prefix__group) {
+      :global(.vtex-styleguide-9-x-input){
+        width: 100%;
+      }
+    }
+  } 
+  :global(.vtex-store-newsletter-1-x-formSubmitContainer){
+    :global(.vtex-button) {
+      width: 65% !important;
+    }
+  }
+}
+:global(.vtex-store-newsletter-1-x-defaultSuccessMessage){
+  color: white;
+  font-size: 22px;
+  text-align: center;
+  text-shadow: 0px 0px 5px #000;
+  margin-top: 41%;
+}
+@media screen and (max-width: 425px){
+  :global(.vtex-store-newsletter-1-x-defaultSuccessMessage){
+    margin-top: 33% !important;
+  }
+}
+:global(.vtex-checkbox__line-container){
+  margin-top: 8px;
+}
+:global(.vtex-checkbox__label){
+  color: #000;
+  font-size: 14px;
+}
+//modal newsletter
+
 
 :global(.vtex-address-form__postalCode) :global(.vtex-input__label)::before {
   content: "Verificar disponibilidad y costo";
@@ -938,9 +1051,9 @@
 
 .discountInsideContainer {
   border-radius: 5px;
-  top: 10px;
-  right: initial;
-  left: 75%;
+  top: 10px !important;
+  right: auto;
+  left: 6px;
   background: #d22630;
   font-size: 0.9rem;
   font-weight: normal;
@@ -1074,6 +1187,11 @@
     width: 95%;
   }
 }
+@media screen and (max-width: 425px) {
+  .imageElement--season-promotion--card {
+    max-height: 255px !important;
+  }
+}
 
 .notificationContent {
   font-size: 14px;
@@ -1151,3 +1269,47 @@
     max-width: 100%;
   }
 }
+
+//new landing category
+.imageElement--new-landing-category-photo{
+  // max-height: 500px !important;
+  // min-width: 550px;
+  object-fit: cover !important;
+}
+.imageElement--image-landing-subcategories{
+  height: 300px;
+  width: 300px !important;
+  object-fit: contain;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--new-landing-category-photo-text){
+  display: flex !important;
+}
+@media(min-width: 425px){
+  :global(.vtex-flex-layout-0-x-flexColChild--new-landing-category-photo-text){
+    min-height: 80px !important;
+  }
+}
+
+//class new styles
+.imageElement--footer-img-1 {
+  height: 45px;
+}
+.imageElement--footer-img-2 {
+  height: 24px;
+}
+.imageElement--footer-img-3 {
+  height: 24px;
+}
+.imageElement--footer-img-4 {
+  height: 24px;
+}
+.imageElement--footer-img-5 {
+  height: 24px;
+}
+.imageElement--footer-img-6 {
+  height: 24px;
+}
+.imageElement--img-express-pdp-01{
+  height: 70px !important;
+}
+

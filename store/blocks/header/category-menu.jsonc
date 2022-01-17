@@ -114,6 +114,62 @@
       "blockClass": ["menu-title", "menu-title-item-we-bare-bears"]
     }
   },
+    "menu-item#snoopy": {
+      "props": {
+        "id": "menu-item-menu-snoopy",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "href": "/snoopy",
+          "tagTitle": "Snoopy",
+          "text": "Snoopy"
+        },
+        "blockClass": ["menu-title", "menu-title-item-we-bare-bears"]
+      }
+    },
+      "menu-item#tom-and-jerry": {
+          "props": {
+            "id": "menu-item-menu-tom-and-jerry",
+            "type": "custom",
+            "iconId": null,
+            "highlight": false,
+            "itemProps": {
+              "href": "/tom-and-jerry",
+              "tagTitle": "Tom and Jerry",
+              "text": "Tom and Jerry"
+            },
+            "blockClass": ["menu-title", "menu-title-item-we-bare-bears"]
+          }
+        },
+  "menu-item#coca-cola": {
+    "props": {
+      "id": "menu-item-menu-we-bare-bears",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "href": "/cocacola",
+        "tagTitle": "Coca Cola",
+        "text": "Coca-Cola"
+      },
+      "blockClass": ["menu-title", "menu-title-item-we-bare-bears"]
+    }
+  },
+  "menu-item#disney": {
+    "props": {
+      "id": "menu-item-menu-we-bare-bears",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "href": "/disney",
+        "tagTitle": "Disney",
+        "text": "Disney"
+      },
+      "blockClass": ["menu-title", "menu-title-item-we-bare-bears"]
+    }
+  },
   "menu-item#plaza-sesamo": {
     "props": {
       "id": "menu-item-menu-adventure-time",
@@ -121,8 +177,8 @@
       "iconId": null,
       "highlight": false,
       "itemProps": {
-        "href": "/155?map=productClusterIds",
-        "tagTitle": "Adventure Time",
+        "href": "/plaza-sesamo",
+        "tagTitle": "Plaza Sésamo",
         "text": "Plaza Sésamo"
       },
       "blockClass": ["menu-title", "menu-title-item-adventure-time"]

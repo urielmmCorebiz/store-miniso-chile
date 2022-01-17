@@ -2,15 +2,15 @@
   "store.product": {
     "children": [
       "flex-layout.row#product-breadcrumb",
-      //componente custom btn back 
       "botonregresar",
       "flex-layout.row#product-main",
       "sticky-layout#pdp",
       "__fold__",
       "flex-layout.row#description",
-      //"flex-layout.row#product-reviews",
+      "flex-layout.row#product-reviews",
       //"product-questions-and-answers",
-      "shelf.relatedProducts#AlsoBought"
+      "shelf.relatedProducts#AlsoBought",
+      "flex-layout.row#row-iconos-shipping"
     ]
   },
  
@@ -42,7 +42,7 @@
     "children": [
       "tab-list.item#description",
       "tab-list.item#specification",
-      "tab-list.item#comments",
+      // "tab-list.item#comments",
       "tab-list.item#entrega"
     ]
   },
@@ -86,7 +86,7 @@
     "children": [
       "tab-content.item#desc",
       "tab-content.item#spec",
-      "tab-content.item#commets",
+      // "tab-content.item#commets",
       "tab-content.item#entrega"
     ],
     "props": {
@@ -386,7 +386,7 @@
       },
       "context": {
         "maxItemsPerPage": 9,
-        "hideUnavailableItems": false
+        "hideUnavailableItems": true
       },
       "blockClass": "product-who-saw"
     }
@@ -404,7 +404,7 @@
       },
       "context": {
         "maxItemsPerPage": 9,
-        "hideUnavailableItems": false
+        "hideUnavailableItems": true
       }
     }
   },
@@ -461,8 +461,9 @@
      // "modal-trigger#trigger-benefit-pdp-01",
       "modal-trigger#trigger-benefit-pdp-03",
       // "modal-trigger#trigger-benefit-pdp-04",
-      "modal-trigger#trigger-benefit-pdp-02"
-      // "modal-trigger#trigger-benefit-pdp-05"
+      "modal-trigger#trigger-benefit-pdp-02",
+      "modal-trigger#trigger-benefit-pdp-05",
+      "modal-trigger#trigger-benefit-pdp-shopper"
     ],
     "props": {
       "blockClass": ["row-benefits-pdp"]
@@ -513,7 +514,7 @@
   },
   "rich-text#txt-benefit-pdp-02": {
     "props": {
-      "text": "Paga con tus tarjetas",
+      "text": "Paga con tus Tarjetas",
       "blockClass": ["txt-benefit-pdp", "txt-benefit-pdp-02"]
     }
   },
@@ -587,8 +588,8 @@
   },
   "modal-trigger#trigger-benefit-pdp-04": {
     "children": [
-      "flex-layout.col#col-benefit-pdp-04",
-      "modal-layout#benefit-pdp-04"
+      "flex-layout.col#col-benefit-pdp-04"
+      // "modal-layout#benefit-pdp-04"
     ],
     "props": {
       "blockClass": "trigger-benefit-pdp-04"
@@ -622,6 +623,57 @@
     }
   },
 
+
+  "modal-trigger#trigger-benefit-pdp-shopper": {
+    "children": [
+      "flex-layout.col#col-benefit-pdp-shopper",
+      "modal-layout#benefit-pdp-shopper"
+    ],
+    "props": {
+      "blockClass": "trigger-benefit-pdp-04"
+    }
+  },
+
+  "flex-layout.col#col-benefit-pdp-shopper": {
+    "children": ["image#img-benefit-pdp-shopper"], //"rich-text#txt-benefit-pdp-shopper"],
+    "props": {
+      "blockClass": ["col-benefit-pdp", "col-benefit-pdp-03"],
+      "verticalAlign": "middle"
+    }
+  },
+  "image#img-benefit-pdp-shopper": {
+    "props": {
+      "src": "/arquivos/personalshopper_80x60px_negro.png",
+      "blockClass": [ "image-benefit-pdp-shopper"]
+    }
+  },
+
+  "rich-text#txt-benefit-pdp-shopper": {
+    "props": {
+      "text": "Te ayudamos en tus compras",
+      "blockClass": ["txt-benefit-pdp", "txt-benefit-pdp-02"]
+    }
+  },
+
+  "modal-layout#benefit-pdp-shopper": {
+    "children": ["rich-text#txt-modal-benefit-pdp-shopper"],
+    "props": {
+      "blockClass": ["modal-benefit-pdp-04", "modal-benefit-pdp"]
+    }
+  },
+  "rich-text#txt-modal-benefit-pdp-shopper": {
+    "props": {
+      "text": "## Personal Shopper \n  Ponemos a tu completa disposición un grupo de muy preparados Minisers que serán tus asistentes de compra.",
+      "blockClass": ["txt-modal-benefit-pdp-04", "txt-modal-benefit-pdp"]
+    }
+  },
+  // "image#img-benefit-pdp-04": {
+  //   "props": {
+  //     "src": "assets/icon-clic-recoge.png",
+  //     "blockClass": ["image-benefit-pdp", "image-benefit-pdp-04"]
+  //   }
+  // },
+
   "flex-layout.col#col-benefit-pdp-03": {
     "children": ["image#img-benefit-pdp-03", "rich-text#txt-benefit-pdp-03"],
     "props": {
@@ -631,7 +683,7 @@
   },
   "image#img-benefit-pdp-03": {
     "props": {
-      "src": "assets/carritoSVG.svg",
+      "src": "https://minisocl.vtexassets.com/assets/vtex/assets-builder/minisocl.store-theme/0.17.33/carritoSVG___56230402bfec19c86ccdd8847687db93.svg",
       "blockClass": ["image-benefit-pdp", "image-benefit-pdp-03"]
     }
   },
@@ -644,8 +696,8 @@
   /*5*/
   "modal-trigger#trigger-benefit-pdp-05": {
     "children": [
-      "flex-layout.col#col-benefit-pdp-05",
-      "modal-layout#benefit-pdp-05"
+      "flex-layout.col#col-benefit-pdp-05"
+      // "modal-layout#benefit-pdp-05"
     ],
     "props": {
       "blockClass": "trigger-benefit-pdp-05"
@@ -684,7 +736,189 @@
       "blockClass": ["txt-benefit-pdp", "txt-benefit-pdp-05"]
     }
   },
+  "rich-text#txt-politicas-pdp": {
+    "props": {
+      "blockClass": "extra-politicas",
+      "text": "**ENTREGA A DOMICILIO:**\n En el momento de procesar tu compra indica la dirección donde quieres recibir tu producto. \n\n -Tiempo de entrega: El plazo estimado de entrega será entre 5 y 7 días hábiles, dependiendo de la dirección en donde se realizará el envío. Te compartiremos el número de rastreo para que puedas darle el seguimiento correspondiente.\n\n -Cobertura: Las entregas son realizadas por Chilexpress, por lo que estamos sujetos a su cobertura, para más información de cobertura y el servicio puedes consultar: [ www.chilexpress.cl]( www.chilexpress.cl)\n\n Cambios y Garantia Para cambios, devoluciones o aplicacion de garantia Consulta restricciones en [https://www.miniso.cl/devoluciones-y-garantias](https://www.miniso.cl/devoluciones-y-garantias) \n\n Ofrecemos garantías en productos eléctricos, electrónicos y electrodomésticos."
+    }
+  },
+
+
   /**FIN5)**/
+
+  "flex-layout.row#row-iconos-shipping": {
+    "children": [
+        "flex-layout.row#row-iconos-1", 
+        "flex-layout.row#row-iconos-2",
+        "flex-layout.row#row-iconos-4"
+        // "flex-layout.row#row-iconos-3"
+      ],
+    "props": {
+      "colGap": 2,
+      "horizontalAlign":"center",
+      "blockClass": ["row-express-pdp"],
+      "verticalAlign": "middle"
+    }
+  },
+  "flex-layout.row#row-iconos-1": {
+    "children": ["image#img-express-pdp-01", "flex-layout.col#text-exppress1"],
+    "props": {
+      "colSizing":"auto",
+      "horizontalAlign":"center",
+      "blockClass": ["col-express-pdp"],
+      "verticalAlign": "middle"
+    }
+  },
+  "image#img-express-pdp-01": {
+    "props": {
+      "src": "https://minisocl.vtexassets.com/assets/vtex/assets-builder/minisocl.store-theme/0.17.33/carritoSVG___56230402bfec19c86ccdd8847687db93.svg",
+      "blockClass": ["img-express-pdp-01"],
+      "link": {
+        "url": "/"
+      }
+    }
+  },
+  "flex-layout.col#text-exppress1": {
+    "children": ["rich-text#txt-express-pdp-01", "rich-text#txt-express-pdp-02"],
+    "props": {
+      "blockClass": ["col-express-pdp"],
+      "verticalAlign": "middle",
+      "horizontalAlign":"center"
+    }
+  },
+  "rich-text#txt-express-pdp-01": {
+    "props": {
+      "text": "[Envío Seguro.](/) ",
+      "blockClass": ["txt-title-express"]
+    }
+  },
+  "rich-text#txt-express-pdp-02": {
+    "props": {
+      "text": "[Todos tus Envíos \n son Seguros.](/)",
+      "blockClass": ["txt-desc-express"]
+    }
+  },
+/*2*/
+  "flex-layout.row#row-iconos-2": {
+    "children": ["image#img-express-pdp-02", "flex-layout.col#text-exppress-02"],
+    "props": {
+      "colSizing":"auto",
+      "horizontalAlign":"center",
+      "blockClass": ["col-express-pdp"],
+      "verticalAlign": "middle"
+    }
+  },
+  "image#img-express-pdp-02": {
+   
+    "props": {
+      "src": "https://minisocl.vtexassets.com/assets/vtex/assets-builder/minisocl.store-theme/0.17.33/icon-cards___058d3f41d808b4de8761e98304d95d8c.svg",
+      "blockClass": ["img-express-pdp-02"],
+      "link": {
+        "url": "/"
+      }
+    }
+  },
+  "flex-layout.col#text-exppress-02": {
+    "children": ["rich-text#txt-express-pdp-01-02", "rich-text#txt-express-pdp-02-02"],
+    "props": {
+      "blockClass": ["col-express-pdp"],
+      "verticalAlign": "middle",
+      "horizontalAlign":"center"
+    }
+  },
+  "rich-text#txt-express-pdp-01-02": {
+    "props": {
+      "text": "[Paga con tus Tarjetas.](/opciones-de-entrega) ",
+      "blockClass": ["txt-title-express"]
+    }
+  },
+  "rich-text#txt-express-pdp-02-02": {
+    "props": {
+      "text": "[Paga con tus Tarjetas de Crédito y Débito.](/)",
+      "blockClass": ["txt-desc-express"]
+    }
+  },
+/*3*/
+"flex-layout.row#row-iconos-3": {
+  "children": ["image#img-express-pdp-03", "flex-layout.col#text-exppress-03"],
+  "props": {
+    "colSizing":"auto",
+    "horizontalAlign":"center",
+    "blockClass": ["col-express-pdp"],
+    "verticalAlign": "middle"
+  }
+},
+"image#img-express-pdp-03": {
+ 
+  "props": {
+    //"src": "assets/whites/60x60-devoluciones_blanco.svg",
+    "src":"https://minisomx.vtexassets.com/arquivos/return-item.png",
+    "blockClass": ["img-express-pdp-03"],
+    "link": {
+      "url": "/info-devoluciones-y-garantias"
+    }
+  }
+},
+"flex-layout.col#text-exppress-03": {
+  "children": ["rich-text#txt-express-pdp-01-03", "rich-text#txt-express-pdp-02-03"],
+  "props": {
+    "blockClass": ["col-express-pdp"],
+    "verticalAlign": "middle",
+    "horizontalAlign":"center"
+  }
+},
+"rich-text#txt-express-pdp-01-03": {
+  "props": {
+    "text": "[Devoluciones](/info-devoluciones-y-garantias)",
+    "blockClass": ["txt-title-express"]
+  }
+},
+"rich-text#txt-express-pdp-02-03": {
+  "props": {
+    "text": "[Contamos con devoluciones en tiendas Miniso.](/info-devoluciones-y-garantias)",
+    "blockClass": ["txt-desc-express"]
+  }
+},
+"flex-layout.row#row-iconos-4": {
+  "children": ["image#img-express-pdp-04", "flex-layout.col#text-exppress4"],
+  "props": {
+    "colSizing":"auto",
+    "horizontalAlign":"center",
+    "blockClass": ["col-express-pdp"],
+    "verticalAlign": "middle"
+  }
+},
+"image#img-express-pdp-04": {
+  "props": {
+    "src": "https://minisocl.vtexassets.com/assets/vtex/assets-builder/minisocl.store-theme/0.17.33/icon-seguridad___a61d5d665d0f26f550db02deb6609f35.svg",
+    "blockClass": ["img-express-pdp-01"],
+    "link": {
+      "url": "/"
+    }
+  }
+},
+"flex-layout.col#text-exppress4": {
+  "children": ["rich-text#txt-express-pdp-04", "rich-text#txt-express-pdp-04-01"],
+  "props": {
+    "blockClass": ["col-express-pdp"],
+    "verticalAlign": "middle",
+    "horizontalAlign":"center"
+  }
+},
+"rich-text#txt-express-pdp-04": {
+  "props": {
+    "text": "[Pago Seguro.](/) ",
+    "blockClass": ["txt-title-express"]
+  }
+},
+"rich-text#txt-express-pdp-04-01": {
+  "props": {
+    "text": "[Todos tus Pagos \n son Seguros.](/)",
+    "blockClass": ["txt-desc-express"]
+  }
+}
+  //
+  /*
   "flex-layout.row#pdp-extras": {
     "children": [
       "product-identifier.product",
@@ -770,13 +1004,7 @@
   "vtex.menu@2.x:submenu.accordion#submenu-pdp-politicas": {
     "children": ["rich-text#txt-politicas-pdp"]
   },
-  "rich-text#txt-politicas-pdp": {
-    "props": {
-      "blockClass": "extra-politicas",
-      "text": "**ENTREGA A DOMICILIO:**\n \n En el momento de procesar tu compra indica la dirección donde quieres recibir tu producto.\n \n -Tiempo de entrega: El plazo estimado de entrega será entre 5 y 7 días hábiles, dependiendo de la dirección en donde se realizará el envío. Te compartiremos el número de rastreo para que puedas darle el seguimiento correspondiente. \n \n -Cobertura: Las entregas son realizadas por Chilexpress, por lo que estamos sujetos a su cobertura, para más información de cobertura y el servicio puedes consultar: [www.chilexpress.cl](https://www.chilexpress.cl/contingencia/) \n \n Cambios y Garantia Para cambios, devoluciones o aplicacion de garantia Consulta restricciones en[ https://www.miniso.cl/devoluciones-y-garantias](/devoluciones-y-garantias) \n \n Ofrecemos garantías en productos eléctricos, electrónicos y electrodomésticos."
-    }
-  },
-
+  
   "menu-item#pdp-product-cares": {
     "props": {
       "id": "menu-item-pdp-product-cares",
@@ -793,5 +1021,5 @@
   },
   "vtex.menu@2.x:submenu.accordion#submenu-pdp-product-cares": {
     "children": ["product-specifications#product-cares"]
-  }
+  }*/
 }

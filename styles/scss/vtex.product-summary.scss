@@ -44,18 +44,22 @@
             }
         }
     }
+    //class new styles
     .productPriceClass {
         width: 100%;
         align-items: flex-end;
         .sellingPrice {
-            font-size: 21px;
-            font-weight: 700;
-            color: #1ac0c6;
-            @media (max-width: 768px) {
-                font-size: 18px;
-            }
+          font-size: 21px;
+          font-weight: 700;
+          color: #d22630;
+          :hover{
+            color: #f7c1bb !important;
+          }
+          @media (max-width: 768px) {
+            font-size: 18px;
+          }
         }
-    }
+      }
     .installmentContainer {
         display: none;
     }
@@ -68,66 +72,52 @@
 .element {
     padding: 0 10px;
     position: relative;
-
-    @media screen and (min-width:640px){
-        :global(.vtex-flex-layout-0-x-flexRow--row-btns-shelf){
-            opacity: 0;
-            visibility: hidden;
-            transition: all .12s linear;
+  
+    @media screen and (min-width: 640px) {
+      :global(.vtex-flex-layout-0-x-flexRow--row-btns-shelf) {
+        transition: all 0.12s linear;
+      }
+  
+      &:hover {
+        :global(.vtex-flex-layout-0-x-flexRow--row-btns-shelf) {
+          visibility: visible;
+          opacity: 1;
         }
-
-        &:hover{
-            :global(.vtex-flex-layout-0-x-flexRow--row-btns-shelf){
-                visibility: visible;
-                opacity: 1;
-            }    
-        }
+      }
     }
-
-    .buyButton{
-
-        :global(.vtex-button) {
-            background-color: transparent!important;
-
-            :global(.vtex-button__label){
-                font-weight: 700;
-                font-size: 13px;
-            }
-
-            &:hover {
-                background-color: #d22630!important;
-                border-color: #d22630!important;
-            }
-        }
+  
+    .buyButton {
+      :global(.vtex-button) {
+        background-color: white;
+      }
     }
-    
+  
     :global(.vtex-button) {
-        border-radius: 6px;
-        border-color: #f7c1bb;
+      border-radius: 6px;
+      border-color: #d22630;
+      background-color: #d22630;
+      min-height: 43px;
+      @media (max-width: 768px) {
+        :global(.vtex-button__label) {
+          padding: 0;
+          font-size: 13px;
+        }
+      }
+      :global(.vtex-add-to-cart-button-0-x-buttonText) {
+        font-size: 13px;
+        letter-spacing: 1px;
+        text-align: center;
+        color: white ;
+      }
+      &:hover {
         background-color: #f7c1bb;
-        min-height: 43px;
-        @media (max-width: 768px) {
-            :global(.vtex-button__label) {
-                padding: 0;
-                font-size: 13px;
-            }
-        }
+        border-color: #f7c1bb;
         :global(.vtex-add-to-cart-button-0-x-buttonText) {
-            font-size: 13px;
-            letter-spacing: 1px;
-            text-align: center;
-            color: #1e1e24;
+          color: #fff !important;
         }
-        &:hover {
-            background-color: #d22630;
-            border-color: #d22630;
-            :global(.vtex-add-to-cart-button-0-x-buttonText) {
-                color: #fff;
-            }
-        }
+      }
     }
-}
-
+  }
 .buyButtonContainer{
     padding: 0px;
 }
@@ -163,3 +153,11 @@
         line-height: 11px
     }
 }
+:global(.vtex-product-summary-2-x-image) {
+    @media (max-width: 1023px) {
+      max-height: 190px !important;
+    }
+    @media (max-width: 768px) {
+      max-height: 230px !important;
+    }
+  }

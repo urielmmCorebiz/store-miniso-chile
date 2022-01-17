@@ -14,10 +14,44 @@
   },
   "flex-layout.col#header-products": {
     "children": [
+      "list-context.image-list#newsslatter-home",
       "rich-text#title-products"
       //"rich-text#description-products"
     ]
   },
+    //newsletter banner
+    "list-context.image-list#newsslatter-home": {
+      "children": [
+        "slider-layout#demo-newsslatter-home" 
+      ],
+      "props": {
+        "height": "auto",
+        "images": [
+          {
+            "image": "https://minisomx.vtexassets.com/assets/vtex/assets-builder/minisomx.store-theme/1.26.91/banner-enterate/1900x150___fbe25fd8ac0a2b05c9a07337859e0ab8.webp",
+            "mobileImage": "https://minisomx.vtexassets.com/assets/vtex.file-manager-graphql/images/243b6980-3bcd-4a20-a988-5907daa55f0c___2b17a0258462320a38f86f82e514ca03.webp",
+            "link": {
+              "url": "/enterate-noticias-ofertas"
+            }
+          }
+        ]
+      }
+    },
+    "slider-layout#demo-newsslatter-home": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "blockClass": "carousel",
+        "showNavigationArrows": "never",
+        "showPaginationDots": "never",
+        "fullWidth": true
+      }
+    },
+    //newsletter
   "rich-text#title-products": {
     "props": {
       "textAlignment": "CENTER",

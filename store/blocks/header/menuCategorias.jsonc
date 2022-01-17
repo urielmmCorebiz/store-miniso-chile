@@ -104,7 +104,7 @@
     "props": {
       "categoryId": 4,
       "orientation": "vertical",
-      "blockClass": "menu-categorias"
+      "blockClass": ["menu-categorias", "categories-text"]
     }
   },
   "menu#menu-categorias-licencias": {
@@ -116,9 +116,14 @@
   },
   "vtex.menu@2.x:menu#submenushop": {
     "children": [
+      "menu-item#coca-cola",
+      "menu-item#disney",
       "menu-item#marvel",
       "menu-item#we-bare-bears",
-      "menu-item#adventure-time-02"
+      // "menu-item#adventure-time-02",
+      "menu-item#plaza-sesamo",
+      "menu-item#snoopy",
+      "menu-item#tom-and-jerry"
     ],
     "props": {
       "orientation": "vertical",

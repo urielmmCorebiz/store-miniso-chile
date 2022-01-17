@@ -22,7 +22,7 @@
     "children": [
       "rich-text#tiendas-tienda-costanteraa",
       "rich-text#tiendas-tienda-florida",
-      "rich-text#tiendas-tienda-arauco-estacion"
+      "rich-text#tiendas-tienda-miniso-plaza-norte"
     ],
     "props": {
       "blockClass": "tiendas-row"
@@ -61,8 +61,7 @@
   "flex-layout.row#tiendas-row5-chile": {
     "children": [
       "rich-text#tiendas-tienda-arauco-maipu",
-      "rich-text#tiendas-tienda-miniso-lyon",
-      "rich-text#tiendas-tienda-miniso-plaza-norte"
+      "rich-text#tiendas-tienda-miniso-lyon"
     ],
     "props": {
       "blockClass": "tiendas-row"
@@ -78,7 +77,7 @@
   "rich-text#tiendas-tienda-florida": {
     "title": "Florida",
     "props": {
-      "text": "**¡Tienda abierta!**\n**Nombre de la tienda:** Miniso Mall Florida Center\n**Dirección:** Av. Vicuña Mackenna oriente 6100 2º Nivel Local 2085 \n Comuna; La Florida",
+      "text": "**¡Tienda abierta!**\n **Nombre de la tienda:**  Miniso Mall Florida Center\n**Dirección:** Av. Vicuña Mackenna oriente 6100 2º Nivel Local 2085 \n Comuna; La Florida",
       "blockClass": "info-tienda"
     }
   },

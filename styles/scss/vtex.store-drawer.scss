@@ -62,8 +62,10 @@
     padding: 5px 0;
     border-bottom: solid thin #e0e0e0;
     margin-bottom: 10px;
+    
     .closeIconButton--categorias {
         display: flex;
+        margin-left: 10px;
         .closeIcon--categorias {
             display: none;
         }
@@ -72,7 +74,7 @@
         content: "";
         width: 20px;
         height: 15px;
-        background: url(/arquivos/arrow-go.png) no-repeat;
+        background: url(https://minisomx.myvtex.com/arquivos/arrow-go.png) no-repeat;
         background-size: contain;
         display: block;
         transform: rotate(180deg);

@@ -2,7 +2,7 @@
   "store.home": {
     "blocks": [
       "modal-trigger#example",
-      "hello-world",
+      // "hello-world",
       //"newsletter-popup",
       "list-context.image-list#demo",
       "flex-layout.row#season-promotion",
@@ -18,7 +18,7 @@
     ]
   },
 
-  //modal
+  //modal newsletter
   "modal-trigger#example": {
     "children": [
       "modal-layout#example"
@@ -48,42 +48,12 @@
     }
   },
   "flex-layout.col#newsletter-content":{
-    "children": ["rich-text#newsletter-title-modal", "rich-text#newsletter-modal","newsletter#modal", "rich-text#newsletter-terms-modal"],
+    "children": ["newsletter-popup-cl"],
     "props": {
       "blockClass": "newsletter-modal"
     }
   },
-  "rich-text#newsletter-title-modal": {
-    "props": {
-      "textAlignment": "CENTER",
-      "textPosition": "LEFT",
-      "text": "¡Que no se te pase ni una!",
-      "blockClass": "newsletter-title-modal"
-    }
-  },
-  "rich-text#newsletter-modal": {
-    "props": {
-      "textAlignment": "LEFT",
-      "textPosition": "CENTER",
-      "text": "Deja tu correo y enterate de todo lo que pasa en miniso antes que nadie. Tips, noticias, tendencias, promociones y más.",
-      "blockClass": "newsletter-modal"
-    }
-  },
-  "newsletter#modal": {
-    "props": {
-      "blockClass": "newsletter-modal",
-      "placeholder": "hola@correo.com",
-      "submit": "enviar"
-    }
-  },
-  "rich-text#newsletter-terms-modal": {
-    "props": {
-      "textAlignment": "LEFT",
-      "textPosition": "LEFT",
-      "text": "Al momento de enviar mi correo acepto los [Términos y condiciones](/terminos-y-condiciones) y el [Aviso de privacidad](/aviso-de-privacidad)",
-      "blockClass": "newsletter-terms-modal"
-    }
-  },
+  //end modal newsletter
 
   //site
   "flex-layout.row#home-shelf-01": {
@@ -477,7 +447,7 @@
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "LEFT",
-      "text": "¡Que no se te pase ni una!",
+      "text": "## ¡Que no se te pase ni una!",
       "blockClass": "newsletter-title"
     }
   },

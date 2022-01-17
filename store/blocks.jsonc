@@ -48,6 +48,11 @@
       "add-to-cart-button#default-summary-add"
     ]
   },
+  "product-summary-name": {
+    "props": {
+      "tag": "h4"
+    }
+  },
   "vtex.product-highlights@2.x:product-highlights#collection": {
     "props": {
       "type": "collection"

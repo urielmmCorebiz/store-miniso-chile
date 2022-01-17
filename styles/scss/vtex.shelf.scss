@@ -151,3 +151,33 @@
 .arrowRight--product-who-saw{
     display: flex!important;
 }
+
+//new landing colecciones
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--colecciones-landing-bg-1){
+    background-color: #DF1F2D;
+    padding: 20px 0;
+}
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--colecciones-landing-bg-2){
+    background-color: #404B56;
+    padding: 20px 0;
+}
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--colecciones-landing-bg-3){
+    background-color: #162CA2;
+    padding: 20px 0;
+}
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--colecciones-landing-bg-4){
+    background-color:  #A2CD48;
+    padding: 20px 0;
+}
+
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf-landing-colecciones){
+    margin-top: 28px !important;
+}
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf-landing-colecciones-bottom){
+    margin-top: 40px !important;
+}
+@media (max-width: 768px) {
+    :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf-landing-colecciones){
+        margin-top: 0!important;
+    }
+}

@@ -8,7 +8,9 @@
   "footer-layout.desktop": {
     "children": [
       "flex-layout.row#footer-desktop-1",
+      "flex-layout.row#footer-desktop-paymentsOptions",
       "flex-layout.row#footer-desktop-2",
+      
       "flex-layout.row#footer-desktop-3"
     ]
   },
@@ -85,9 +87,10 @@
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "text": "Miniso Chile. Todos los derechos reservados © 2020",
+      "text": "Miniso México. Todos los derechos reservados © 2020",
       "blockClass": "footer-copyright"
-    }
+    },
+    "title": "MOBILE - COPYRIGHT TEXT"
   },
   "flex-layout.row#footer-desktop-3": {
     "children": [
@@ -102,8 +105,67 @@
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "text": " De conformidad con la Legislación de Chile sobre protección de datos personales, te informamos que este sitio web utiliza cookies para diversas finalidades. \n Si continúas navegando, consideramos que aceptas su uso. Puedes obtener más información [__*aquí*__](/aviso-de-privacidad) ",
+      "text": "De conformidad con la Legislación Colombiana sobre protección de datos personales, te informamos que este sitio web utiliza cookies para diversas finalidades.Si continúas navegando, consideramos que aceptas su uso. Puedes obtener más información [aquí](/aviso-de-privacidad)",
       "blockClass": "footer-copyright"
+    },
+    "title": "COPYRIGHT TEXT"
+  },
+  "flex-layout.row#footer-desktop-paymentsOptions": {
+    "children": [
+      "image#footer-img-1",
+      "image#footer-img-2",
+      "rich-text#footer-paymentOptions-text",
+      "image#footer-img-4",
+      "image#footer-img-5",
+      "image#footer-img-6"
+    ],
+    "props": {
+      "blockClass": "footer-desktop-paymentsOptions",
+      "paddingTop": 8,
+      "paddingBottom": 3,
+      "colSizing": "auto"
+    }
+  },
+  "image#footer-img-1": {
+    "props": {
+      "src": "https://minisomx.vteximg.com.br/arquivos/vtex-white.png",
+      "blockClass": ["footer-img-1"]
+    }
+  },
+  "image#footer-img-2": {
+    "props": {
+      "src": "https://minisomx.vteximg.com.br/arquivos/ico_candado-01.png",
+      "blockClass": ["footer-img-2"]
+    }
+  },
+  "rich-text#footer-paymentOptions-text":{
+    "props": {
+      "text": "Pago seguro con",
+      "blockClass": ["footer-paymentOptions-text"]
+    }
+  },
+  "image#footer-img-3": {
+    "props": {
+      "src": "https://minisomx.vteximg.com.br/arquivos/ico_mercado_pago_bn-01.png",
+      "blockClass": ["footer-img-3"]
+    }
+  },
+  "image#footer-img-4": {
+    "props": {
+      "src": "https://minisomx.vteximg.com.br/arquivos/ico_visa_bn-01.png",
+      "blockClass": ["footer-img-4"]
+    }
+  },
+  "image#footer-img-5": {
+    "props": {
+      "src": "https://minisomx.vteximg.com.br/arquivos/ico_mastercard_bn-01.png",
+      "blockClass": ["footer-img-5"]
+    }
+  },
+  "image#footer-img-6": {
+    "props": {
+      "src": "https://minisomx.vteximg.com.br/arquivos/ico_amex-01.png",
+      "blockClass": ["footer-img-6"]
     }
   },
   "flex-layout.row#footer-mobile": {
@@ -184,15 +246,15 @@
       "socialNetworks": [
         {
           "name": "Facebook",
-          "url": "https://www.facebook.com/MinisoChileOficial"
+          "url": "https://www.facebook.com/MinisoMexico/"
         },
         {
           "name": "Instagram",
-          "url": "https://www.instagram.com/miniso.chile/"
+          "url": "https://www.instagram.com/minisomexico/"
         },
         {
           "name": "Twitter",
-          "url": "https://twitter.com/MinisoChile"
+          "url": "https://twitter.com/MinisoMexico"
         },
         {
           "name": "Youtube",

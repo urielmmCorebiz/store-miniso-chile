@@ -63,3 +63,30 @@
 
     }
 }
+//new landing category
+.label--button-new-landing-category{
+    background-color: #f7c1bb!important;
+    padding: 15px 90px !important;
+    font-weight: 700;
+    color: black;
+    border-radius: 5px !important;
+    min-width: 100% !important;
+}
+.link--button-new-landing-category{
+    text-decoration: none !important;
+    margin-top: 10px;
+}
+@media(max-width: 768px){
+    .link--button-new-landing-category{
+        margin-top: 45px;
+    }
+}
+@media(max-width: 425px){
+    .link--button-new-landing-category{
+        display: flex;
+        width: 70px !important;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+}
