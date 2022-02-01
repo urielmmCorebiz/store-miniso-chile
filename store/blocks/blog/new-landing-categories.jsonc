@@ -1,0 +1,88 @@
+{
+    "store.custom#new-landing-categories": {
+      "blocks": [
+        "list-context.image-list#new-landing-categories",
+        "flex-layout.row#new-landing-categories"
+      ]
+    },
+    //banner principal
+    "list-context.image-list#new-landing-categories": {
+        "children": [
+          "slider-layout#demo-new-landing-categories" 
+        ],
+        "props": {
+          "height": "auto",
+          "images": [
+            {
+              "image": "https://minisomx.vtexassets.com/assets/vtex.file-manager-graphql/images/9130830c-2fbc-4920-8b39-d9a12cadc29e___055b8ef918b482703e57f83f583119ac.webp",
+              "mobileImage": "https://minisomx.vtexassets.com/assets/vtex.file-manager-graphql/images/8497da55-b489-41d4-8bc1-0fefda03c499___6e6b7b72a98040456b9b53789fe5d6de.webp"
+            }
+          ]
+        }
+      },
+      "slider-layout#demo-new-landing-categories": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "blockClass": "carousel",
+          "showNavigationArrows": "never",
+          "showPaginationDots": "never",
+          "fullWidth": true
+        }
+      },
+      //end banner principal
+
+      //main contain
+      "flex-layout.row#new-landing-categories": {
+        "children": [
+            "flex-layout.col#new-landing-filter",
+            "flex-layout.col#new-landing-categories"
+           
+        ]
+      },
+      //filter
+      "flex-layout.col#new-landing-filter": {
+        "children": [
+            "rich-text#landing-category-filter"
+        ],
+        "props": {
+            "width": "15%"
+        }
+      },
+
+      "rich-text#landing-category-filter": {
+        "props": {
+            "text": "# filtro",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+
+    //contain
+      "flex-layout.col#new-landing-categories": {
+          "children": [
+              "flex-layout.row#row-title-category"
+          ]
+      },
+
+      "flex-layout.row#row-title-category": {
+          "children": ["rich-text#title-category"],
+          "props": {
+            "verticalAlign": "middle",
+            "horizontalAlign": "right"
+          }
+      },
+      "rich-text#title-category": {
+          "props": {
+              "text": "# No sabía que lo necesitaba en **HOGAR**",
+              "textAlignment": "CENTER",
+              "textPosition": "CENTER",
+              "blockClass": "title-category-new-landing"
+          }
+      }
+  
+  } 

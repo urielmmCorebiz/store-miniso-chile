@@ -1,7 +1,7 @@
 {
   "vendor": "minisocl",
   "name": "store-theme",
-  "version": "0.17.44",
+  "version": "0.17.46",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
@@ -17,6 +17,7 @@
     "minisocl.backbtn": "0.x",
     "minisocl.newsletter-custom-cl": "0.x",
     "minisocl.landing-news-cl": "0.x",
+    "minisocl.reviews-link": "0.x",
     "minisocl.temporizador": "1.x",
     "minisomx.franchise-selector": "0.x",
     "vtex.store-newsletter": "1.x",

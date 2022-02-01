@@ -519,10 +519,11 @@
 }
 
 
-:global(.vtex-reviews-and-ratings-1-x-summaryContainer) {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+:global(.vtex-reviews-and-ratings-2-x-summaryContainer) {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  cursor: pointer;
 }
 
 :global(.vtex-reviews-and-ratings-1-x-stars) {
@@ -530,12 +531,19 @@
   display: block;
 
   :global(.vtex-reviews-and-ratings-1-x-star) {
-    color: #000;
+    color: #ffa31c !important;
     font-size: 19px;
     position: relative;
     top: -1px;
+    &:hover {
+      color: #ffa31c !important;
+    }
   }
 }
+:global(.vtex-reviews-and-ratings-2-x-stars){
+  color: #ffa31c !important;
+}
+
 
 .shippingContainer {
   display: flex;

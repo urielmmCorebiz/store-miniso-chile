@@ -1,0 +1,76 @@
+{
+    "store.custom#newsletter-landing": {
+      "blocks": [
+        "list-context.image-list#newsslatter-10",
+        "flex-layout.row#newsslatter-10"
+        
+      ]
+    },
+  
+    "list-context.image-list#newsslatter-10": {
+      "children": [
+        "slider-layout#demo-newsslatter-10" 
+      ],
+      "props": {
+        "height": "auto",
+        "images": [
+          {
+            "image": "https://minisomx.vtexassets.com/assets/vtex.file-manager-graphql/images/9130830c-2fbc-4920-8b39-d9a12cadc29e___055b8ef918b482703e57f83f583119ac.webp",
+            "mobileImage": "https://minisomx.vtexassets.com/assets/vtex.file-manager-graphql/images/8497da55-b489-41d4-8bc1-0fefda03c499___6e6b7b72a98040456b9b53789fe5d6de.webp",
+            "link": {
+              "url": "/enterate-noticias-ofertas"
+            }
+          }
+        ]
+      }
+    },
+    "slider-layout#demo-newsslatter-10": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "blockClass": "carousel",
+        "showNavigationArrows": "never",
+        "showPaginationDots": "never",
+        "fullWidth": true
+      }
+    },
+  
+    "flex-layout.row#newsslatter-10": {
+      "children": [
+        "flex-layout.col#text-newsslatter-10"
+      ],
+      "props": {
+        "blockClass": ["page-institucionales", "acerca-de","page-registro"]
+      }
+    },
+    
+    "flex-layout.col#text-newsslatter-10": {
+      "children": [
+        "flex-layout.row#form"
+        
+      ],
+      "props": {
+        "blockclass": "",
+        "preventVerticalStretch": true
+      }
+    },
+    "flex-layout.row#form": {
+      "props":{
+        "blockClass": "content-form"
+      },
+      "children": [
+        "flex-layout.col#form"
+      ]
+       
+    },
+    "flex-layout.col#form": {
+      "children": [
+        "landing-news-cl" 
+      ]
+    }
+  
+  } 

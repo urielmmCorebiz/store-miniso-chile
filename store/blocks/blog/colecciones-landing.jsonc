@@ -1,0 +1,259 @@
+{
+    "store.custom#colecciones-landing": {
+        "blocks": [
+            "list-context.image-list#banner-colecciones-landing",
+            "rich-text#title-colecciones-01",
+            "list-context.product-list#shelf-colecciones-01",
+            "rich-text#title-colecciones-02",
+            "list-context.product-list#shelf-colecciones-02",
+            "rich-text#title-colecciones-03",
+            "list-context.product-list#shelf-colecciones-03",
+            "rich-text#title-colecciones-04",
+            "list-context.product-list#shelf-colecciones-04",
+            "flex-layout.row#new-landing-button-vertodo",
+            "flex-layout.row#seo-text-new-landing"
+        ]
+    },
+    "list-context.image-list#banner-colecciones-landing": {
+        "children": ["slider-layout#banner-colecciones-landing-img"],
+        "props": {
+          "height": "auto",
+          "blockClass": "banner-colecciones-landing-img",
+          "images": [
+            {
+              "image": "https://minisomx.vteximg.com.br/arquivos/banner-dia-nino-3.jpg",
+              "mobileImage": "https://minisomx.vteximg.com.br/arquivos/banner-dia-nino-3.jpg",
+              "description": "Colecciones Miniso"
+            }
+          ]
+        }
+    },
+    "slider-layout#banner-colecciones-landing-img": {
+        "props": {
+            "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+            },
+            "infinite": true,
+            "blockClass": "banner-colecciones-landing-img",
+            "showNavigationArrows": "never",
+            "showPaginationDots": "never",
+            "fullWidth": true
+        }
+    },
+    "rich-text#title-colecciones-01":{
+        "props": {
+          "text": "## Spider Man",
+          "textAlignment": "LEFT",
+          "textPosition": "CENTER",
+          "blockClass": "title-colecciones-landing"
+        }
+      },
+      "list-context.product-list#shelf-colecciones-01": {
+        "blocks": ["product-summary.shelf#colecciones-landing-block1"],
+        "children": ["slider-layout#colecciones-landing-block1"],
+        "props": {
+          "orderBy": "OrderByTopSaleDESC",
+          "hideUnavailableItems": false,
+          "collection": "146"
+        }
+      },
+    "rich-text#title-colecciones-02":{
+        "props": {
+          "text": "## Thor",
+          "textAlignment": "LEFT",
+          "textPosition": "CENTER",
+          "blockClass": "title-colecciones-landing"
+        }
+      },
+      "list-context.product-list#shelf-colecciones-02": {
+        "blocks": ["product-summary.shelf#colecciones-landing-block2"],
+        "children": ["slider-layout#colecciones-landing-block2"],
+        "props": {
+          "orderBy": "OrderByTopSaleDESC",
+          "hideUnavailableItems": false,
+          "collection": "146"
+        }
+      },
+    "rich-text#title-colecciones-03":{
+        "props": {
+          "text": "## Capitán América",
+          "textAlignment": "LEFT",
+          "textPosition": "CENTER",
+          "blockClass": "title-colecciones-landing"
+        }
+      },
+      "list-context.product-list#shelf-colecciones-03": {
+        "blocks": ["product-summary.shelf#colecciones-landing-block3"],
+        "children": ["slider-layout#colecciones-landing-block3"],
+        "props": {
+          "orderBy": "OrderByTopSaleDESC",
+          "hideUnavailableItems": false,
+          "collection": "146"
+        }
+      },
+    "rich-text#title-colecciones-04":{
+        "props": {
+          "text": "## Hulk",
+          "textAlignment": "LEFT",
+          "textPosition": "CENTER",
+          "blockClass": "title-colecciones-landing"
+        }
+      },
+      "list-context.product-list#shelf-colecciones-04": {
+        "blocks": ["product-summary.shelf#colecciones-landing-block4"],
+        "children": ["slider-layout#colecciones-landing-block4"],
+        "props": {
+          "orderBy": "OrderByTopSaleDESC",
+          "hideUnavailableItems": false,
+          "collection": "146"
+        }
+      },
+
+      "flex-layout.row#new-landing-button-vertodo" : {
+        "children": [
+          "link#new-landing-button-vertodo"
+        ],
+        "props": {
+          "horizontalAlign": "center",
+          "blockClass": "new-landing-category-button"
+        }
+      },
+      "link#new-landing-button-vertodo":{
+        "props":{
+            "href": "/",
+            "label": "Ver Todo",
+            "blockClass": ["button-new-landing-category" ,"button-vertodo-margin"]
+        }
+      },
+
+      //sliders
+      "product-summary.shelf#colecciones-landing-block1": {
+        "children": [
+          "add-to-list-btn",
+          "stack-layout#prodsum",
+          "product-summary-name",
+          "product-summary-space",
+          "product-summary-price",
+          "flex-layout.row#row-btns-shelf-landing"
+        ]
+      },
+      "slider-layout#colecciones-landing-block1": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 2,
+            "phone": 2
+          },
+          "infinite": true,
+          "fullWidth": false,
+          "showNavigationArrows": "always",
+          "blockClass": ["shelf", "colecciones-landing-bg-1"]
+        }
+      },
+      //2 slider 2
+      "product-summary.shelf#colecciones-landing-block2": {
+        "children": [
+          "add-to-list-btn",
+          "stack-layout#prodsum",
+          "product-summary-name",
+          "product-summary-space",
+          "product-summary-price",
+          "flex-layout.row#row-btns-shelf-landing"
+        ]
+      },
+      "slider-layout#colecciones-landing-block2": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 2,
+            "phone": 2
+          },
+          "infinite": true,
+          "fullWidth": false,
+          "showNavigationArrows": "always",
+          "blockClass": ["shelf", "colecciones-landing-bg-2"]
+        }
+      },
+      //3 slider 3
+      "product-summary.shelf#colecciones-landing-block3": {
+        "children": [
+          "add-to-list-btn",
+          "stack-layout#prodsum",
+          "product-summary-name",
+          "product-summary-space",
+          "product-summary-price",
+          "flex-layout.row#row-btns-shelf-landing"
+        ]
+      },
+      "slider-layout#colecciones-landing-block3": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 2,
+            "phone": 2
+          },
+          "infinite": true,
+          "fullWidth": false,
+          "showNavigationArrows": "always",
+          "blockClass": ["shelf", "colecciones-landing-bg-3"]
+        }
+      },
+      //4  slider 4
+      "product-summary.shelf#colecciones-landing-block4": {
+        "children": [
+          "add-to-list-btn",
+          "stack-layout#prodsum",
+          "product-summary-name",
+          "product-summary-space",
+          "product-summary-price",
+          "flex-layout.row#row-btns-shelf-landing"
+        ]
+      },
+      "slider-layout#colecciones-landing-block4": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 5,
+            "tablet": 2,
+            "phone": 2
+          },
+          "infinite": true,
+          "fullWidth": false,
+          "showNavigationArrows": "always",
+          "blockClass": ["shelf", "colecciones-landing-bg-4"]
+        }
+      },
+      //buttons shelf
+    "flex-layout.row#row-btns-shelf-landing": {
+      "children": [
+        //"product-summary-buy-button",
+        // "flex-layout.col#btn-01-landing",
+        "add-to-cart-button#home-summary-add-landing"
+      ],
+      "props": {
+        "blockClass": "row-btns-shelf",
+        "colGap": "2"
+      }
+    },
+    "add-to-cart-button#home-summary-add-landing": {
+      "props": {
+        "text": "AGREGAR A LA BOLSA",
+        "unavailableText": "NO DISPONIBLE"
+      }
+    },
+    "flex-layout.col#btn-01-landing": {
+      "children": ["add-to-cart-button#home-summary-buy-one-click-landing"],
+      "props": {
+        "blockClass": "btn-01"
+      }
+    },
+    "add-to-cart-button#home-summary-buy-one-click-landing": {
+      "props": {
+        "text": "COMPRAR AHORA",
+        "isOneClickBuy": true,
+        "unavailableText": "NO DISPONIBLE",
+        "customOneClickBuyLink": "/checkout/#/cart"
+      }
+    }
+}

@@ -1,0 +1,261 @@
+{
+    "store.custom#colecciones-landing2": {
+        "blocks" : [ "list-context.image-list#banner-colecciones-landing-2", "rich-text#title-colecciones-2", "flex-layout.row#colecciones-landing-block1", "flex-layout.row#colecciones-landing-block2-middle",
+          "list-context.product-list#shelf-colecciones-bottom",
+          "flex-layout.row#new-landing-button-vertodo",
+          "flex-layout.row#seo-text-new-landing"
+        ]
+    },
+
+    "list-context.image-list#banner-colecciones-landing-2": {
+        "children": ["slider-layout#banner-colecciones-landing-img-2"],
+        "props": {
+          "height": "auto",
+          "blockClass": "banner-colecciones-landing-img",
+          "images": [
+            {
+              "image": "https://minisomx.vteximg.com.br/arquivos/banner-dia-nino-3.jpg",
+              "mobileImage": "https://minisomx.vteximg.com.br/arquivos/banner-dia-nino-3.jpg",
+              "description": "Colecciones Miniso"
+            }
+          ]
+        }
+    },
+    "slider-layout#banner-colecciones-landing-img-2": {
+        "props": {
+            "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+            },
+            "infinite": true,
+            "blockClass": "banner-colecciones-landing-img",
+            "showNavigationArrows": "never",
+            "showPaginationDots": "never",
+            "fullWidth": true
+        }
+    },
+    "rich-text#title-colecciones-2":{
+        "props": {
+          "text": "# TÍTULO",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": ""
+        }
+      },
+
+      //block1 editorial
+      "flex-layout.row#colecciones-landing-block1": {
+          "children": ["flex-layout.col#colecciones-landing-block1-photo", "flex-layout.col#colecciones-lannding-block1-slider"],
+          "props": {
+            "blockClass": "colecciones-landing-block",
+            "verticalAlign": "middle",
+            "horizontalAlign": "center"
+          }
+      },
+
+      "flex-layout.col#colecciones-landing-block1-photo": {
+          "children": ["list-context.image-list#colecciones-landing-block1-photo-1"]
+      },
+      "list-context.image-list#colecciones-landing-block1-photo-1": {
+        "children": ["slider-layout#colecciones-landing-block1-photo-editorial"],
+        "props": {
+          "height": "100",
+          "images": [
+            {
+              "image": "https://minisocol.vteximg.com.br/arquivos/bannerSecundarioMinisoCol.png",
+              "mobileImage": "https://minisocol.vteximg.com.br/arquivos/425x425pxMiniso.png",
+              "description": "Categories"
+            }
+          ],
+          "blockClass": "new-landing-category-photo"
+        }
+      },
+      "slider-layout#colecciones-landing-block1-photo-editorial": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "blockClass": "new-landing-category-photo"
+        }
+      },
+      "flex-layout.col#colecciones-lannding-block1-slider": {
+        "children": ["list-context.product-list#shelf-colecciones-landing2"]
+      },
+      "list-context.product-list#shelf-colecciones-landing2": {
+        "blocks": ["product-summary.shelf#colecciones-landing-2-shelf"],
+        "children": ["slider-layout#colecciones-landing-2-slider"],
+        "props": {
+          "orderBy": "OrderByTopSaleDESC",
+          "hideUnavailableItems": false,
+          "collection": "146"
+        }
+      },
+      "product-summary.shelf#colecciones-landing-2-shelf": {
+        "children": [
+          "add-to-list-btn",
+          "stack-layout#prodsum",
+          "product-summary-name",
+          "product-summary-space",
+          "product-summary-price",
+          "flex-layout.row#row-btns-shelf-landing"
+        ]
+      },
+      "slider-layout#colecciones-landing-2-slider": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 2,
+            "tablet": 2,
+            "phone": 2
+          },
+          "infinite": true,
+          "fullWidth": false,
+          "showNavigationArrows": "always",
+          "blockClass":[ "shelf", "shelf-landing-colecciones"]
+        }
+      },
+
+      //block 2 editorial
+      "flex-layout.row#colecciones-landing-block2-middle": {
+        "children": ["flex-layout.col#colecciones-landing-block1-photo2-middle", "flex-layout.col#colecciones-lannding-block1-slider2-middle"]
+    },
+
+    "flex-layout.col#colecciones-landing-block1-photo2-middle": {
+        "children": ["list-context.image-list#colecciones-landing-block1-photo-2-middle"]
+    },
+    "list-context.image-list#colecciones-landing-block1-photo-2-middle": {
+      "children": ["slider-layout#colecciones-landing-block1-photo-editorial2-middle"],
+      "props": {
+        "height": "100",
+        "images": [
+          {
+            "image": "https://minisocol.vteximg.com.br/arquivos/bannerSecundarioMinisoCol.png",
+            "mobileImage": "https://minisocol.vteximg.com.br/arquivos/425x425pxMiniso.png",
+            "description": "Categories"
+          }
+        ],
+        "blockClass": "new-landing-category-photo"
+      }
+    },
+    "slider-layout#colecciones-landing-block1-photo-editorial2-middle": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 1,
+          "tablet": 1,
+          "phone": 1
+        },
+        "infinite": true,
+        "blockClass": "new-landing-category-photo"
+      }
+    },
+    "flex-layout.col#colecciones-lannding-block1-slider2-middle": {
+      "children": ["list-context.product-list#shelf-colecciones-landing2-2-middle"]
+    },
+    "list-context.product-list#shelf-colecciones-landing2-2-middle": {
+      "blocks": ["product-summary.shelf#colecciones-landing-2-shelf2-middle"],
+      "children": ["slider-layout#colecciones-landing-2-slider2-middle"],
+      "props": {
+        "orderBy": "OrderByTopSaleDESC",
+        "hideUnavailableItems": false,
+        "collection": "146"
+      }
+    },
+    "product-summary.shelf#colecciones-landing-2-shelf2-middle": {
+      "children": [
+        "add-to-list-btn",
+        "stack-layout#prodsum",
+        "product-summary-name",
+        "product-summary-space",
+        "product-summary-price",
+        "flex-layout.row#row-btns-shelf-landing"
+      ]
+    },
+    "slider-layout#colecciones-landing-2-slider2-middle": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 2,
+          "tablet": 2,
+          "phone": 2
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "showNavigationArrows": "always",
+        "blockClass":[ "shelf", "shelf-landing-colecciones"]
+      }
+    },
+
+    //block 3
+    "list-context.product-list#shelf-colecciones-bottom": {
+      "blocks": ["product-summary.shelf#colecciones-landing-shelf-bottom"],
+      "children": [  "slider-layout#colecciones-landing-slider-bottom"],
+      "props": {
+        "orderBy": "OrderByTopSaleDESC",
+        "hideUnavailableItems": false,
+        "collection": "218"
+      }
+    },
+    "product-summary.shelf#colecciones-landing-shelf-bottom": {
+      "children": [
+        "add-to-list-btn",
+        "stack-layout#prodsum",
+        "product-summary-name",
+        "product-summary-space",
+        "product-summary-price",
+        "flex-layout.row#row-btns-shelf-landing"
+      ]
+    },
+    "product-summary-name": {
+      "props": {
+        "tag": "h4"
+      }
+    },
+    "slider-layout#colecciones-landing-slider-bottom": {
+      "props": {
+        "itemsPerPage": {
+          "desktop": 5,
+          "tablet": 2,
+          "phone": 2
+        },
+        "infinite": true,
+        "fullWidth": false,
+        "showNavigationArrows": "always",
+        "blockClass":[ "shelf", "shelf-landing-colecciones-bottom"]
+      }
+    },
+
+    //buttons shelf
+    "flex-layout.row#row-btns-shelf-landing": {
+      "children": [
+        //"product-summary-buy-button",
+        // "flex-layout.col#btn-01-landing",
+        "add-to-cart-button#home-summary-add-landing"
+      ],
+      "props": {
+        "blockClass": "row-btns-shelf",
+        "colGap": "2"
+      }
+    },
+    "add-to-cart-button#home-summary-add-landing": {
+      "props": {
+        "text": "AGREGAR A LA BOLSA",
+        "unavailableText": "NO DISPONIBLE"
+      }
+    },
+    "flex-layout.col#btn-01-landing": {
+      "children": ["add-to-cart-button#home-summary-buy-one-click-landing"],
+      "props": {
+        "blockClass": "btn-01"
+      }
+    },
+    "add-to-cart-button#home-summary-buy-one-click-landing": {
+      "props": {
+        "text": "COMPRAR AHORA",
+        "isOneClickBuy": true,
+        "unavailableText": "NO DISPONIBLE",
+        "customOneClickBuyLink": "/checkout/#/cart"
+      }
+    }
+}

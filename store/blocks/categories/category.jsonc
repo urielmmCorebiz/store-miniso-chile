@@ -1,0 +1,536 @@
+{
+    "store.search#new-landing": {
+      "blocks": ["flex-layout.row#collection-2banners", "search-result-layout#new-landing"],
+      "props": {
+        "context": {
+          "maxItemsPerPage": 20,
+          "skusFilter": "FIRST_AVAILABLE",
+          "__unstableProductOriginVtex": true
+        }
+      }
+    },
+    "store.search#brand-new-landing": {
+      "blocks": ["flex-layout.row#collection-2banners", "search-result-layout#new-landing"],
+      "props": {
+        "context": {
+          "orderByField": "OrderByReleaseDateDESC",
+          "hideUnavailableItems": true,
+          "maxItemsPerPage": 20,
+          "skusFilter": "FIRST_AVAILABLE",
+          "__unstableProductOriginVtex": true
+        }
+      }
+    },
+    "store.search#department-new-landing": {
+      "blocks": ["flex-layout.row#collection-2banners", "search-result-layout#new-landing"],
+      "props": {
+        "context": {
+          "maxItemsPerPage": 20,
+          "skusFilter": "FIRST_AVAILABLE",
+          "__unstableProductOriginVtex": true
+        }
+      }
+    },
+    "store.search#category-new-landing": {
+      "blocks": ["flex-layout.row#collection-2banners", "search-result-layout#new-landing"],
+      "props": {
+        "context": {
+          "maxItemsPerPage": 20,
+          "skusFilter": "FIRST_AVAILABLE",
+          "__unstableProductOriginVtex": true
+        }
+      }
+    },
+    "store.search#subcategory-new-landing": {
+      "blocks": [
+        "flex-layout.row#collection-2banners",
+        "search-result-layout#subcategory-new-landing"
+      ],
+      "props": {
+        "context": {
+          "maxItemsPerPage": 20,
+          "skusFilter": "FIRST_AVAILABLE",
+          "__unstableProductOriginVtex": true
+        }
+      }
+    },
+    "search-result-layout#search-new-landing": {
+      "blocks": [
+        "search-result-layout.desktop#new-landing",
+        "search-result-layout.mobile#new-landing",
+        "search-not-found-layout#new-landing"
+      ]
+    },
+    "search-result-layout#new-landing": {
+      "blocks": [
+        "search-result-layout.desktop#new-landing",
+        "search-result-layout.mobile#new-landing",
+        "search-not-found-layout#new-landing"
+      ]
+    },
+    "search-result-layout#subcategory-new-landing": {
+      "blocks": [
+        "search-result-layout.desktop#subcategory-new-landing",
+        "search-result-layout.mobile#new-landing",
+        "search-not-found-layout#new-landing"
+      ]
+    },
+    "search-result-layout.desktop#new-landing": {
+      "children": [
+        "flex-layout.row#imageCollection-new-landing",
+        "flex-layout.row#searchbread-new-landing",
+        "flex-layout.row#result-new-landing",
+        "flex-layout.row#landing-products-new-landing",
+        "flex-layout.row#seo-text-new-landing"
+      ],
+      "props": {
+        "pagination": "show-more",
+        "blockClass": "searchResultLayoutDesktop",
+        "preventRouteChange": true,
+        "hiddenFacets": {
+          "priceRange": false
+        },
+        "mobileLayout": {
+          "mode1": "small",
+          "mode2": "normal"
+        },
+        "paddingBottom": 10
+      }
+    },
+    //SEO TEXT
+    "flex-layout.row#seo-text-new-landing": {
+      "children": ["rich-text#seo-text-new-landing"],
+      "props": {
+        "blockClass": "seo-text"
+      }
+    },
+    "rich-text#seo-text-new-landing": {
+      "props": {
+        "text": "**Miniso Life.** \n  Si crees que tu **recámara**, cocina o baño necesitan un nuevo toque de estilo o simplemente tienes en mente un proyecto de decoración para tu hogar, Miniso cuenta con decenas de artículos que te ayudan a hacerlo posible ¡Siempre es buen momento para hacer un cambio! Contamos con cajas de almacenamiento, accesorios decorativos, artículos de cocina y productos para hacer de cualquier casa un cálido hogar, llenando cada uno de tus espacios de tu **toque personal** combinado con las tendencias de diseño del momento sin gastar mucho más. ¿Qué dices, has pensado en redecorar últimamente?  Visita nuestro catálogo en línea para tomar un poco de inspiración, elige tus productos favoritos **sin salir de tu domicilio** y añadelos a tu carrito de compra **¡Solo tienes que dar un clic y nosotros lo llevamos a tu casa!**",
+        "textAlignment": "LEFT",
+        "textPosition": "CENTER",
+        "blockClass": "seo-text-contain"
+      }
+    },
+    //SEO TEXT
+    "flex-layout.row#imageCollection-new-landing": {
+      "children": [
+        "image#imageCollection-new-landing"
+        //"search-banner#one"
+      ],
+      "props": {
+        "blockClass": "plp-banner"
+      },
+      "title": "Linea banner desktop"
+    },
+    "flex-layout.row#imageCollectionMobile-new-landing": {
+      "children": [
+        "image#imageCollectionMobile-new-landing"
+        //"search-banner#one"
+      ],
+      "title": "Linea banner mobile"
+    },
+    "image#imageCollection-new-landing": {
+      "title": "Desktop image collection",
+      "props": {
+        "src": "desktop-image-collection"
+      }
+    },
+    "image#imageCollectionMobile-new-landing": {
+      "title": "Mobile image collection",
+      "props": {
+        "src": "mobile-image-collection"
+      }
+    },
+    "search-result-layout.desktop#subcategory-new-landing": {
+      "children": ["flex-layout.row#searchbread-new-landing", "flex-layout.row#result-new-landing"],
+      "props": {
+        "pagination": "show-more",
+        "blockClass": "searchResultLayoutDesktop",
+        "preventRouteChange": true,
+        "mobileLayout": {
+          "mode1": "small",
+          "mode2": "normal"
+        }
+      }
+    },
+    "flex-layout.row#didyoumean-new-landing": {
+      "children": ["did-you-mean"]
+    },
+    "flex-layout.row#suggestion-new-landing": {
+      "children": ["search-suggestions"]
+    },
+    "flex-layout.row#banner-one-newlanding": {
+      "children": ["search-banner#one-new-landing"]
+    },
+    "search-banner#one-new-landing": {
+      "props": {
+        "area": "one",
+        "blockClass": "myBanner",
+        "horizontalAlignment": "center"
+      }
+    },
+    "flex-layout.row#searchbread-new-landing": {
+      "children": ["breadcrumb.search"],
+      "props": {
+        "preserveLayoutOnMobile": true,
+        "fullWidth": true
+      }
+    },
+   
+    "flex-layout.col#filter-new-landing": {
+      "children": ["filter-navigator.v3"],
+      "props": {
+        "sticky": true,
+        "blockClass": "filterCol"
+      }
+    },
+    //row new landing products
+    "flex-layout.row#landing-products-new-landing": {
+      "children": ["flex-layout.col#filter-new-landing", "flex-layout.col#col-landing-products-new-landing"],
+      "props": {
+        "preventHorizontalStretch": true,
+        "fullWidth": true,
+        "blockClass": "rowContentResult"
+      }
+    },
+    "flex-layout.col#col-landing-products-new-landing": {
+      "children": [
+        "flex-layout.row#searchinfo-new-landing",
+        "flex-layout.row#fetchprevious-new-landing",
+        "flex-layout.row#products-new-landing",
+        "flex-layout.row#fetchmore-new-landing"
+      ],
+      "props": {
+        "width": "grow"
+      }
+    },
+    "flex-layout.row#searchinfo-new-landing": {
+      "children": ["flex-layout.row#productCount-new-landing", "flex-layout.col#orderby-new-landing"]
+    },
+    "flex-layout.row#productCount-new-landing": {
+      "children": ["search-title.v2", "total-products.v2"],
+      "props": {
+        "blockClass": "productCountCol",
+        "colSizing": "auto"
+      }
+    },
+    "flex-layout.col#orderby-new-landing": {
+      "children": ["order-by.v2"],
+      "props": {
+        "blockClass": "orderByCol"
+      }
+    },
+    "flex-layout.row#fetchprevious-new-landing": {
+      "props": {
+        "marginBottom": 3
+      },
+      "children": ["search-fetch-previous"]
+    },
+    "flex-layout.row#fetchmore-new-landing": {
+      "props": {
+        "marginTop": 3
+      },
+      "children": ["search-fetch-more"]
+    },
+    "flex-layout.row#products-new-landing": {
+      "children": ["search-content"]
+    },
+    "search-content": {
+      "blocks": ["gallery", "not-found"]
+    },
+    "search-result-layout.mobile#new-landing": {
+      "children": [
+        "flex-layout.row#imageCollectionMobile-new-landing",
+        "flex-layout.row#content-result-new-landing",
+        "flex-layout.row#searchtitle-new-landing",
+        "flex-layout.row#searchinfomobile-new-landing",
+        "flex-layout.row#searchbread-new-landing",
+        "flex-layout.row#productCountMobile-new-landing",
+        "flex-layout.row#fetchprevious-new-landing",
+        "flex-layout.row#contentmobile-new-landing",
+        "flex-layout.row#fetchmore-new-landing",
+        "flex-layout.row#seo-text-new-landing"
+      ],
+      "props": {
+        "pagination": "show-more",
+        "mobileLayout": {
+          "mode1": "small",
+          "mode2": "normal"
+        }
+      }
+    },
+    "flex-layout.row#searchtitle-new-landing": {
+      "children": ["search-title.v2"]
+    },
+    "flex-layout.row#contentmobile-new-landing": {
+      "children": ["search-content"],
+      "props": {
+        "preserveLayoutOnMobile": true
+      }
+    },
+    "flex-layout.row#searchinfomobile-new-landing": {
+      "children": [
+        "flex-layout.col#orderByMobile-new-landing",
+        "flex-layout.col#filterMobile-new-landing",
+        "flex-layout.col#switcherMobile-new-landing"
+      ],
+      "props": {
+        "preserveLayoutOnMobile": true,
+        "colSizing": "auto",
+        "colJustify": "around"
+      }
+    },
+    "flex-layout.col#orderByMobile-new-landing": {
+      "children": ["order-by.v2"],
+      "props": {
+        "blockClass": "orderByMobileCol"
+      }
+    },
+    "flex-layout.row#productCountDesktop-new-landing": {
+      "children": ["total-products.v2"],
+      "props": {
+        "blockClass": "productCountDesktop"
+      }
+    },
+    "flex-layout.row#productCountMobile-new-landing": {
+      "children": ["total-products.v2"],
+      "props": {
+        "blockClass": "productCountMobileRow"
+      }
+    },
+    "flex-layout.col#filterMobile-new-landing": {
+      "children": ["filter-navigator.v3"],
+      "props": {
+        "blockClass": "filterMobileCol"
+      }
+    },
+    "flex-layout.col#switcherMobile-new-landing": {
+      "children": ["search-layout-switcher"],
+      "props": {
+        "blockClass": "switcherMobileCol"
+      }
+    },
+    "search-not-found-layout#new-landing": {
+      "children": [
+        "flex-layout.row#searchbread-new-landing",
+        "flex-layout.row#line-01-not-found-new-landing",
+        "flex-layout.row#line-02-not-found-new-landing",
+        // "flex-layout.row#line-03-not-found",
+        "flex-layout.row#line-04-not-found-new-landing"
+      ]
+    },
+    "flex-layout.row#notfound-new-landing": {
+      "children": ["flex-layout.col#col-content-notfound-new-landing"],
+      "props": {
+        "fullWidth": true
+      }
+    },
+  
+    "flex-layout.col#col-content-notfound-new-landing": {
+      "children": [
+        "flex-layout.row#line-01-not-found-new-landing",
+        "flex-layout.row#line-02-not-found-new-landing",
+        "flex-layout.row#line-03-not-found-new-landing",
+        "flex-layout.row#line-04-not-found-new-landing"
+      ],
+      "props": {
+        "blockClass": "col-content-notfound"
+      }
+    },
+  
+    "flex-layout.row#line-01-not-found-new-landing": {
+      "children": ["flex-layout.col#col-line-01-not-found-new-landing"],
+      "props": {
+        "blockClass": ["line-01-not-found", "line-not-found"]
+      }
+    },
+    "flex-layout.col#col-line-01-not-found-new-landing": {
+      "children": ["image#image-01-not-found-new-landing", "rich-text#txt-not-found-new-landing"],
+      "props": {
+        "blockClass": ["line-01-not-found", "content"]
+      }
+    },
+    "image#image-01-not-found-new-landing": {
+      "props": {
+        "src": "assets/pinguino.png"
+      }
+    },
+    "rich-text#txt-not-found-new-landing": {
+      "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "¡Vaya! No hemos encontrado nada para tu búsqueda! \n Pero estás en Miniso ¡Déjate inspirar!",
+        "blockClass": "txt-not-found"
+      }
+    },
+  
+    "flex-layout.row#line-02-not-found-new-landing": {
+      "children": ["shelf#shelf-01-not-found-new-landing"],
+      "props": {
+        "blockClass": ["line-02-not-found", "content", "line-not-found"]
+      }
+    },
+  
+    "shelf#shelf-01-not-found-new-landing": {
+      "blocks": ["product-summary.shelf#default-shelf"],
+      "props": {
+        "paginationDotsVisibility": "visible",
+        "collection": "139",
+        "productList": {
+          "maxItems": 8,
+          "itemsPerPage": 5,
+          "minItemsPerPage": 1,
+          "orderBy": "OrderByTopSaleDESC",
+          "scroll": "BY_PAGE",
+          "arrows": true,
+          "titleText": "Hora de curiosear",
+          "gap": "ph5"
+        }
+      }
+    },
+  
+    "flex-layout.row#line-03-not-found-new-landing": {
+      "children": ["info-card#infocard-not-found-new-landing"],
+      "props": {
+        "blockClass": ["line-03-not-found", "content", "line-not-found"]
+      }
+    },
+  
+    "info-card#infocard-not-found-new-landing": {
+      "props": {
+        "id": "info-card-notfound",
+        "isFullModeStyle": false,
+        "textPosition": "left",
+        "imageUrl": "assets/nosabes_L.png",
+        "headline": "¿No te decides?",
+        "subhead": "Atrévete  a encontrar el producto perfecto para ti o el regalo que más encaja con ese amig@ en tan sólo 3 preguntas ¡Inténtalo!",
+        "callToActionText": "DESCUBRIR",
+        "callToActionMode": "link",
+        "callToActionUrl": "/recomendador",
+        "blockClass": "info-card-notfound",
+        "textAlignment": "left"
+      }
+    },
+  
+    "flex-layout.row#line-04-not-found-new-landing": {
+      "children": ["shelf#shelf-02-not-found-new-landing"],
+      "props": {
+        "blockClass": ["line-04-not-found", "content", "line-not-found"]
+      }
+    },
+  
+    "shelf#shelf-02-not-found-new-landing": {
+      "blocks": ["product-summary.shelf#default-shelf"],
+      "props": {
+        "paginationDotsVisibility": "visible",
+        "collection": "173",
+        "productList": {
+          "maxItems": 8,
+          "itemsPerPage": 5,
+          "orderBy": "OrderByTopSaleDESC",
+          "minItemsPerPage": 1,
+          "scroll": "BY_PAGE",
+          "arrows": true,
+          "titleText": "También te puede interesar ",
+          "gap": "ph5"
+        }
+      }
+    },
+  
+    "breadcrumb": {
+      "props": {
+        "showOnMobile": true
+      }
+    },
+    "gallery": {
+      "blocks": ["product-summary.shelf#default-shelf"],
+      "props": {
+        "maxItemsPerRow": {
+          "desktop": 4
+        }
+      }
+    },
+    "filter-navigator.v3": {
+      "props": {
+        "blockClass": "filterNavigator",
+        "initiallyCollapsed": true
+      }
+    },
+    "flex-layout.row#banner-seo-new-landing": {
+      "children": ["flex-layout.col#banner-seo-content-new-landing"],
+      "props": {
+        "blockClass": "banner-seo"
+      }
+    },
+    "flex-layout.col#banner-seo-content-new-landing": {
+      "children": ["rich-text#banner-seo-title-new-landing", "image#banner-seo-image-new-landing"],
+      "props": {
+        "blockClass": "banner-seo-content"
+      }
+    },
+    "rich-text#banner-seo-title-new-landing": {
+      "props": {
+        "textAlignment": "CENTER",
+        "textPosition": "CENTER",
+        "text": "",
+        "blockClass": "title-text-banner-seo"
+      }
+    },
+    "image#banner-seo-image-new-landing": {
+      "props": {
+        "src": "",
+        "blockClass": "image-banner-seo"
+      }
+    },
+    "flex-layout.row#category-info-new-landing": {
+      "children": ["flex-layout.col#category-info-new-landing"],
+      "props": {
+        "blockClass": "category-info-bottom",
+        "marginTop": 2,
+        "marginBottom": 8
+      }
+    },
+    "flex-layout.col#category-info-new-landing": {
+      "children": [
+        "rich-text#category-info-title-new-landing",
+        "flex-layout.row#category-info-content-new-landing"
+      ]
+    },
+    "rich-text#category-info-title-new-landing": {
+      "props": {
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "text": "",
+        "font": "t-heading-6",
+        "textColor": "c-on-info",
+        "blockClass": "category-info-title"
+      }
+    },
+    "flex-layout.row#category-info-content-new-landing": {
+      "children": [
+        "image#category-info-image-new-landing",
+        "rich-text#category-info-content-new-landing"
+      ],
+      "props": {
+        "colSizing": "auto"
+      }
+    },
+    "image#category-info-image-new-landing": {
+      "props": {
+        "src": "",
+        "blockClass": "category-info-image",
+        "width": "30%"
+      }
+    },
+    "rich-text#category-info-content-new-landing": {
+      "props": {
+        "text": "",
+        "width": "65%",
+        "blockClass": "category-info-content"
+      }
+    }
+  
+    //new landing category
+  }
+  

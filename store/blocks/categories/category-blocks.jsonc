@@ -1,0 +1,157 @@
+{
+    "store.custom#category-blocks": {
+        "blocks": [
+            "flex-layout.row#result-new-landing"
+        ]
+    },
+    "flex-layout.row#result-new-landing": {
+        "children": ["flex-layout.row#content-result-new-landing"],
+        "props": {
+          "preventHorizontalStretch": false,
+          "blockClass": "rowResult"
+        }
+      },
+    "flex-layout.row#content-result-new-landing": {
+        "children": [ "flex-layout.col#content-new-landing"],
+        "props": {
+          "preventHorizontalStretch": true,
+          "fullWidth": true,
+          "blockClass": "rowContentResult"
+        }
+      },
+    "flex-layout.col#content-new-landing": {
+        "children": [
+          "rich-text#title-new-category-new-landing",
+          "list-context.image-list#titles-subcategories-new-landing",
+          "flex-layout.row#photo-editorial-new-landing"
+        ],
+        "props": {
+          "width": "grow"
+        }
+      },
+      "rich-text#title-new-category-new-landing": {
+        "props": {
+          "text": "# No sabía que lo necesitaba en **Hogar**",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": "title-category-new-landing"
+      }
+      },
+      "list-context.image-list#titles-subcategories-new-landing": {
+        "children": ["slider-layout#subcategories-images-new-landing"],
+        "props": {
+          "height": "100",
+          "images": [
+          ],
+          "blockClass": "slider-landing-subcategories"
+        }
+      },
+      "slider-layout#subcategories-images-new-landing": {
+        "props": {
+          "blockClass" : "image-landing-subcategories",
+          "itemsPerPage": {
+            "desktop": 3,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true
+        }
+      },
+      "flex-layout.row#photo-editorial-new-landing": {
+        "children": [
+          "list-context.image-list#new-landing-category-new-landing",
+          "flex-layout.col#content-landing-category"
+
+        ],
+          "props": {
+            "blockClass": "new-landing-category-photo"
+          }
+      },
+      "flex-layout.col#content-landing-category":{
+        "children": [
+          "flex-layout.row#new-landing-category-new-landing",
+          "flex-layout.row#new-landing-category-new-landing2",
+          "flex-layout.row#new-landing-category-new-landing3"
+        ],
+        "props": {
+          "blockClass": "new-landing-category-photo-text"
+        }
+      },
+      "flex-layout.row#new-landing-category-new-landing" : {
+        "children": [
+          "rich-text#title-category-image-new-landing"
+        ],
+        "props": {
+          "verticalAlign": "top",
+          "blockClass": "title-category-image"
+        }
+      },
+      "flex-layout.row#new-landing-category-new-landing2" : {
+        "children": [
+          "rich-text#content-category-image"
+        ],
+        "props": {
+          "blockClass": "",
+          "verticalAlign": "middle"
+        }
+      },
+      "flex-layout.row#new-landing-category-new-landing3" : {
+        "children": [
+          "link#new-landing-category-new-landing"
+        ],
+        "props": {
+          "horizontalAlign": "center",
+          "blockClass": "new-landing-category-button"
+        }
+      },
+      //subcategories
+      //photo editorial
+      "list-context.image-list#new-landing-category-new-landing": {
+        "children": ["slider-layout#new-landing-category-image-new-landing"],
+        "props": {
+          "height": "100",
+          "images": [
+            {
+              "image": "https://minisocol.vteximg.com.br/arquivos/bannerSecundarioMinisoCol.png",
+              "mobileImage": "https://minisocol.vteximg.com.br/arquivos/425x425pxMiniso.png",
+              "description": "Categories"
+            }
+          ],
+          "blockClass": "new-landing-category-photo"
+        }
+      },
+      "slider-layout#new-landing-category-image-new-landing": {
+        "props": {
+          "itemsPerPage": {
+            "desktop": 1,
+            "tablet": 1,
+            "phone": 1
+          },
+          "infinite": true,
+          "blockClass": "new-landing-category-photo"
+        }
+      },
+      "rich-text#title-category-image-new-landing":{
+        "props": {
+          "text": "### MinisoHogar",
+          "textAlignment": "LEFT",
+          "textPosition": "LEFT",
+          "blockClass": ["new-landing-category-photo-text-title"]
+        }
+      },
+      "rich-text#content-category-image":{
+        "props": {
+          "text": "Dale un nuevo toque a tu recámara, **[baño](/hogar/bano)** o cualquier espacio en tu casa o departamento, ¡contamos con difusores, cojines, **[electrodomésticos](/hogar/electrodomesticos)**, artículos de ferretería y automotriz, lámparas, artículos de limpieza, lavandería, **[organización y almacenamiento!](/organizacion-y-almacenamiento)**",
+          "textAlignment": "CENTER",
+          "textPosition": "CENTER",
+          "blockClass": "new-landing-category-photo-text"
+        }
+      },
+      "link#new-landing-category-new-landing":{
+        "props":{
+            "href": "/",
+            "label": "Descubrir",
+            "blockClass": "button-new-landing-category"
+        }
+      }
+}
