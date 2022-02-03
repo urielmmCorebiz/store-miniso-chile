@@ -198,7 +198,7 @@
         "mode1": "small"
       },
       "querySchema": {
-        "maxItemsPerPage": 21,
+        "maxItemsPerPage": 36,
         "orderByField": "OrderByPriceDESC"
       },
       "hiddenFacets": {

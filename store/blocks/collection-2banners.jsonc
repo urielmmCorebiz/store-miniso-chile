@@ -10,7 +10,7 @@
             "querySchema": {
                 "orderByField": "",
                 "hideUnavailableItems": false,
-                "maxItemsPerPage": 12,
+                "maxItemsPerPage": 36,
                 "queryField": "137",
                 "mapField": "productClusterIds",
                 "skusFilter": "ALL_AVAILABLE",
