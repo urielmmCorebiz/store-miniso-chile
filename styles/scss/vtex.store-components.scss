@@ -1320,4 +1320,10 @@
 .imageElement--img-express-pdp-01{
   height: 70px !important;
 }
-
+/* PDP Cambio de color de fuente */
+:global(.vtex-store-components-3-x-productBrand){
+  color: #383435!important;
+}
+:global(.vtex-store-components-3-x-content){
+  color: #383435!important;
+}

@@ -225,7 +225,7 @@
     "link#blog-13-ver-todo":{
       "props":{
           "href": "/",
-          "label": "Ver Todo",
+          "label": "VER TODA LA COLECCIÓN",
           "blockClass": ["blog-13-ver-todo" ,"button-vertodo-margin"]
       }
     }
