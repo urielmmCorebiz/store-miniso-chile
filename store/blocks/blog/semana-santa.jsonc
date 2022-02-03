@@ -6,10 +6,11 @@
         "rich-text#title-blog-13-mequedo",
         "slider-layout-group#vacation-mequedo",
         "flex-layout.row#line-feature-01-vacation",
-        "rich-text#title-blog-13-mevoy",
-        "slider-layout-group#vacation-mevoy",
-        "flex-layout.row#line-feature-02-vacation",
+        // "rich-text#title-blog-13-mevoy",
+        // "slider-layout-group#vacation-mevoy",
+        // "flex-layout.row#line-feature-02-vacation",
         "flex-layout.row#vacaciones-shelf-01",
+        "flex-layout.row#blog-13-ver-todo",
         "flex-layout.row#newsletter"
       ]
     },
@@ -210,6 +211,22 @@
         "textPosition": "CENTER",
         "blockClass": ["title-semana"],
         "title": "me-voy"
+      }
+    },
+    "flex-layout.row#blog-13-ver-todo": {
+      "children": [
+        "link#blog-13-ver-todo"
+      ],
+      "props": {
+        "horizontalAlign": "center",
+        "blockClass": "new-landing-category-button"
+      }
+    },
+    "link#blog-13-ver-todo":{
+      "props":{
+          "href": "/",
+          "label": "Ver Todo",
+          "blockClass": ["blog-13-ver-todo" ,"button-vertodo-margin"]
       }
     }
   }
