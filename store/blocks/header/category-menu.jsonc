@@ -3,6 +3,7 @@
     "children": [
       "menu-item#menu-categorias",
       "menu-item#menu-item-01",
+      "menu-item#menu-san-valentin",
       "menu-item#menu-item-losMasVendidos",
       "menu-item#menu-item-outlet",
       "menu-item#menu-item-licencias",
@@ -26,6 +27,24 @@
         "text": "Lo Nuevo"
       },
       "blockClass": ["menu-title", "menu-title-item-01"]
+    }
+  },
+  "menu-item#menu-san-valentin": {
+    "props": {
+      "id": "menu-item-menu-san-valentin",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "sanvalentin",
+        "href": "/san-valentin",
+        "tagTitle": "Regalos",
+        "text": "San Valentín"
+      },
+      "blockClass": [
+        "menu-title",
+        "menu-title-item-02"
+      ]
     }
   },
   "menu-item#menu-item-losMasVendidos": {

@@ -209,6 +209,7 @@
     "children": [
       "menu-item#menu-mobile-categorias",
       "menu-item#menu-item-01",
+      "menu-item#menu-san-valentin",
       "menu-item#menu-item-losMasVendidos",
       "menu-item#menu-item-outlet",
       "drawer#categorias-licencias",
