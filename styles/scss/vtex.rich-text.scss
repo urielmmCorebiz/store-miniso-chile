@@ -661,10 +661,11 @@
 //landing
 .container--title-vacation {
   background: #e4c9ff;
-  padding: 10px 0;
+  // padding: 10px 0;
 }
 .paragraph--title-vacation{
-  margin: 0;
+  height: 60px;
+  margin: 0px !important;
   font-size: 18px;
 }
 .wrapper--title-vacation {
@@ -683,8 +684,23 @@
   }
 }
 .paragraph--title-vacation{
-  margin: 0;
+  height: 60px;
+  margin: 0px !important;
   font-size: 18px;
+}
+.headingLevel3--title-vacation{
+  margin: 10px 0 !important;
+  text-align: center !important;
+}
+@media(max-width: 640px){
+  .paragraph--title-vacation{
+    height: 160px;
+  }
+}
+@media(max-width: 320px){
+  .paragraph--title-vacation{
+    height: 180px;
+  }
 }
 .link--title-semana{
   font-size: 28px;
@@ -693,9 +709,11 @@
   color:black;
 }
 .paragraph--title-semana{
+  margin: 0px !important;
   font-size: 26px;
   font-weight: 600;
   text-decoration: none;
+  text-align: center;
   color: black;
 }
 .paragraph--title-extra-semana{
