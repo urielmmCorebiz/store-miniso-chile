@@ -990,3 +990,9 @@
   display: flex !important;
   justify-content: center !important;
 }
+//PDP: Reviews link
+.flexRowContent--container-rating-reviews{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}

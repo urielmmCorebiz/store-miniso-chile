@@ -101,3 +101,13 @@
     text-decoration: none !important;
     margin: 40px 0;
 }
+/* reviews link text PDP */
+.link--reviews-link-text{
+    font-size: 14px;
+    color: #19c0c5;
+}
+@media(max-width: 640px){
+    .link--reviews-link-text{
+        text-align: right !important;
+    }
+}

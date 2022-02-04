@@ -522,8 +522,12 @@
 :global(.vtex-reviews-and-ratings-2-x-summaryContainer) {
   display: flex !important;
   align-items: center !important;
-  justify-content: flex-end !important;
   cursor: pointer;
+}
+@media(max-width: 640px){
+  :global(.vtex-reviews-and-ratings-2-x-summaryContainer) {
+    justify-content: flex-end !important;
+  }
 }
 
 :global(.vtex-reviews-and-ratings-1-x-stars) {

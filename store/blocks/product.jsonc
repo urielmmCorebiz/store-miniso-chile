@@ -264,13 +264,44 @@
       "blockClass": ["col-product-headers", "col-product-headers-01"]
     }
   },
+  //Reviews rating
   "flex-layout.row#col-product-headers-02": {
-    "children": ["product-rating-summary"],
+    "children": ["flex-layout.row#container-product-rating-link-reviews"],
     "props": {
       "horizontalAlign": "right",
       "blockClass": ["col-product-headers", "col-product-headers-02"]
     }
   },
+  "flex-layout.row#container-product-rating-link-reviews": {
+    "children":[
+      "flex-layout.row#container-product-rating",
+      "flex-layout.row#container-link-reviews"
+    ],
+    "props":{
+      "blockClass": "container-rating-reviews"
+    }
+  },
+  "flex-layout.row#container-link-reviews":{
+    "children": [
+      "link#link-reviews-text"
+    ],
+    "props":{
+      "blockClass": "container-link-reviews"
+    }
+  },
+  "flex-layout.row#container-product-rating":{
+    "children": [
+      "product-rating-summary"
+    ]
+  },
+  "link#link-reviews-text": {
+    "props": {
+        "href": "#reviews-main-container",
+        "label": "Escribe una opinión",
+        "blockClass": "reviews-link-text"
+    }
+  },
+  //Reviews rating 
   "product-specifications#product": {
     "props": {
       "showSpecificationsTab": false,
