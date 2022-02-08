@@ -147,7 +147,7 @@
 
 .paragraph--titles-home,
 .link--titles-home {
-  margin: -32px 0 -18px 0;
+  margin: -45px 0 -18px 0;
   font-size: 45px;
   font-weight: 700;
   font-stretch: normal;
@@ -158,6 +158,9 @@
   text-align: center;
   color: #1e1e24;
   text-decoration: none;
+}
+.link--titles-home-mt{
+  margin-top: -28px !important;
 }
 
 @media screen and (max-width: 425px) {
@@ -590,6 +593,9 @@
 
 .headingLevel1--titles-home {
   margin-bottom: 0px;
+}
+.container--titles-home{
+  margin-top: -1px;
 }
 
 .paragraph--title-extra-shelf {

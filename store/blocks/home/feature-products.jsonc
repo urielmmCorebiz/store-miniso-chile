@@ -25,6 +25,7 @@
         "slider-layout#demo-newsslatter-home" 
       ],
       "props": {
+        "blockClass": "banner-enterate",
         "height": "auto",
         "images": [
           {
@@ -51,13 +52,13 @@
         "fullWidth": true
       }
     },
-    //newsletter
+    //newsletter landing
   "rich-text#title-products": {
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "No sabía que lo necesitaba",
-      "blockClass": "titles-home"
+      "blockClass": ["titles-home", "titles-home-mt"]
     },
     "title": "No sabía que lo necesitaba"
   },
